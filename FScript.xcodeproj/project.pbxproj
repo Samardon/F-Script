@@ -3150,8 +3150,6 @@
 		BACC80031BD963DB00919ED8 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF31BD963DA00919ED8 /* CoreImage.framework */; };
 		BACC80041BD963DB00919ED8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF41BD963DA00919ED8 /* CoreTelephony.framework */; };
 		BACC80051BD963DB00919ED8 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF51BD963DA00919ED8 /* GameplayKit.framework */; };
-		BACC80061BD963DB00919ED8 /* JavaFrameEmbedding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF61BD963DB00919ED8 /* JavaFrameEmbedding.framework */; };
-		BACC80071BD963DB00919ED8 /* JavaVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF71BD963DB00919ED8 /* JavaVM.framework */; };
 		BACC80091BD963DB00919ED8 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF91BD963DB00919ED8 /* Metal.framework */; };
 		BACC800A1BD963DB00919ED8 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FFA1BD963DB00919ED8 /* MetalKit.framework */; };
 		BACC800B1BD963DB00919ED8 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FFB1BD963DB00919ED8 /* ModelIO.framework */; };
@@ -4754,24 +4752,20 @@
 		BA223520189FA412002C5B6A /* F-Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA223668189FA429002C5B6A /* FScript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FScript.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2237B0189FA432002C5B6A /* FScript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FScript.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BACC7F7F1BD9636A00919ED8 /* F-Script 10.11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Script 10.11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC7F7F1BD9636A00919ED8 /* F-Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACC7FF01BD963DA00919ED8 /* AppKitScripting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKitScripting.framework; path = System/Library/Frameworks/AppKitScripting.framework; sourceTree = SDKROOT; };
 		BACC7FF11BD963DA00919ED8 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		BACC7FF21BD963DA00919ED8 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		BACC7FF31BD963DA00919ED8 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		BACC7FF41BD963DA00919ED8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		BACC7FF51BD963DA00919ED8 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
-		BACC7FF61BD963DB00919ED8 /* JavaFrameEmbedding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFrameEmbedding.framework; path = System/Library/Frameworks/JavaFrameEmbedding.framework; sourceTree = SDKROOT; };
-		BACC7FF71BD963DB00919ED8 /* JavaVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaVM.framework; path = System/Library/Frameworks/JavaVM.framework; sourceTree = SDKROOT; };
-		BACC7FF81BD963DB00919ED8 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		BACC7FF91BD963DB00919ED8 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		BACC7FFA1BD963DB00919ED8 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		BACC7FFB1BD963DB00919ED8 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
 		BACC7FFC1BD963DB00919ED8 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		BACC7FFD1BD963DB00919ED8 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		BACC7FFE1BD963DB00919ED8 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
-		BACC7FFF1BD963DB00919ED8 /* vecLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vecLib.framework; path = System/Library/Frameworks/vecLib.framework; sourceTree = SDKROOT; };
-		BACC81561BD963E400919ED8 /* FScriptFramework 10.11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "FScriptFramework 10.11.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC81561BD963E400919ED8 /* F-Script.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "F-Script.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29F5D8A19FD93FD00AD90CF /* F-Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29F5D9219FD944300AD90CF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E29F5D9319FD944400AD90CF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -5247,8 +5241,6 @@
 				BACC80031BD963DB00919ED8 /* CoreImage.framework in Frameworks */,
 				BACC80041BD963DB00919ED8 /* CoreTelephony.framework in Frameworks */,
 				BACC80051BD963DB00919ED8 /* GameplayKit.framework in Frameworks */,
-				BACC80061BD963DB00919ED8 /* JavaFrameEmbedding.framework in Frameworks */,
-				BACC80071BD963DB00919ED8 /* JavaVM.framework in Frameworks */,
 				BACC80091BD963DB00919ED8 /* Metal.framework in Frameworks */,
 				BACC800A1BD963DB00919ED8 /* MetalKit.framework in Frameworks */,
 				BACC800B1BD963DB00919ED8 /* ModelIO.framework in Frameworks */,
@@ -5512,34 +5504,18 @@
 		0CD4E2FB00D7DD4D7BE9C1BD = {
 			isa = PBXGroup;
 			children = (
-				BACC7FF01BD963DA00919ED8 /* AppKitScripting.framework */,
-				BACC7FF11BD963DA00919ED8 /* Contacts.framework */,
-				BACC7FF21BD963DA00919ED8 /* ContactsUI.framework */,
-				BACC7FF31BD963DA00919ED8 /* CoreImage.framework */,
-				BACC7FF41BD963DA00919ED8 /* CoreTelephony.framework */,
 				F5F1A9F4022E9A96011160FE /* F-Script */,
 				0CD4E30D00D7DFE17BE9C1BD /* FScriptFramework */,
 				8F6392E00BDB855B005C8D94 /* FScriptIBPlugin */,
 				F5F1AAAD022E9E4F011160FE /* FSTest1 */,
 				F5F1AAB6022E9E90011160FE /* FSTest2 */,
-				BACC7FF51BD963DA00919ED8 /* GameplayKit.framework */,
 				8F6DA8EB055FC70C0050409A /* Info-FScript.plist */,
 				8F6DA9DC055FC7200050409A /* Info-FScriptFramework.plist */,
 				8F6DA6E7055FC6C80050409A /* Info-FSTest1_2.plist */,
 				8F6DA6D1055FC6980050409A /* Info-FSTest2_2.plist */,
-				BACC7FF61BD963DB00919ED8 /* JavaFrameEmbedding.framework */,
-				BACC7FF71BD963DB00919ED8 /* JavaVM.framework */,
 				F5F00F100279FB69016D9B48 /* JGAdditions */,
-				BACC7FF81BD963DB00919ED8 /* Kernel.framework */,
-				BACC7FF91BD963DB00919ED8 /* Metal.framework */,
-				BACC7FFA1BD963DB00919ED8 /* MetalKit.framework */,
-				BACC7FFB1BD963DB00919ED8 /* ModelIO.framework */,
-				BACC7FFC1BD963DB00919ED8 /* NetworkExtension.framework */,
 				E29F5F9319FD9F0400AD90CF /* Other Frameworks */,
-				BACC7FFD1BD963DB00919ED8 /* Photos.framework */,
-				BACC7FFE1BD963DB00919ED8 /* PhotosUI.framework */,
 				0CD4E2FC00D7DDB47BE9C1BD /* Products */,
-				BACC7FFF1BD963DB00919ED8 /* vecLib.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5557,8 +5533,8 @@
 				BA2237B0189FA432002C5B6A /* FScript.framework */,
 				E29F5D8A19FD93FD00AD90CF /* F-Script.app */,
 				E29F5EEC19FD94FC00AD90CF /* FScript.framework */,
-				BACC7F7F1BD9636A00919ED8 /* F-Script 10.11.app */,
-				BACC81561BD963E400919ED8 /* FScriptFramework 10.11.framework */,
+				BACC7F7F1BD9636A00919ED8 /* F-Script.app */,
+				BACC81561BD963E400919ED8 /* F-Script.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5909,6 +5885,18 @@
 		E29F5F9319FD9F0400AD90CF /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BACC7FF01BD963DA00919ED8 /* AppKitScripting.framework */,
+				BACC7FF11BD963DA00919ED8 /* Contacts.framework */,
+				BACC7FF21BD963DA00919ED8 /* ContactsUI.framework */,
+				BACC7FF31BD963DA00919ED8 /* CoreImage.framework */,
+				BACC7FF41BD963DA00919ED8 /* CoreTelephony.framework */,
+				BACC7FF91BD963DB00919ED8 /* Metal.framework */,
+				BACC7FFA1BD963DB00919ED8 /* MetalKit.framework */,
+				BACC7FFB1BD963DB00919ED8 /* ModelIO.framework */,
+				BACC7FFC1BD963DB00919ED8 /* NetworkExtension.framework */,
+				BACC7FF51BD963DA00919ED8 /* GameplayKit.framework */,
+				BACC7FFD1BD963DB00919ED8 /* Photos.framework */,
+				BACC7FFE1BD963DB00919ED8 /* PhotosUI.framework */,
 				E29F5F6119FD98F600AD90CF /* AppKit.framework */,
 				BA223095189F9924002C5B6A /* Accelerate.framework */,
 				E2DBA31F161CA5D00035A675 /* Accounts.framework */,
@@ -8120,7 +8108,7 @@
 			);
 			name = "F-Script 10.11";
 			productName = fs;
-			productReference = BACC7F7F1BD9636A00919ED8 /* F-Script 10.11.app */;
+			productReference = BACC7F7F1BD9636A00919ED8 /* F-Script.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BACC80101BD963E400919ED8 /* FScriptFramework 10.11 */ = {
@@ -8140,7 +8128,7 @@
 			name = "FScriptFramework 10.11";
 			productInstallPath = "";
 			productName = FScript;
-			productReference = BACC81561BD963E400919ED8 /* FScriptFramework 10.11.framework */;
+			productReference = BACC81561BD963E400919ED8 /* F-Script.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E29F5BCC19FD93FD00AD90CF /* F-Script 10.10 */ = {
@@ -10786,6 +10774,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wmissing-method-return-type",
@@ -10816,6 +10805,7 @@
 				INSTALL_OWNER = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wmissing-method-return-type",
@@ -11152,11 +11142,11 @@
 				GCC_MODEL_TUNING = "";
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Info-FScript.plist";
+				INFOPLIST_FILE = "Info-FScript.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "F-Script";
 				SDKROOT = macosx10.11;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -11189,11 +11179,11 @@
 				GCC_WARN_SHADOW = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Info-FScript.plist";
+				INFOPLIST_FILE = "Info-FScript.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "F-Script";
 				SDKROOT = macosx10.11;
 				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = app;
@@ -11214,7 +11204,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Info-FScriptFramework.plist";
+				INFOPLIST_FILE = "Info-FScriptFramework.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
@@ -11225,7 +11215,7 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "F-Script";
 				SDKROOT = macosx10.11;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
@@ -11244,7 +11234,7 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/Info-FScriptFramework.plist";
+				INFOPLIST_FILE = "Info-FScriptFramework.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
@@ -11255,7 +11245,7 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "F-Script";
 				SDKROOT = macosx10.11;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;

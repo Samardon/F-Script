@@ -190,4 +190,9 @@ static id globalServicesProvider;
   return result;
 }
 
+- (void)inject:(NSPasteboard *)aPasteboard userData:(NSString *)aUserData error:(NSString **)anError
+{
+    *anError = @"Not implemented";
+}
+
 @end

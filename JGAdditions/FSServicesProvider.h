@@ -30,4 +30,7 @@
 - (void)execute:(NSPasteboard *)pboard userData:(NSString *)userData error:(NSString **)error;
 
 - (NSString *)executeText:(NSString *)commandsString; // jg moved from FSEvalCommand
+
+- (void)inject:(NSPasteboard *)aPasteboard userData:(NSString *)aUserData error:(NSString **)anError;
+
 @end
