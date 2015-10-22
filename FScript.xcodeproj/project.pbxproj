@@ -2702,6 +2702,779 @@
 		BA2237A8189FA432002C5B6A /* FSNSMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44270C116549C700E88F21 /* FSNSMutableDictionary.m */; };
 		BA2237B2189FAC75002C5B6A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA32D161CA7180035A675 /* AVFoundation.framework */; };
 		BA2237B3189FAC75002C5B6A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223099189F9976002C5B6A /* AVKit.framework */; };
+		BACC7DBD1BD9636A00919ED8 /* FSAirplane.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E30F00D7DFE17BE9C1BD /* FSAirplane.h */; };
+		BACC7DBE1BD9636A00919ED8 /* ArrayPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31300D7DFE17BE9C1BD /* ArrayPrivate.h */; };
+		BACC7DBF1BD9636A00919ED8 /* ArrayRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31400D7DFE17BE9C1BD /* ArrayRep.h */; };
+		BACC7DC01BD9636A00919ED8 /* ArrayRepDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31700D7DFE17BE9C1BD /* ArrayRepDouble.h */; };
+		BACC7DC11BD9636A00919ED8 /* ArrayRepEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31900D7DFE17BE9C1BD /* ArrayRepEmpty.h */; };
+		BACC7DC21BD9636A00919ED8 /* ArrayRepId.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31B00D7DFE17BE9C1BD /* ArrayRepId.h */; };
+		BACC7DC31BD9636A00919ED8 /* FSCollectionInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31D00D7DFE17BE9C1BD /* FSCollectionInspector.h */; };
+		BACC7DC41BD9636A00919ED8 /* FSObjectBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32000D7DFE17BE9C1BD /* FSObjectBrowser.h */; };
+		BACC7DC51BD9636A00919ED8 /* FSObjectBrowserArgumentPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FA8A6C0215D44C01AFEEFD /* FSObjectBrowserArgumentPanel.h */; };
+		BACC7DC61BD9636A00919ED8 /* FSObjectBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32200D7DFE17BE9C1BD /* FSObjectBrowserCell.h */; };
+		BACC7DC71BD9636A00919ED8 /* FSObjectBrowserView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32400D7DFE17BE9C1BD /* FSObjectBrowserView.h */; };
+		BACC7DC81BD9636A00919ED8 /* FSBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32600D7DFE17BE9C1BD /* FSBlock.h */; };
+		BACC7DC91BD9636A00919ED8 /* BlockInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32800D7DFE17BE9C1BD /* BlockInspector.h */; };
+		BACC7DCA1BD9636A00919ED8 /* BlockPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32B00D7DFE17BE9C1BD /* BlockPrivate.h */; };
+		BACC7DCB1BD9636A00919ED8 /* BlockRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32C00D7DFE17BE9C1BD /* BlockRep.h */; };
+		BACC7DCC1BD9636A00919ED8 /* BlockSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32E00D7DFE17BE9C1BD /* BlockSignature.h */; };
+		BACC7DCD1BD9636A00919ED8 /* BlockStackElem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32F00D7DFE17BE9C1BD /* BlockStackElem.h */; };
+		BACC7DCE1BD9636A00919ED8 /* build_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33200D7DFE17BE9C1BD /* build_config.h */; };
+		BACC7DCF1BD9636A00919ED8 /* CLIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33300D7DFE17BE9C1BD /* CLIView.h */; };
+		BACC7DD01BD9636A00919ED8 /* FSCompilationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33500D7DFE17BE9C1BD /* FSCompilationResult.h */; };
+		BACC7DD11BD9636A00919ED8 /* CompiledCodeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33700D7DFE17BE9C1BD /* CompiledCodeNode.h */; };
+		BACC7DD21BD9636A00919ED8 /* FSCompiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33900D7DFE17BE9C1BD /* FSCompiler.h */; };
+		BACC7DD31BD9636A00919ED8 /* FSConstantsInitialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33B00D7DFE17BE9C1BD /* FSConstantsInitialization.h */; };
+		BACC7DD41BD9636A00919ED8 /* FSExecEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33D00D7DFE17BE9C1BD /* FSExecEngine.h */; };
+		BACC7DD51BD9636A00919ED8 /* FSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33F00D7DFE17BE9C1BD /* FSExecutor.h */; };
+		BACC7DD61BD9636A00919ED8 /* FSFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34200D7DFE17BE9C1BD /* FSFlight.h */; };
+		BACC7DD71BD9636A00919ED8 /* FSArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34500D7DFE17BE9C1BD /* FSArchiver.h */; };
+		BACC7DD81BD9636A00919ED8 /* FSBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34700D7DFE17BE9C1BD /* FSBoolean.h */; };
+		BACC7DD91BD9636A00919ED8 /* FSBooleanPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34900D7DFE17BE9C1BD /* FSBooleanPrivate.h */; };
+		BACC7DDA1BD9636A00919ED8 /* FScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34C00D7DFE17BE9C1BD /* FScript.h */; };
+		BACC7DDB1BD9636A00919ED8 /* FScriptFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34E00D7DFE17BE9C1BD /* FScriptFunctions.h */; };
+		BACC7DDC1BD9636A00919ED8 /* FScriptTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FBEF2802149D32018C0134 /* FScriptTextView.h */; };
+		BACC7DDD1BD9636A00919ED8 /* FSInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35000D7DFE17BE9C1BD /* FSInterpreter.h */; };
+		BACC7DDE1BD9636A00919ED8 /* FSInterpreterResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35200D7DFE17BE9C1BD /* FSInterpreterResult.h */; };
+		BACC7DDF1BD9636A00919ED8 /* FSInterpreterResultPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35400D7DFE17BE9C1BD /* FSInterpreterResultPrivate.h */; };
+		BACC7DE01BD9636A00919ED8 /* FSInterpreterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35500D7DFE17BE9C1BD /* FSInterpreterView.h */; };
+		BACC7DE11BD9636A00919ED8 /* FSInterpreterViewIBHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35700D7DFE17BE9C1BD /* FSInterpreterViewIBHeader.h */; };
+		BACC7DE21BD9636A00919ED8 /* FSNSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35800D7DFE17BE9C1BD /* FSNSArray.h */; };
+		BACC7DE31BD9636A00919ED8 /* FSNSArrayPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35A00D7DFE17BE9C1BD /* FSNSArrayPrivate.h */; };
+		BACC7DE41BD9636A00919ED8 /* FSNSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35B00D7DFE17BE9C1BD /* FSNSDate.h */; };
+		BACC7DE51BD9636A00919ED8 /* FSNSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35D00D7DFE17BE9C1BD /* FSNSDictionary.h */; };
+		BACC7DE61BD9636A00919ED8 /* FSNSDistantObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F51CA01401B013C401BFBB24 /* FSNSDistantObject.h */; };
+		BACC7DE71BD9636A00919ED8 /* FSNSMutableString.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35F00D7DFE17BE9C1BD /* FSNSMutableString.h */; };
+		BACC7DE81BD9636A00919ED8 /* FSNSNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36100D7DFE17BE9C1BD /* FSNSNumber.h */; };
+		BACC7DE91BD9636A00919ED8 /* FSNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36300D7DFE17BE9C1BD /* FSNSObject.h */; };
+		BACC7DEA1BD9636A00919ED8 /* FSNSProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36500D7DFE17BE9C1BD /* FSNSProxy.h */; };
+		BACC7DEB1BD9636A00919ED8 /* FSPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36C00D7DFE17BE9C1BD /* FSPattern.h */; };
+		BACC7DEC1BD9636A00919ED8 /* FSUnarchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37200D7DFE17BE9C1BD /* FSUnarchiver.h */; };
+		BACC7DED1BD9636A00919ED8 /* FSVoid.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37400D7DFE17BE9C1BD /* FSVoid.h */; };
+		BACC7DEE1BD9636A00919ED8 /* FSVoidPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37600D7DFE17BE9C1BD /* FSVoidPrivate.h */; };
+		BACC7DEF1BD9636A00919ED8 /* FSGenericObjectInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37700D7DFE17BE9C1BD /* FSGenericObjectInspector.h */; };
+		BACC7DF01BD9636A00919ED8 /* KTestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66029E580161E0650055708C /* KTestManager.h */; };
+		BACC7DF11BD9636A00919ED8 /* MessagePatternCodeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37F00D7DFE17BE9C1BD /* MessagePatternCodeNode.h */; };
+		BACC7DF21BD9636A00919ED8 /* FSMiscTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38100D7DFE17BE9C1BD /* FSMiscTools.h */; };
+		BACC7DF31BD9636A00919ED8 /* FSMsgContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38300D7DFE17BE9C1BD /* FSMsgContext.h */; };
+		BACC7DF41BD9636A00919ED8 /* FSNewlyAllocatedObjectHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38700D7DFE17BE9C1BD /* FSNewlyAllocatedObjectHolder.h */; };
+		BACC7DF51BD9636A00919ED8 /* FSNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38D00D7DFE17BE9C1BD /* FSNumber.h */; };
+		BACC7DF61BD9636A00919ED8 /* NumberPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38F00D7DFE17BE9C1BD /* NumberPrivate.h */; };
+		BACC7DF71BD9636A00919ED8 /* FSPilot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39000D7DFE17BE9C1BD /* FSPilot.h */; };
+		BACC7DF81BD9636A00919ED8 /* FSReplacementForCoderForClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39400D7DFE17BE9C1BD /* FSReplacementForCoderForClass.h */; };
+		BACC7DF91BD9636A00919ED8 /* ShellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39600D7DFE17BE9C1BD /* ShellView.h */; };
+		BACC7DFA1BD9636A00919ED8 /* Space.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39800D7DFE17BE9C1BD /* Space.h */; };
+		BACC7DFB1BD9636A00919ED8 /* FSCommandHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39A00D7DFE17BE9C1BD /* FSCommandHistory.h */; };
+		BACC7DFC1BD9636A00919ED8 /* FSSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39E00D7DFE17BE9C1BD /* FSSystem.h */; };
+		BACC7DFD1BD9636A00919ED8 /* DOTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F13B4701C8BE3401CB6DF7 /* DOTest.h */; };
+		BACC7DFE1BD9636A00919ED8 /* FSNSProtocolChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F140590223CC9D01DD698C /* FSNSProtocolChecker.h */; };
+		BACC7DFF1BD9636A00919ED8 /* FScriptAppController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F1A9F9022E9A96011160FE /* FScriptAppController.h */; };
+		BACC7E001BD9636A00919ED8 /* FSObjectBrowserToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF6C0279FD3C01345511 /* FSObjectBrowserToolbar.h */; };
+		BACC7E011BD9636A00919ED8 /* FSEvalCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF700279FD3C01345511 /* FSEvalCommand.h */; };
+		BACC7E021BD9636A00919ED8 /* FSServicesProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF7C0279FD3C01345511 /* FSServicesProvider.h */; };
+		BACC7E031BD9636A00919ED8 /* FSTask.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF7E0279FD3C01345511 /* FSTask.h */; };
+		BACC7E041BD9636A00919ED8 /* FSObjectBrowserToolbarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F0AD420285792F0103CD49 /* FSObjectBrowserToolbarButton.h */; };
+		BACC7E051BD9636A00919ED8 /* FSObjectBrowserButtonCtxBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F0261F02C243D20155CB83 /* FSObjectBrowserButtonCtxBlock.h */; };
+		BACC7E061BD9636A00919ED8 /* DOCustom.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F1AAAE022E9E4F011160FE /* DOCustom.h */; };
+		BACC7E071BD9636A00919ED8 /* Pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = F505648002DF417501FE0326 /* Pointer.h */; };
+		BACC7E081BD9636A00919ED8 /* PointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F856C002EB281C01F7E6F0 /* PointerPrivate.h */; };
+		BACC7E091BD9636A00919ED8 /* FSInterpreterPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F54CA17602FB2CAF01C25A35 /* FSInterpreterPrivate.h */; };
+		BACC7E0A1BD9636A00919ED8 /* FSIdentifierFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5073A2102FC5400013656B0 /* FSIdentifierFormatter.h */; };
+		BACC7E0B1BD9636A00919ED8 /* FSObjectFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EBBE820321029601CA10C6 /* FSObjectFormatter.h */; };
+		BACC7E0C1BD9636A00919ED8 /* FSSystemPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A25E260357B373011A39F8 /* FSSystemPrivate.h */; };
+		BACC7E0D1BD9636A00919ED8 /* FSKeyedUnarchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D44C40358A88801B9E934 /* FSKeyedUnarchiver.h */; };
+		BACC7E0E1BD9636A00919ED8 /* FSKeyedArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D44CE0358B5D201B9E934 /* FSKeyedArchiver.h */; };
+		BACC7E0F1BD9636A00919ED8 /* FSConstantListBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F52EECA6036210E2016141BB /* FSConstantListBuilder.h */; };
+		BACC7E101BD9636A00919ED8 /* FSImageInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = F54B55B9036B45770140C608 /* FSImageInspector.h */; };
+		BACC7E111BD9636A00919ED8 /* FSNSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F54B55C8036B4A330140C608 /* FSNSImage.h */; };
+		BACC7E121BD9636A00919ED8 /* FSObjectBrowserToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F58090CF03755FC701AED2EF /* FSObjectBrowserToolbarItem.h */; };
+		BACC7E131BD9636A00919ED8 /* FSNSObjectPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F63CC08044B95DB00B84480 /* FSNSObjectPrivate.h */; };
+		BACC7E141BD9636A00919ED8 /* FSArrayEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA3AE55044D4D6700CF7A3A /* FSArrayEnumerator.h */; };
+		BACC7E151BD9636A00919ED8 /* FSNSMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F66F85404666E8100AFC811 /* FSNSMutableArray.h */; };
+		BACC7E161BD9636A00919ED8 /* FSObjectBrowserButtonsInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F9569602B272FB0121B3BA /* FSObjectBrowserButtonsInspector.h */; };
+		BACC7E171BD9636A00919ED8 /* ArrayRepBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D4BE29038511FF01461810 /* ArrayRepBoolean.h */; };
+		BACC7E181BD9636A00919ED8 /* FSNSValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F553BF70585222700A92293 /* FSNSValue.h */; };
+		BACC7E191BD9636A00919ED8 /* FSReplacementForCoderForNilInArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7D7DB7058E32CD00F1B8A8 /* FSReplacementForCoderForNilInArray.h */; };
+		BACC7E1A1BD9636A00919ED8 /* FSNamedNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0E3B7E059F3DBB003F6CE9 /* FSNamedNumber.h */; };
+		BACC7E1B1BD9636A00919ED8 /* FSCollectionInspectorTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F60216E05A25CDC0004EFF1 /* FSCollectionInspectorTableView.h */; };
+		BACC7E1C1BD9636A00919ED8 /* FSNSSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F60F24505A9FE8B00985FEC /* FSNSSet.h */; };
+		BACC7E1D1BD9636A00919ED8 /* FSAttributedStringInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDCCD4E05C09F8200747C0A /* FSAttributedStringInspector.h */; };
+		BACC7E1E1BD9636A00919ED8 /* FSNSAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDCCDBF05C0A23000747C0A /* FSNSAttributedString.h */; };
+		BACC7E1F1BD9636A00919ED8 /* FSInterpreterViewPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F71F72205C43A7D00C34794 /* FSInterpreterViewPrivate.h */; };
+		BACC7E201BD9636A00919ED8 /* FScriptMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0B66FB05C5639E0099180D /* FScriptMenuItem.h */; };
+		BACC7E211BD9636A00919ED8 /* FSNSFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F658B2705C9694F0040FB24 /* FSNSFont.h */; };
+		BACC7E221BD9636A00919ED8 /* FSObjectBrowserMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB505FF05D53C8600153B33 /* FSObjectBrowserMatrix.h */; };
+		BACC7E231BD9636A00919ED8 /* FSNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36700D7DFE17BE9C1BD /* FSNSString.h */; };
+		BACC7E241BD9636A00919ED8 /* FSNSStringPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36900D7DFE17BE9C1BD /* FSNSStringPrivate.h */; };
+		BACC7E251BD9636A00919ED8 /* FSSymbolTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F17C07D06B1309C00F07862 /* FSSymbolTable.h */; };
+		BACC7E261BD9636A00919ED8 /* TestFS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBB10A4044E28FD00181279 /* TestFS.h */; };
+		BACC7E271BD9636A00919ED8 /* FSObjectBrowserViewObjectInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4E294C075B8E5600F8DCDB /* FSObjectBrowserViewObjectInfo.h */; };
+		BACC7E281BD9636A00919ED8 /* FSCollectionInspectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA8EDC607735B3B001BEC7B /* FSCollectionInspectorView.h */; };
+		BACC7E291BD9636A00919ED8 /* ArrayRepFetchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBC2877077B7D5200F9B4A2 /* ArrayRepFetchRequest.h */; };
+		BACC7E2A1BD9636A00919ED8 /* FSPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA70B077F6A5200AC1C96 /* FSPointer.h */; };
+		BACC7E2B1BD9636A00919ED8 /* FSGenericPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA779077F6C9300AC1C96 /* FSGenericPointer.h */; };
+		BACC7E2C1BD9636A00919ED8 /* FSPointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA7E8077F719800AC1C96 /* FSPointerPrivate.h */; };
+		BACC7E2D1BD9636A00919ED8 /* FSGenericPointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA841077F79A000AC1C96 /* FSGenericPointerPrivate.h */; };
+		BACC7E2E1BD9636A00919ED8 /* FSObjectPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE9AE12078071CC005B2CC4 /* FSObjectPointer.h */; };
+		BACC7E2F1BD9636A00919ED8 /* FSObjectPointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE9AE8207807269005B2CC4 /* FSObjectPointerPrivate.h */; };
+		BACC7E301BD9636A00919ED8 /* FSManagedObjectContextInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F37AEC2078B7E900083565D /* FSManagedObjectContextInspector.h */; };
+		BACC7E311BD9636A00919ED8 /* FSObjectBrowserNamedObjectWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F86923607F19BA8000D20A4 /* FSObjectBrowserNamedObjectWrapper.h */; };
+		BACC7E321BD9636A00919ED8 /* FSInspectorUniquier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7F4F9C07FB274C008E42F4 /* FSInspectorUniquier.h */; };
+		BACC7E331BD9636A00919ED8 /* FSPredicateTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F95E3C108034A670030B65C /* FSPredicateTextView.h */; };
+		BACC7E341BD9636A00919ED8 /* FSCoreDataSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE7E0E6082AD964008231E8 /* FSCoreDataSample.h */; };
+		BACC7E351BD9636A00919ED8 /* FSNSManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5189E707F072EA00A50735 /* FSNSManagedObjectContext.h */; };
+		BACC7E361BD9636A00919ED8 /* FSObjectBrowserSearchField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F585F6E059B23F100C12B6F /* FSObjectBrowserSearchField.h */; };
+		BACC7E371BD9636A00919ED8 /* FSBlockCompilationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F90A2EF096DB0660064F4BC /* FSBlockCompilationResult.h */; };
+		BACC7E381BD9636A00919ED8 /* FSReturnSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD7D4A60975B377009B2685 /* FSReturnSignal.h */; };
+		BACC7E391BD9636A00919ED8 /* FSConstantsDictionaryGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F92F0340463F03300F4C61F /* FSConstantsDictionaryGenerator.h */; };
+		BACC7E3A1BD9636A00919ED8 /* FSMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3C13980C65E66400948776 /* FSMethod.h */; };
+		BACC7E3B1BD9636A00919ED8 /* FSCNClassDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5AD3200D05CFFE000CEAC6 /* FSCNClassDefinition.h */; };
+		BACC7E3C1BD9636A00919ED8 /* FSCNBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE6397E0D09C0F400255EBA /* FSCNBase.h */; };
+		BACC7E3D1BD9636A00919ED8 /* FSCNIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE6398E0D09DCB600255EBA /* FSCNIdentifier.h */; };
+		BACC7E3E1BD9636A00919ED8 /* FSTestObjCClass1.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE3DD200D26D49900A1D767 /* FSTestObjCClass1.h */; };
+		BACC7E3F1BD9636A00919ED8 /* FSTestObjCClass2.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4822020D2C317700754A4E /* FSTestObjCClass2.h */; };
+		BACC7E401BD9636A00919ED8 /* FSCNCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8112F00D85E58200CB3407 /* FSCNCategory.h */; };
+		BACC7E411BD9636A00919ED8 /* FSCNMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F59CA6F0D86DD0800D67A78 /* FSCNMessage.h */; };
+		BACC7E421BD9636A00919ED8 /* FSCNSuper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F72237D0D870C6A00394C99 /* FSCNSuper.h */; };
+		BACC7E431BD9636A00919ED8 /* FSCNUnaryMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E341E0D8DB61C00912543 /* FSCNUnaryMessage.h */; };
+		BACC7E441BD9636A00919ED8 /* FSCNBinaryMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E34310D8DBF6A00912543 /* FSCNBinaryMessage.h */; };
+		BACC7E451BD9636A00919ED8 /* FSCNKeywordMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E343A0D8DBFE700912543 /* FSCNKeywordMessage.h */; };
+		BACC7E461BD9636A00919ED8 /* FSCNCascade.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5900130D9468FC003A8B17 /* FSCNCascade.h */; };
+		BACC7E471BD9636A00919ED8 /* FSCNStatementList.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8F58640D9FE6A900ED0FED /* FSCNStatementList.h */; };
+		BACC7E481BD9636A00919ED8 /* FSCNPrecomputedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F747DA70DA03AE200148342 /* FSCNPrecomputedObject.h */; };
+		BACC7E491BD9636A00919ED8 /* FSCNArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F747DB60DA0467100148342 /* FSCNArray.h */; };
+		BACC7E4A1BD9636A00919ED8 /* FSCNBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE79AA0DA0ED5D00CB6E14 /* FSCNBlock.h */; };
+		BACC7E4B1BD9636A00919ED8 /* FSCNAssignment.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE79F10DA109C500CB6E14 /* FSCNAssignment.h */; };
+		BACC7E4C1BD9636A00919ED8 /* FSCNMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F45CBBD0DA813F200AFA8C8 /* FSCNMethod.h */; };
+		BACC7E4D1BD9636A00919ED8 /* FSCNReturn.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD0A3120DD7276000E47459 /* FSCNReturn.h */; };
+		BACC7E4E1BD9636A00919ED8 /* FSClassDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8949D50DE08B110094EC14 /* FSClassDefinition.h */; };
+		BACC7E4F1BD9636A00919ED8 /* FSTranscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2DE6590E57254700CF83CB /* FSTranscript.h */; };
+		BACC7E501BD9636A00919ED8 /* FSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE6AD8F0EC740650096019D /* FSArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC7E511BD9636A00919ED8 /* Array_fscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F31A4C00EC74A2E00D1B8E8 /* Array_fscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC7E521BD9636A00919ED8 /* Block_fscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCA00C10EEAF34300B10420 /* Block_fscript.h */; };
+		BACC7E531BD9636A00919ED8 /* Number_fscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBB2FF00EEB3467007A3163 /* Number_fscript.h */; };
+		BACC7E541BD9636A00919ED8 /* FSGlobalScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB9D5970F1CEE2100E10274 /* FSGlobalScope.h */; };
+		BACC7E551BD9636A00919ED8 /* FSNSFileHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9D04170F1DF1CB001B8286 /* FSNSFileHandle.h */; };
+		BACC7E561BD9636A00919ED8 /* FSAssociation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F940B810F2393B0004525E1 /* FSAssociation.h */; };
+		BACC7E571BD9636A00919ED8 /* FSCNDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F940C6E0F23BC2E004525E1 /* FSCNDictionary.h */; };
+		BACC7E581BD9636A00919ED8 /* FSObjectBrowserBottomBarTextDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7A71290F48397C00E95364 /* FSObjectBrowserBottomBarTextDisplay.h */; };
+		BACC7E591BD9636A00919ED8 /* FSNSAffineTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2D72090F6BD9B100F0862A /* FSNSAffineTransform.h */; };
+		BACC7E5A1BD9636A00919ED8 /* FSDemoAssistant.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9636430F8DF6AB00A70F39 /* FSDemoAssistant.h */; };
+		BACC7E5B1BD9636A00919ED8 /* FSNewlyAllocatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCA593110883B0100F67841 /* FSNewlyAllocatedObject.h */; };
+		BACC7E5C1BD9636A00919ED8 /* FSWorksWhenModalWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5EDA00109B384A003A2F4C /* FSWorksWhenModalWindow.h */; };
+		BACC7E5D1BD9636A00919ED8 /* FSNSMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F44270B116549C700E88F21 /* FSNSMutableDictionary.h */; };
+		BACC7E5F1BD9636A00919ED8 /* FSTest2.app in Resources */ = {isa = PBXBuildFile; fileRef = 8FD37B9F08472E0F00524B98 /* FSTest2.app */; };
+		BACC7E601BD9636A00919ED8 /* FSTest1.app in Resources */ = {isa = PBXBuildFile; fileRef = 8FD37BA108472E0F00524B98 /* FSTest1.app */; };
+		BACC7E611BD9636A00919ED8 /* FSCollectionInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E31F00D7DFE17BE9C1BD /* FSCollectionInspector.nib */; };
+		BACC7E621BD9636A00919ED8 /* blockInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E32A00D7DFE17BE9C1BD /* blockInspector.nib */; };
+		BACC7E631BD9636A00919ED8 /* FlightTutorial.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E34400D7DFE17BE9C1BD /* FlightTutorial.txt */; };
+		BACC7E641BD9636A00919ED8 /* genObjInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E37900D7DFE17BE9C1BD /* genObjInspector.nib */; };
+		BACC7E651BD9636A00919ED8 /* KTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E37D00D7DFE17BE9C1BD /* KTest.txt */; };
+		BACC7E661BD9636A00919ED8 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E37E00D7DFE17BE9C1BD /* license.txt */; };
+		BACC7E671BD9636A00919ED8 /* fs.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5F1A9F7022E9A96011160FE /* fs.icns */; };
+		BACC7E681BD9636A00919ED8 /* FScriptAppPreference.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5F1A9FB022E9A96011160FE /* FScriptAppPreference.nib */; };
+		BACC7E691BD9636A00919ED8 /* fs.nib in Resources */ = {isa = PBXBuildFile; fileRef = F598CDB7025CF7E5011B2E41 /* fs.nib */; };
+		BACC7E6A1BD9636A00919ED8 /* fs.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = F538EF6E0279FD3C01345511 /* fs.scriptSuite */; };
+		BACC7E6B1BD9636A00919ED8 /* fs.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = F538EF6F0279FD3C01345511 /* fs.scriptTerminology */; };
+		BACC7E6C1BD9636A00919ED8 /* FSObjectBrowserButtonsInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5F9569002B272A30121B3BA /* FSObjectBrowserButtonsInspector.nib */; };
+		BACC7E6D1BD9636A00919ED8 /* FSImageInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = F54B55C3036B48690140C608 /* FSImageInspector.nib */; };
+		BACC7E6E1BD9636A00919ED8 /* ArrayTableView.nib in Resources */ = {isa = PBXBuildFile; fileRef = F58090FC03756D2401AED2EF /* ArrayTableView.nib */; };
+		BACC7E6F1BD9636A00919ED8 /* constantsDictionary in Resources */ = {isa = PBXBuildFile; fileRef = 8F92F0380463F2A400F4C61F /* constantsDictionary */; };
+		BACC7E701BD9636A00919ED8 /* FSAttributedStringInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDCCD7A05C0A0A000747C0A /* FSAttributedStringInspector.nib */; };
+		BACC7E711BD9636A00919ED8 /* FSConsole.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B64C805C5370D0099180D /* FSConsole.nib */; };
+		BACC7E721BD9636A00919ED8 /* FScriptPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B664F05C557A40099180D /* FScriptPreferences.nib */; };
+		BACC7E731BD9636A00919ED8 /* run.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D066F05CED9B9007EA81B /* run.tiff */; };
+		BACC7E741BD9636A00919ED8 /* build.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F56036505CF22660044FA65 /* build.tiff */; };
+		BACC7E751BD9636A00919ED8 /* FSCollectionInspectorView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8EF9107739FD4001BEC7B /* FSCollectionInspectorView.nib */; };
+		BACC7E761BD9636A00919ED8 /* FSManagedObjectContextInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA6B79078E0E4F005FC6B2 /* FSManagedObjectContextInspector.nib */; };
+		BACC7E771BD9636A00919ED8 /* FSMovieInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7472BE056B7ACE00E87339 /* FSMovieInspector.nib */; };
+		BACC7E781BD9636A00919ED8 /* FSTestClasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8FE3DC990D26C0FD00A1D767 /* FSTestClasses.txt */; };
+		BACC7E791BD9636A00919ED8 /* DemoAssistant.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F9636480F8DF86600A70F39 /* DemoAssistant.xib */; };
+		BACC7E7B1BD9636A00919ED8 /* FSAirplane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31000D7DFE17BE9C1BD /* FSAirplane.m */; };
+		BACC7E7C1BD9636A00919ED8 /* ArrayRepDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31800D7DFE17BE9C1BD /* ArrayRepDouble.m */; };
+		BACC7E7D1BD9636A00919ED8 /* ArrayRepEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31A00D7DFE17BE9C1BD /* ArrayRepEmpty.m */; };
+		BACC7E7E1BD9636A00919ED8 /* ArrayRepId.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31C00D7DFE17BE9C1BD /* ArrayRepId.m */; };
+		BACC7E7F1BD9636A00919ED8 /* FSCollectionInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31E00D7DFE17BE9C1BD /* FSCollectionInspector.m */; };
+		BACC7E801BD9636A00919ED8 /* FSObjectBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32100D7DFE17BE9C1BD /* FSObjectBrowser.m */; };
+		BACC7E811BD9636A00919ED8 /* FSObjectBrowserArgumentPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FA8A6D0215D44C01AFEEFD /* FSObjectBrowserArgumentPanel.m */; };
+		BACC7E821BD9636A00919ED8 /* FSObjectBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32300D7DFE17BE9C1BD /* FSObjectBrowserCell.m */; };
+		BACC7E831BD9636A00919ED8 /* FSObjectBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32500D7DFE17BE9C1BD /* FSObjectBrowserView.m */; };
+		BACC7E841BD9636A00919ED8 /* FSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32700D7DFE17BE9C1BD /* FSBlock.m */; };
+		BACC7E851BD9636A00919ED8 /* BlockInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32900D7DFE17BE9C1BD /* BlockInspector.m */; };
+		BACC7E861BD9636A00919ED8 /* BlockRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32D00D7DFE17BE9C1BD /* BlockRep.m */; };
+		BACC7E871BD9636A00919ED8 /* BlockStackElem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33000D7DFE17BE9C1BD /* BlockStackElem.m */; };
+		BACC7E881BD9636A00919ED8 /* CLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33400D7DFE17BE9C1BD /* CLIView.m */; };
+		BACC7E891BD9636A00919ED8 /* FSCompilationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33600D7DFE17BE9C1BD /* FSCompilationResult.m */; };
+		BACC7E8A1BD9636A00919ED8 /* CompiledCodeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33800D7DFE17BE9C1BD /* CompiledCodeNode.m */; };
+		BACC7E8B1BD9636A00919ED8 /* FSCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33A00D7DFE17BE9C1BD /* FSCompiler.m */; };
+		BACC7E8C1BD9636A00919ED8 /* FSConstantsInitialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33C00D7DFE17BE9C1BD /* FSConstantsInitialization.m */; };
+		BACC7E8D1BD9636A00919ED8 /* FSExecEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33E00D7DFE17BE9C1BD /* FSExecEngine.m */; };
+		BACC7E8E1BD9636A00919ED8 /* FSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34000D7DFE17BE9C1BD /* FSExecutor.m */; };
+		BACC7E8F1BD9636A00919ED8 /* FSFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34300D7DFE17BE9C1BD /* FSFlight.m */; };
+		BACC7E901BD9636A00919ED8 /* FSArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34600D7DFE17BE9C1BD /* FSArchiver.m */; };
+		BACC7E911BD9636A00919ED8 /* FSBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34800D7DFE17BE9C1BD /* FSBoolean.m */; };
+		BACC7E921BD9636A00919ED8 /* FScriptFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34F00D7DFE17BE9C1BD /* FScriptFunctions.m */; };
+		BACC7E931BD9636A00919ED8 /* FScriptTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F501AF7B021497C401A75EC5 /* FScriptTextView.m */; };
+		BACC7E941BD9636A00919ED8 /* FSInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35100D7DFE17BE9C1BD /* FSInterpreter.m */; };
+		BACC7E951BD9636A00919ED8 /* FSInterpreterResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35300D7DFE17BE9C1BD /* FSInterpreterResult.m */; };
+		BACC7E961BD9636A00919ED8 /* FSInterpreterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35600D7DFE17BE9C1BD /* FSInterpreterView.m */; };
+		BACC7E971BD9636A00919ED8 /* FSNSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35900D7DFE17BE9C1BD /* FSNSArray.m */; };
+		BACC7E981BD9636A00919ED8 /* FSNSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35C00D7DFE17BE9C1BD /* FSNSDate.m */; };
+		BACC7E991BD9636A00919ED8 /* FSNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35E00D7DFE17BE9C1BD /* FSNSDictionary.m */; };
+		BACC7E9A1BD9636A00919ED8 /* FSNSDistantObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CA01501B013C401BFBB24 /* FSNSDistantObject.m */; };
+		BACC7E9B1BD9636A00919ED8 /* FSNSMutableString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36000D7DFE17BE9C1BD /* FSNSMutableString.m */; };
+		BACC7E9C1BD9636A00919ED8 /* FSNSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36200D7DFE17BE9C1BD /* FSNSNumber.m */; };
+		BACC7E9D1BD9636A00919ED8 /* FSNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36400D7DFE17BE9C1BD /* FSNSObject.m */; };
+		BACC7E9E1BD9636A00919ED8 /* FSNSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36600D7DFE17BE9C1BD /* FSNSProxy.m */; };
+		BACC7E9F1BD9636A00919ED8 /* FSPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36D00D7DFE17BE9C1BD /* FSPattern.m */; };
+		BACC7EA01BD9636A00919ED8 /* FSUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E37300D7DFE17BE9C1BD /* FSUnarchiver.m */; };
+		BACC7EA11BD9636A00919ED8 /* FSVoid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E37500D7DFE17BE9C1BD /* FSVoid.m */; };
+		BACC7EA21BD9636A00919ED8 /* FSGenericObjectInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E37800D7DFE17BE9C1BD /* FSGenericObjectInspector.m */; };
+		BACC7EA31BD9636A00919ED8 /* KTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66029E590161E0650055708C /* KTestManager.m */; };
+		BACC7EA41BD9636A00919ED8 /* FSMiscTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38200D7DFE17BE9C1BD /* FSMiscTools.m */; };
+		BACC7EA51BD9636A00919ED8 /* FSMsgContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38400D7DFE17BE9C1BD /* FSMsgContext.m */; };
+		BACC7EA61BD9636A00919ED8 /* FSNewlyAllocatedObjectHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38800D7DFE17BE9C1BD /* FSNewlyAllocatedObjectHolder.m */; };
+		BACC7EA71BD9636A00919ED8 /* FSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38E00D7DFE17BE9C1BD /* FSNumber.m */; };
+		BACC7EA81BD9636A00919ED8 /* FSPilot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39100D7DFE17BE9C1BD /* FSPilot.m */; };
+		BACC7EA91BD9636A00919ED8 /* MessagePatternCodeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38000D7DFE17BE9C1BD /* MessagePatternCodeNode.m */; };
+		BACC7EAA1BD9636A00919ED8 /* FSReplacementForCoderForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39500D7DFE17BE9C1BD /* FSReplacementForCoderForClass.m */; };
+		BACC7EAB1BD9636A00919ED8 /* ShellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39700D7DFE17BE9C1BD /* ShellView.m */; };
+		BACC7EAC1BD9636A00919ED8 /* Space.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39900D7DFE17BE9C1BD /* Space.m */; };
+		BACC7EAD1BD9636A00919ED8 /* FSCommandHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39B00D7DFE17BE9C1BD /* FSCommandHistory.m */; };
+		BACC7EAE1BD9636A00919ED8 /* FSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39F00D7DFE17BE9C1BD /* FSSystem.m */; };
+		BACC7EAF1BD9636A00919ED8 /* DOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F13B4801C8BE3401CB6DF7 /* DOTest.m */; };
+		BACC7EB01BD9636A00919ED8 /* FSNSProtocolChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F1405A0223CC9D01DD698C /* FSNSProtocolChecker.m */; };
+		BACC7EB11BD9636A00919ED8 /* fs_main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F1A9F8022E9A96011160FE /* fs_main.m */; };
+		BACC7EB21BD9636A00919ED8 /* FScriptAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F1A9FA022E9A96011160FE /* FScriptAppController.m */; };
+		BACC7EB31BD9636A00919ED8 /* FSObjectBrowserToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF6D0279FD3C01345511 /* FSObjectBrowserToolbar.m */; };
+		BACC7EB41BD9636A00919ED8 /* FSEvalCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF710279FD3C01345511 /* FSEvalCommand.m */; };
+		BACC7EB51BD9636A00919ED8 /* FSServicesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF7D0279FD3C01345511 /* FSServicesProvider.m */; };
+		BACC7EB61BD9636A00919ED8 /* FSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF7F0279FD3C01345511 /* FSTask.m */; };
+		BACC7EB71BD9636A00919ED8 /* FSObjectBrowserToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0AD430285792F0103CD49 /* FSObjectBrowserToolbarButton.m */; };
+		BACC7EB81BD9636A00919ED8 /* FSObjectBrowserButtonsInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F9569502B272FB0121B3BA /* FSObjectBrowserButtonsInspector.m */; };
+		BACC7EB91BD9636A00919ED8 /* FSObjectBrowserButtonCtxBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0261E02C243D20155CB83 /* FSObjectBrowserButtonCtxBlock.m */; };
+		BACC7EBA1BD9636A00919ED8 /* DOCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F1AAAF022E9E4F011160FE /* DOCustom.m */; };
+		BACC7EBB1BD9636A00919ED8 /* Pointer.m in Sources */ = {isa = PBXBuildFile; fileRef = F505647F02DF417501FE0326 /* Pointer.m */; };
+		BACC7EBC1BD9636A00919ED8 /* FSIdentifierFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5073A2002FC5400013656B0 /* FSIdentifierFormatter.m */; };
+		BACC7EBD1BD9636A00919ED8 /* FSObjectFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBE810321029601CA10C6 /* FSObjectFormatter.m */; };
+		BACC7EBE1BD9636A00919ED8 /* FSKeyedUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D44C50358A88801B9E934 /* FSKeyedUnarchiver.m */; };
+		BACC7EBF1BD9636A00919ED8 /* FSKeyedArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D44CF0358B5D201B9E934 /* FSKeyedArchiver.m */; };
+		BACC7EC01BD9636A00919ED8 /* FSConstantListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EECA7036210E2016141BB /* FSConstantListBuilder.m */; };
+		BACC7EC11BD9636A00919ED8 /* FSImageInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F54B55BA036B45770140C608 /* FSImageInspector.m */; };
+		BACC7EC21BD9636A00919ED8 /* FSNSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F54B55C9036B4A330140C608 /* FSNSImage.m */; };
+		BACC7EC31BD9636A00919ED8 /* FSObjectBrowserToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F58090D003755FC701AED2EF /* FSObjectBrowserToolbarItem.m */; };
+		BACC7EC41BD9636A00919ED8 /* FSArrayEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3AE56044D4D6700CF7A3A /* FSArrayEnumerator.m */; };
+		BACC7EC51BD9636A00919ED8 /* FSNSMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F85504666E8100AFC811 /* FSNSMutableArray.m */; };
+		BACC7EC61BD9636A00919ED8 /* ArrayRepBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D4BE2A038511FF01461810 /* ArrayRepBoolean.m */; };
+		BACC7EC71BD9636A00919ED8 /* FSNSValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F553BF80585222700A92293 /* FSNSValue.m */; };
+		BACC7EC81BD9636A00919ED8 /* FSReplacementForCoderForNilInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D7DB8058E32CD00F1B8A8 /* FSReplacementForCoderForNilInArray.m */; };
+		BACC7EC91BD9636A00919ED8 /* FSNamedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E3B7F059F3DBB003F6CE9 /* FSNamedNumber.m */; };
+		BACC7ECA1BD9636A00919ED8 /* FSCollectionInspectorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F60216F05A25CDC0004EFF1 /* FSCollectionInspectorTableView.m */; };
+		BACC7ECB1BD9636A00919ED8 /* FSNSSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F60F24605A9FE8B00985FEC /* FSNSSet.m */; };
+		BACC7ECC1BD9636A00919ED8 /* FSAttributedStringInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCCD4F05C09F8200747C0A /* FSAttributedStringInspector.m */; };
+		BACC7ECD1BD9636A00919ED8 /* FSNSAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCCDC005C0A23000747C0A /* FSNSAttributedString.m */; };
+		BACC7ECE1BD9636A00919ED8 /* FScriptMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B66FC05C5639E0099180D /* FScriptMenuItem.m */; };
+		BACC7ECF1BD9636A00919ED8 /* FSNSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F658B2805C9694F0040FB24 /* FSNSFont.m */; };
+		BACC7ED01BD9636A00919ED8 /* FSObjectBrowserMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB5060005D53C8600153B33 /* FSObjectBrowserMatrix.m */; };
+		BACC7ED11BD9636A00919ED8 /* FSNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36800D7DFE17BE9C1BD /* FSNSString.m */; };
+		BACC7ED21BD9636A00919ED8 /* FSSymbolTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C07E06B1309C00F07862 /* FSSymbolTable.m */; };
+		BACC7ED31BD9636A00919ED8 /* TestFS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E3A000D7DFE17BE9C1BD /* TestFS.m */; };
+		BACC7ED41BD9636A00919ED8 /* FSObjectBrowserViewObjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E294D075B8E5600F8DCDB /* FSObjectBrowserViewObjectInfo.m */; };
+		BACC7ED51BD9636A00919ED8 /* FSCollectionInspectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8EDD307735B3B001BEC7B /* FSCollectionInspectorView.m */; };
+		BACC7ED61BD9636A00919ED8 /* ArrayRepFetchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBC2884077B7D5200F9B4A2 /* ArrayRepFetchRequest.m */; };
+		BACC7ED71BD9636A00919ED8 /* FSPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EA718077F6A5200AC1C96 /* FSPointer.m */; };
+		BACC7ED81BD9636A00919ED8 /* FSGenericPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EA786077F6C9300AC1C96 /* FSGenericPointer.m */; };
+		BACC7ED91BD9636A00919ED8 /* FSObjectPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9AE1F078071CC005B2CC4 /* FSObjectPointer.m */; };
+		BACC7EDA1BD9636A00919ED8 /* FSManagedObjectContextInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F37AEC3078B7E900083565D /* FSManagedObjectContextInspector.m */; };
+		BACC7EDB1BD9636A00919ED8 /* FSObjectBrowserNamedObjectWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F86923707F19BA8000D20A4 /* FSObjectBrowserNamedObjectWrapper.m */; };
+		BACC7EDC1BD9636A00919ED8 /* FSInspectorUniquier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F4F9D07FB274C008E42F4 /* FSInspectorUniquier.m */; };
+		BACC7EDD1BD9636A00919ED8 /* FSPredicateTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F95E3C208034A670030B65C /* FSPredicateTextView.m */; };
+		BACC7EDE1BD9636A00919ED8 /* FSCoreDataSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7E0E7082AD964008231E8 /* FSCoreDataSample.m */; };
+		BACC7EDF1BD9636A00919ED8 /* FSNSManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5189E807F072EA00A50735 /* FSNSManagedObjectContext.m */; };
+		BACC7EE01BD9636A00919ED8 /* FSObjectBrowserSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F585F6F059B23F100C12B6F /* FSObjectBrowserSearchField.m */; };
+		BACC7EE11BD9636A00919ED8 /* FSBlockCompilationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F90A2F0096DB0660064F4BC /* FSBlockCompilationResult.m */; };
+		BACC7EE21BD9636A00919ED8 /* FSReturnSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D4A70975B377009B2685 /* FSReturnSignal.m */; };
+		BACC7EE31BD9636A00919ED8 /* FSConstantsDictionaryGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F92F0350463F03300F4C61F /* FSConstantsDictionaryGenerator.m */; };
+		BACC7EE41BD9636A00919ED8 /* FSQTMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F573F90056B780500F2796A /* FSQTMovie.m */; };
+		BACC7EE51BD9636A00919ED8 /* FSMovieInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F573F7E056B754B00F2796A /* FSMovieInspector.m */; };
+		BACC7EE61BD9636A00919ED8 /* FSMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C13990C65E66400948776 /* FSMethod.m */; };
+		BACC7EE71BD9636A00919ED8 /* FSCNClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AD3210D05CFFE000CEAC6 /* FSCNClassDefinition.m */; };
+		BACC7EE81BD9636A00919ED8 /* FSCNBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6397F0D09C0F400255EBA /* FSCNBase.m */; };
+		BACC7EE91BD9636A00919ED8 /* FSCNIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6398F0D09DCB600255EBA /* FSCNIdentifier.m */; };
+		BACC7EEA1BD9636A00919ED8 /* FSTestObjCClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3DD210D26D49900A1D767 /* FSTestObjCClass1.m */; };
+		BACC7EEB1BD9636A00919ED8 /* FSTestObjCClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4822030D2C317700754A4E /* FSTestObjCClass2.m */; };
+		BACC7EEC1BD9636A00919ED8 /* FSCNCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8112F10D85E58200CB3407 /* FSCNCategory.m */; };
+		BACC7EED1BD9636A00919ED8 /* FSCNMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CA700D86DD0800D67A78 /* FSCNMessage.m */; };
+		BACC7EEE1BD9636A00919ED8 /* FSCNSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72237E0D870C6A00394C99 /* FSCNSuper.m */; };
+		BACC7EEF1BD9636A00919ED8 /* FSCNUnaryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E341F0D8DB61C00912543 /* FSCNUnaryMessage.m */; };
+		BACC7EF01BD9636A00919ED8 /* FSCNBinaryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E34320D8DBF6A00912543 /* FSCNBinaryMessage.m */; };
+		BACC7EF11BD9636A00919ED8 /* FSCNKeywordMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E343B0D8DBFE700912543 /* FSCNKeywordMessage.m */; };
+		BACC7EF21BD9636A00919ED8 /* FSCNCascade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5900140D9468FC003A8B17 /* FSCNCascade.m */; };
+		BACC7EF31BD9636A00919ED8 /* FSCNStatementList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F58650D9FE6A900ED0FED /* FSCNStatementList.m */; };
+		BACC7EF41BD9636A00919ED8 /* FSCNPrecomputedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F747DA80DA03AE200148342 /* FSCNPrecomputedObject.m */; };
+		BACC7EF51BD9636A00919ED8 /* FSCNArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F747DB70DA0467100148342 /* FSCNArray.m */; };
+		BACC7EF61BD9636A00919ED8 /* FSCNBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE79AB0DA0ED5D00CB6E14 /* FSCNBlock.m */; };
+		BACC7EF71BD9636A00919ED8 /* FSCNAssignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE79F20DA109C500CB6E14 /* FSCNAssignment.m */; };
+		BACC7EF81BD9636A00919ED8 /* FSCNMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F45CBBE0DA813F200AFA8C8 /* FSCNMethod.m */; };
+		BACC7EF91BD9636A00919ED8 /* FSCNReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0A3130DD7276000E47459 /* FSCNReturn.m */; };
+		BACC7EFA1BD9636A00919ED8 /* FSClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8949D60DE08B110094EC14 /* FSClassDefinition.m */; };
+		BACC7EFB1BD9636A00919ED8 /* FSTranscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DE65A0E57254700CF83CB /* FSTranscript.m */; };
+		BACC7EFC1BD9636A00919ED8 /* FSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6AD900EC740650096019D /* FSArray.m */; };
+		BACC7EFD1BD9636A00919ED8 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F31A4C10EC74A2E00D1B8E8 /* Array.m */; };
+		BACC7EFE1BD9636A00919ED8 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA00C20EEAF34300B10420 /* Block.m */; };
+		BACC7EFF1BD9636A00919ED8 /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB2FF10EEB3467007A3163 /* Number.m */; };
+		BACC7F001BD9636A00919ED8 /* FSGlobalScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9D5980F1CEE2100E10274 /* FSGlobalScope.m */; };
+		BACC7F011BD9636A00919ED8 /* FSNSFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D04180F1DF1CB001B8286 /* FSNSFileHandle.m */; };
+		BACC7F021BD9636A00919ED8 /* FSAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F940B820F2393B0004525E1 /* FSAssociation.m */; };
+		BACC7F031BD9636A00919ED8 /* FSCNDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F940C6F0F23BC2E004525E1 /* FSCNDictionary.m */; };
+		BACC7F041BD9636A00919ED8 /* FSObjectBrowserBottomBarTextDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7A712A0F48397C00E95364 /* FSObjectBrowserBottomBarTextDisplay.m */; };
+		BACC7F051BD9636A00919ED8 /* FSNSAffineTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D720A0F6BD9B100F0862A /* FSNSAffineTransform.m */; };
+		BACC7F061BD9636A00919ED8 /* FSDemoAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9636410F8DF69F00A70F39 /* FSDemoAssistant.m */; };
+		BACC7F071BD9636A00919ED8 /* FSNewlyAllocatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA593210883B0100F67841 /* FSNewlyAllocatedObject.m */; };
+		BACC7F081BD9636A00919ED8 /* FSWorksWhenModalWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EDA01109B384A003A2F4C /* FSWorksWhenModalWindow.m */; };
+		BACC7F091BD9636A00919ED8 /* FSNSMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44270C116549C700E88F21 /* FSNSMutableDictionary.m */; };
+		BACC7F811BD963DA00919ED8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223095189F9924002C5B6A /* Accelerate.framework */; };
+		BACC7F821BD963DA00919ED8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA31F161CA5D00035A675 /* Accounts.framework */; };
+		BACC7F831BD963DA00919ED8 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22309F189F9A14002C5B6A /* AddressBook.framework */; };
+		BACC7F841BD963DA00919ED8 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230A0189F9A14002C5B6A /* AGL.framework */; };
+		BACC7F851BD963DA00919ED8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5F6119FD98F600AD90CF /* AppKit.framework */; };
+		BACC7F861BD963DA00919ED8 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230A3189F9A14002C5B6A /* AppleScriptKit.framework */; };
+		BACC7F871BD963DA00919ED8 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230A4189F9A14002C5B6A /* AppleScriptObjC.framework */; };
+		BACC7F881BD963DA00919ED8 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230A6189F9A14002C5B6A /* ApplicationServices.framework */; };
+		BACC7F891BD963DA00919ED8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223097189F9958002C5B6A /* AudioToolbox.framework */; };
+		BACC7F8A1BD963DA00919ED8 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230A7189F9A14002C5B6A /* AudioUnit.framework */; };
+		BACC7F8B1BD963DA00919ED8 /* AudioVideoBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA321161CA60C0035A675 /* AudioVideoBridging.framework */; };
+		BACC7F8C1BD963DA00919ED8 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230A8189F9A14002C5B6A /* Automator.framework */; };
+		BACC7F8D1BD963DA00919ED8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA32D161CA7180035A675 /* AVFoundation.framework */; };
+		BACC7F8E1BD963DA00919ED8 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223099189F9976002C5B6A /* AVKit.framework */; };
+		BACC7F8F1BD963DA00919ED8 /* CalendarStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B3189F9A2E002C5B6A /* CalendarStore.framework */; };
+		BACC7F901BD963DA00919ED8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B4189F9A2E002C5B6A /* Carbon.framework */; };
+		BACC7F911BD963DA00919ED8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B5189F9A2E002C5B6A /* CFNetwork.framework */; };
+		BACC7F921BD963DA00919ED8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9219FD944300AD90CF /* CloudKit.framework */; };
+		BACC7F931BD963DA00919ED8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B6189F9A2E002C5B6A /* Cocoa.framework */; };
+		BACC7F941BD963DA00919ED8 /* Collaboration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B7189F9A2E002C5B6A /* Collaboration.framework */; };
+		BACC7F951BD963DA00919ED8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22309B189F9988002C5B6A /* CoreAudio.framework */; };
+		BACC7F961BD963DA00919ED8 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B8189F9A2F002C5B6A /* CoreAudioKit.framework */; };
+		BACC7F971BD963DA00919ED8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9319FD944400AD90CF /* CoreBluetooth.framework */; };
+		BACC7F981BD963DA00919ED8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B9189F9A2F002C5B6A /* CoreData.framework */; };
+		BACC7F991BD963DA00919ED8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230BA189F9A2F002C5B6A /* CoreFoundation.framework */; };
+		BACC7F9A1BD963DA00919ED8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230BB189F9A2F002C5B6A /* CoreGraphics.framework */; };
+		BACC7F9B1BD963DA00919ED8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22309D189F99CC002C5B6A /* CoreLocation.framework */; };
+		BACC7F9C1BD963DA00919ED8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230BC189F9A2F002C5B6A /* CoreMedia.framework */; };
+		BACC7F9D1BD963DA00919ED8 /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230BD189F9A2F002C5B6A /* CoreMediaIO.framework */; };
+		BACC7F9E1BD963DA00919ED8 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230BE189F9A2F002C5B6A /* CoreMIDI.framework */; };
+		BACC7F9F1BD963DA00919ED8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230BF189F9A2F002C5B6A /* CoreServices.framework */; };
+		BACC7FA01BD963DA00919ED8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230C0189F9A2F002C5B6A /* CoreText.framework */; };
+		BACC7FA11BD963DA00919ED8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230C1189F9A2F002C5B6A /* CoreVideo.framework */; };
+		BACC7FA21BD963DA00919ED8 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230C2189F9A2F002C5B6A /* CoreWLAN.framework */; };
+		BACC7FA31BD963DA00919ED8 /* CryptoTokenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9419FD944400AD90CF /* CryptoTokenKit.framework */; };
+		BACC7FA41BD963DA00919ED8 /* DirectoryService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D3189F9A7A002C5B6A /* DirectoryService.framework */; };
+		BACC7FA51BD963DA00919ED8 /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D4189F9A7A002C5B6A /* DiscRecording.framework */; };
+		BACC7FA61BD963DA00919ED8 /* DiscRecordingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D5189F9A7A002C5B6A /* DiscRecordingUI.framework */; };
+		BACC7FA71BD963DA00919ED8 /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D6189F9A7A002C5B6A /* DiskArbitration.framework */; };
+		BACC7FA81BD963DA00919ED8 /* DVComponentGlue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D8189F9A7A002C5B6A /* DVComponentGlue.framework */; };
+		BACC7FA91BD963DA00919ED8 /* DVDPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D9189F9A7A002C5B6A /* DVDPlayback.framework */; };
+		BACC7FAA1BD963DA00919ED8 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA31C161CA57C0035A675 /* EventKit.framework */; };
+		BACC7FAB1BD963DA00919ED8 /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22316F189F9AD3002C5B6A /* ExceptionHandling.framework */; };
+		BACC7FAC1BD963DA00919ED8 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9519FD944400AD90CF /* FinderSync.framework */; };
+		BACC7FAD1BD963DA00919ED8 /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223170189F9AD3002C5B6A /* ForceFeedback.framework */; };
+		BACC7FAE1BD963DA00919ED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223171189F9AD3002C5B6A /* Foundation.framework */; };
+		BACC7FAF1BD963DA00919ED8 /* FWAUserLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223172189F9AD3002C5B6A /* FWAUserLib.framework */; };
+		BACC7FB01BD963DA00919ED8 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223173189F9AD3002C5B6A /* GameController.framework */; };
+		BACC7FB11BD963DA00919ED8 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA323161CA6270035A675 /* GameKit.framework */; };
+		BACC7FB21BD963DA00919ED8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA325161CA64B0035A675 /* GLKit.framework */; };
+		BACC7FB31BD963DA00919ED8 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223147189F9AC5002C5B6A /* GLUT.framework */; };
+		BACC7FB41BD963DA00919ED8 /* GSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223148189F9AC5002C5B6A /* GSS.framework */; };
+		BACC7FB51BD963DA00919ED8 /* Hypervisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9619FD944500AD90CF /* Hypervisor.framework */; };
+		BACC7FB61BD963DA00919ED8 /* ICADevices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223149189F9AC6002C5B6A /* ICADevices.framework */; };
+		BACC7FB71BD963DA00919ED8 /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22314A189F9AC6002C5B6A /* ImageCaptureCore.framework */; };
+		BACC7FB81BD963DA00919ED8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22314B189F9AC6002C5B6A /* ImageIO.framework */; };
+		BACC7FB91BD963DA00919ED8 /* IMServicePlugIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22314C189F9AC6002C5B6A /* IMServicePlugIn.framework */; };
+		BACC7FBA1BD963DA00919ED8 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22314D189F9AC6002C5B6A /* InputMethodKit.framework */; };
+		BACC7FBB1BD963DA00919ED8 /* InstallerPlugins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22314E189F9AC6002C5B6A /* InstallerPlugins.framework */; };
+		BACC7FBC1BD963DA00919ED8 /* InstantMessage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22314F189F9AC6002C5B6A /* InstantMessage.framework */; };
+		BACC7FBD1BD963DA00919ED8 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223150189F9AC6002C5B6A /* IOBluetooth.framework */; };
+		BACC7FBE1BD963DA00919ED8 /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223151189F9AC6002C5B6A /* IOBluetoothUI.framework */; };
+		BACC7FBF1BD963DA00919ED8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223152189F9AC6002C5B6A /* IOKit.framework */; };
+		BACC7FC01BD963DA00919ED8 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223153189F9AC6002C5B6A /* IOSurface.framework */; };
+		BACC7FC11BD963DA00919ED8 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223155189F9AC6002C5B6A /* JavaScriptCore.framework */; };
+		BACC7FC21BD963DA00919ED8 /* Kerberos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223157189F9AC6002C5B6A /* Kerberos.framework */; };
+		BACC7FC31BD963DA00919ED8 /* LatentSemanticMapping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223159189F9AC7002C5B6A /* LatentSemanticMapping.framework */; };
+		BACC7FC41BD963DA00919ED8 /* LDAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223144189F9ABD002C5B6A /* LDAP.framework */; };
+		BACC7FC51BD963DA00919ED8 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9719FD944500AD90CF /* LocalAuthentication.framework */; };
+		BACC7FC61BD963DA00919ED8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230F4189F9A99002C5B6A /* MapKit.framework */; };
+		BACC7FC71BD963DA00919ED8 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230F5189F9A99002C5B6A /* MediaAccessibility.framework */; };
+		BACC7FC81BD963DA00919ED8 /* MediaLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230F6189F9A99002C5B6A /* MediaLibrary.framework */; };
+		BACC7FC91BD963DA00919ED8 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230F7189F9A99002C5B6A /* MediaToolbox.framework */; };
+		BACC7FCA1BD963DA00919ED8 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9819FD944500AD90CF /* MultipeerConnectivity.framework */; };
+		BACC7FCB1BD963DA00919ED8 /* NetFS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230F8189F9A99002C5B6A /* NetFS.framework */; };
+		BACC7FCC1BD963DA00919ED8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9919FD944600AD90CF /* NotificationCenter.framework */; };
+		BACC7FCD1BD963DA00919ED8 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230F9189F9A99002C5B6A /* OpenAL.framework */; };
+		BACC7FCE1BD963DA00919ED8 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230FA189F9A99002C5B6A /* OpenCL.framework */; };
+		BACC7FCF1BD963DA00919ED8 /* OpenDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230FB189F9A99002C5B6A /* OpenDirectory.framework */; };
+		BACC7FD01BD963DA00919ED8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230FC189F9A99002C5B6A /* OpenGL.framework */; };
+		BACC7FD11BD963DA00919ED8 /* OSAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230FD189F9A99002C5B6A /* OSAKit.framework */; };
+		BACC7FD21BD963DA00919ED8 /* PCSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230FE189F9A99002C5B6A /* PCSC.framework */; };
+		BACC7FD31BD963DA00919ED8 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230FF189F9A99002C5B6A /* PreferencePanes.framework */; };
+		BACC7FD41BD963DA00919ED8 /* PubSub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223100189F9A99002C5B6A /* PubSub.framework */; };
+		BACC7FD51BD963DA00919ED8 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9A19FD944600AD90CF /* Python.framework */; };
+		BACC7FD61BD963DA00919ED8 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223101189F9A99002C5B6A /* QTKit.framework */; };
+		BACC7FD71BD963DA00919ED8 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223102189F9A99002C5B6A /* Quartz.framework */; };
+		BACC7FD81BD963DA00919ED8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223103189F9A99002C5B6A /* QuartzCore.framework */; };
+		BACC7FD91BD963DA00919ED8 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223104189F9A99002C5B6A /* QuickLook.framework */; };
+		BACC7FDA1BD963DA00919ED8 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223105189F9A99002C5B6A /* QuickTime.framework */; };
+		BACC7FDB1BD963DA00919ED8 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223106189F9A9A002C5B6A /* Ruby.framework */; };
+		BACC7FDC1BD963DA00919ED8 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA327161CA65A0035A675 /* SceneKit.framework */; };
+		BACC7FDD1BD963DA00919ED8 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223108189F9A9A002C5B6A /* ScreenSaver.framework */; };
+		BACC7FDE1BD963DA00919ED8 /* Scripting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223109189F9A9A002C5B6A /* Scripting.framework */; };
+		BACC7FDF1BD963DA00919ED8 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310A189F9A9A002C5B6A /* ScriptingBridge.framework */; };
+		BACC7FE01BD963DA00919ED8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310B189F9A9A002C5B6A /* Security.framework */; };
+		BACC7FE11BD963DA00919ED8 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310C189F9A9A002C5B6A /* SecurityFoundation.framework */; };
+		BACC7FE21BD963DA00919ED8 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310D189F9A9A002C5B6A /* SecurityInterface.framework */; };
+		BACC7FE31BD963DA00919ED8 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310E189F9A9A002C5B6A /* ServiceManagement.framework */; };
+		BACC7FE41BD963DA00919ED8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA329161CA6600035A675 /* Social.framework */; };
+		BACC7FE51BD963DA00919ED8 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310F189F9A9A002C5B6A /* SpriteKit.framework */; };
+		BACC7FE61BD963DA00919ED8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223110189F9A9A002C5B6A /* StoreKit.framework */; };
+		BACC7FE71BD963DA00919ED8 /* SyncServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223111189F9A9A002C5B6A /* SyncServices.framework */; };
+		BACC7FE81BD963DA00919ED8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223112189F9A9A002C5B6A /* SystemConfiguration.framework */; };
+		BACC7FE91BD963DA00919ED8 /* Tcl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223113189F9A9A002C5B6A /* Tcl.framework */; };
+		BACC7FEA1BD963DA00919ED8 /* Tk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223114189F9A9A002C5B6A /* Tk.framework */; };
+		BACC7FEB1BD963DA00919ED8 /* TWAIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223115189F9A9A002C5B6A /* TWAIN.framework */; };
+		BACC7FEC1BD963DA00919ED8 /* VideoDecodeAcceleration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223116189F9A9A002C5B6A /* VideoDecodeAcceleration.framework */; };
+		BACC7FED1BD963DA00919ED8 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA32B161CA6660035A675 /* VideoToolbox.framework */; };
+		BACC7FEE1BD963DA00919ED8 /* vmnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29F5D9B19FD944600AD90CF /* vmnet.framework */; };
+		BACC7FEF1BD963DA00919ED8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223117189F9A9A002C5B6A /* WebKit.framework */; };
+		BACC80001BD963DB00919ED8 /* AppKitScripting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF01BD963DA00919ED8 /* AppKitScripting.framework */; };
+		BACC80011BD963DB00919ED8 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF11BD963DA00919ED8 /* Contacts.framework */; };
+		BACC80021BD963DB00919ED8 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF21BD963DA00919ED8 /* ContactsUI.framework */; };
+		BACC80031BD963DB00919ED8 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF31BD963DA00919ED8 /* CoreImage.framework */; };
+		BACC80041BD963DB00919ED8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF41BD963DA00919ED8 /* CoreTelephony.framework */; };
+		BACC80051BD963DB00919ED8 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF51BD963DA00919ED8 /* GameplayKit.framework */; };
+		BACC80061BD963DB00919ED8 /* JavaFrameEmbedding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF61BD963DB00919ED8 /* JavaFrameEmbedding.framework */; };
+		BACC80071BD963DB00919ED8 /* JavaVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF71BD963DB00919ED8 /* JavaVM.framework */; };
+		BACC80091BD963DB00919ED8 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FF91BD963DB00919ED8 /* Metal.framework */; };
+		BACC800A1BD963DB00919ED8 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FFA1BD963DB00919ED8 /* MetalKit.framework */; };
+		BACC800B1BD963DB00919ED8 /* ModelIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FFB1BD963DB00919ED8 /* ModelIO.framework */; };
+		BACC800C1BD963DB00919ED8 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FFC1BD963DB00919ED8 /* NetworkExtension.framework */; };
+		BACC800D1BD963DB00919ED8 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FFD1BD963DB00919ED8 /* Photos.framework */; };
+		BACC800E1BD963DB00919ED8 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC7FFE1BD963DB00919ED8 /* PhotosUI.framework */; };
+		BACC80121BD963E400919ED8 /* BlockSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32E00D7DFE17BE9C1BD /* BlockSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80131BD963E400919ED8 /* FSAirplane.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E30F00D7DFE17BE9C1BD /* FSAirplane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80141BD963E400919ED8 /* ArrayPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31300D7DFE17BE9C1BD /* ArrayPrivate.h */; };
+		BACC80151BD963E400919ED8 /* ArrayRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31400D7DFE17BE9C1BD /* ArrayRep.h */; settings = {ATTRIBUTES = (); }; };
+		BACC80161BD963E400919ED8 /* ArrayRepDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31700D7DFE17BE9C1BD /* ArrayRepDouble.h */; };
+		BACC80171BD963E400919ED8 /* ArrayRepEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31900D7DFE17BE9C1BD /* ArrayRepEmpty.h */; };
+		BACC80181BD963E400919ED8 /* ArrayRepId.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31B00D7DFE17BE9C1BD /* ArrayRepId.h */; };
+		BACC80191BD963E400919ED8 /* FSCollectionInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31D00D7DFE17BE9C1BD /* FSCollectionInspector.h */; };
+		BACC801A1BD963E400919ED8 /* FSObjectBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32000D7DFE17BE9C1BD /* FSObjectBrowser.h */; };
+		BACC801B1BD963E400919ED8 /* FSObjectBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32200D7DFE17BE9C1BD /* FSObjectBrowserCell.h */; };
+		BACC801C1BD963E400919ED8 /* FSBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32600D7DFE17BE9C1BD /* FSBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC801D1BD963E400919ED8 /* BlockInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32800D7DFE17BE9C1BD /* BlockInspector.h */; };
+		BACC801E1BD963E400919ED8 /* BlockPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32B00D7DFE17BE9C1BD /* BlockPrivate.h */; };
+		BACC801F1BD963E400919ED8 /* BlockRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32C00D7DFE17BE9C1BD /* BlockRep.h */; };
+		BACC80201BD963E400919ED8 /* BlockStackElem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32F00D7DFE17BE9C1BD /* BlockStackElem.h */; };
+		BACC80211BD963E400919ED8 /* build_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33200D7DFE17BE9C1BD /* build_config.h */; settings = {ATTRIBUTES = (); }; };
+		BACC80221BD963E400919ED8 /* CLIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33300D7DFE17BE9C1BD /* CLIView.h */; };
+		BACC80231BD963E400919ED8 /* FSCompilationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33500D7DFE17BE9C1BD /* FSCompilationResult.h */; };
+		BACC80241BD963E400919ED8 /* CompiledCodeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33700D7DFE17BE9C1BD /* CompiledCodeNode.h */; };
+		BACC80251BD963E400919ED8 /* FSCompiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33900D7DFE17BE9C1BD /* FSCompiler.h */; };
+		BACC80261BD963E400919ED8 /* FSConstantsInitialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33B00D7DFE17BE9C1BD /* FSConstantsInitialization.h */; };
+		BACC80271BD963E400919ED8 /* FSExecEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33D00D7DFE17BE9C1BD /* FSExecEngine.h */; };
+		BACC80281BD963E400919ED8 /* FSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E33F00D7DFE17BE9C1BD /* FSExecutor.h */; };
+		BACC80291BD963E400919ED8 /* FSFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34200D7DFE17BE9C1BD /* FSFlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC802A1BD963E400919ED8 /* FSArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34500D7DFE17BE9C1BD /* FSArchiver.h */; };
+		BACC802B1BD963E400919ED8 /* FSBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34700D7DFE17BE9C1BD /* FSBoolean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC802C1BD963E400919ED8 /* FSBooleanPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34900D7DFE17BE9C1BD /* FSBooleanPrivate.h */; };
+		BACC802D1BD963E400919ED8 /* FScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34C00D7DFE17BE9C1BD /* FScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC802E1BD963E400919ED8 /* FScriptFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E34E00D7DFE17BE9C1BD /* FScriptFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC802F1BD963E400919ED8 /* FSInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35000D7DFE17BE9C1BD /* FSInterpreter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80301BD963E400919ED8 /* FSInterpreterResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35200D7DFE17BE9C1BD /* FSInterpreterResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80311BD963E400919ED8 /* FSInterpreterResultPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35400D7DFE17BE9C1BD /* FSInterpreterResultPrivate.h */; };
+		BACC80321BD963E400919ED8 /* FSInterpreterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35500D7DFE17BE9C1BD /* FSInterpreterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80331BD963E400919ED8 /* FSInterpreterViewIBHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35700D7DFE17BE9C1BD /* FSInterpreterViewIBHeader.h */; };
+		BACC80341BD963E400919ED8 /* FSNSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35800D7DFE17BE9C1BD /* FSNSArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80351BD963E400919ED8 /* FSNSArrayPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35A00D7DFE17BE9C1BD /* FSNSArrayPrivate.h */; settings = {ATTRIBUTES = (); }; };
+		BACC80361BD963E400919ED8 /* FSNSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35B00D7DFE17BE9C1BD /* FSNSDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80371BD963E400919ED8 /* FSNSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35D00D7DFE17BE9C1BD /* FSNSDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80381BD963E400919ED8 /* FSNSMutableString.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E35F00D7DFE17BE9C1BD /* FSNSMutableString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80391BD963E400919ED8 /* FSNSNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36100D7DFE17BE9C1BD /* FSNSNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC803A1BD963E400919ED8 /* FSNSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36300D7DFE17BE9C1BD /* FSNSObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC803B1BD963E400919ED8 /* FSNSProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36500D7DFE17BE9C1BD /* FSNSProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC803C1BD963E400919ED8 /* FSNSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36700D7DFE17BE9C1BD /* FSNSString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC803D1BD963E400919ED8 /* FSNSStringPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36900D7DFE17BE9C1BD /* FSNSStringPrivate.h */; };
+		BACC803E1BD963E400919ED8 /* FSPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E36C00D7DFE17BE9C1BD /* FSPattern.h */; };
+		BACC803F1BD963E400919ED8 /* FSUnarchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37200D7DFE17BE9C1BD /* FSUnarchiver.h */; };
+		BACC80401BD963E400919ED8 /* FSVoid.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37400D7DFE17BE9C1BD /* FSVoid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80411BD963E400919ED8 /* FSVoidPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37600D7DFE17BE9C1BD /* FSVoidPrivate.h */; };
+		BACC80421BD963E400919ED8 /* FSGenericObjectInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37700D7DFE17BE9C1BD /* FSGenericObjectInspector.h */; };
+		BACC80431BD963E400919ED8 /* MessagePatternCodeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E37F00D7DFE17BE9C1BD /* MessagePatternCodeNode.h */; };
+		BACC80441BD963E400919ED8 /* FSMiscTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38100D7DFE17BE9C1BD /* FSMiscTools.h */; };
+		BACC80451BD963E400919ED8 /* FSMsgContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38300D7DFE17BE9C1BD /* FSMsgContext.h */; };
+		BACC80461BD963E400919ED8 /* FSNewlyAllocatedObjectHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38700D7DFE17BE9C1BD /* FSNewlyAllocatedObjectHolder.h */; };
+		BACC80471BD963E400919ED8 /* FSNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38D00D7DFE17BE9C1BD /* FSNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80481BD963E400919ED8 /* NumberPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E38F00D7DFE17BE9C1BD /* NumberPrivate.h */; };
+		BACC80491BD963E400919ED8 /* FSPilot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39000D7DFE17BE9C1BD /* FSPilot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC804A1BD963E400919ED8 /* Pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = F505648002DF417501FE0326 /* Pointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC804B1BD963E400919ED8 /* FSReplacementForCoderForClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39400D7DFE17BE9C1BD /* FSReplacementForCoderForClass.h */; };
+		BACC804C1BD963E400919ED8 /* ShellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39600D7DFE17BE9C1BD /* ShellView.h */; };
+		BACC804D1BD963E400919ED8 /* Space.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39800D7DFE17BE9C1BD /* Space.h */; };
+		BACC804E1BD963E400919ED8 /* FSCommandHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39A00D7DFE17BE9C1BD /* FSCommandHistory.h */; };
+		BACC804F1BD963E400919ED8 /* FSSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E39E00D7DFE17BE9C1BD /* FSSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80501BD963E400919ED8 /* KTestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 66029E580161E0650055708C /* KTestManager.h */; };
+		BACC80511BD963E400919ED8 /* FSNSDistantObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F51CA01401B013C401BFBB24 /* FSNSDistantObject.h */; };
+		BACC80521BD963E400919ED8 /* DOTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F13B4701C8BE3401CB6DF7 /* DOTest.h */; };
+		BACC80531BD963E400919ED8 /* FScriptTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FBEF2802149D32018C0134 /* FScriptTextView.h */; };
+		BACC80541BD963E400919ED8 /* FSObjectBrowserArgumentPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FA8A6C0215D44C01AFEEFD /* FSObjectBrowserArgumentPanel.h */; };
+		BACC80551BD963E400919ED8 /* FSNSProtocolChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F140590223CC9D01DD698C /* FSNSProtocolChecker.h */; };
+		BACC80561BD963E400919ED8 /* FSObjectBrowserToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF6C0279FD3C01345511 /* FSObjectBrowserToolbar.h */; };
+		BACC80571BD963E400919ED8 /* FSEvalCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF700279FD3C01345511 /* FSEvalCommand.h */; };
+		BACC80581BD963E400919ED8 /* FSServicesProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF7C0279FD3C01345511 /* FSServicesProvider.h */; settings = {ATTRIBUTES = (); }; };
+		BACC80591BD963E400919ED8 /* FSTask.h in Headers */ = {isa = PBXBuildFile; fileRef = F538EF7E0279FD3C01345511 /* FSTask.h */; settings = {ATTRIBUTES = (); }; };
+		BACC805A1BD963E400919ED8 /* FSObjectBrowserToolbarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F0AD420285792F0103CD49 /* FSObjectBrowserToolbarButton.h */; };
+		BACC805B1BD963E400919ED8 /* FSObjectBrowserButtonCtxBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F0261F02C243D20155CB83 /* FSObjectBrowserButtonCtxBlock.h */; };
+		BACC805C1BD963E400919ED8 /* FSObjectBrowserButtonsInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F9569602B272FB0121B3BA /* FSObjectBrowserButtonsInspector.h */; };
+		BACC805D1BD963E400919ED8 /* FSObjectBrowserView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E32400D7DFE17BE9C1BD /* FSObjectBrowserView.h */; };
+		BACC805E1BD963E400919ED8 /* PointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F856C002EB281C01F7E6F0 /* PointerPrivate.h */; };
+		BACC805F1BD963E400919ED8 /* FSInterpreterPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F54CA17602FB2CAF01C25A35 /* FSInterpreterPrivate.h */; };
+		BACC80601BD963E400919ED8 /* FSObjectFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EBBE820321029601CA10C6 /* FSObjectFormatter.h */; };
+		BACC80611BD963E400919ED8 /* FSIdentifierFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F5073A2102FC5400013656B0 /* FSIdentifierFormatter.h */; };
+		BACC80621BD963E400919ED8 /* FSSystemPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A25E260357B373011A39F8 /* FSSystemPrivate.h */; };
+		BACC80631BD963E400919ED8 /* FSKeyedUnarchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D44C40358A88801B9E934 /* FSKeyedUnarchiver.h */; };
+		BACC80641BD963E400919ED8 /* FSKeyedArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D44CE0358B5D201B9E934 /* FSKeyedArchiver.h */; };
+		BACC80651BD963E400919ED8 /* FSConstantListBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F52EECA6036210E2016141BB /* FSConstantListBuilder.h */; };
+		BACC80661BD963E400919ED8 /* FSImageInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = F54B55B9036B45770140C608 /* FSImageInspector.h */; };
+		BACC80671BD963E400919ED8 /* FSNSImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F54B55C8036B4A330140C608 /* FSNSImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80681BD963E400919ED8 /* FSObjectBrowserToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F58090CF03755FC701AED2EF /* FSObjectBrowserToolbarItem.h */; };
+		BACC80691BD963E400919ED8 /* ArrayRepBoolean.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D4BE29038511FF01461810 /* ArrayRepBoolean.h */; };
+		BACC806A1BD963E400919ED8 /* FSNSObjectPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F63CC08044B95DB00B84480 /* FSNSObjectPrivate.h */; };
+		BACC806B1BD963E400919ED8 /* FSArrayEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA3AE55044D4D6700CF7A3A /* FSArrayEnumerator.h */; };
+		BACC806C1BD963E400919ED8 /* TestFS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBB10A4044E28FD00181279 /* TestFS.h */; };
+		BACC806D1BD963E400919ED8 /* FSNSMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F66F85404666E8100AFC811 /* FSNSMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC806E1BD963E400919ED8 /* FSNSValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F553BF70585222700A92293 /* FSNSValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC806F1BD963E400919ED8 /* FSReplacementForCoderForNilInArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7D7DB7058E32CD00F1B8A8 /* FSReplacementForCoderForNilInArray.h */; };
+		BACC80701BD963E400919ED8 /* FSNamedNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0E3B7E059F3DBB003F6CE9 /* FSNamedNumber.h */; };
+		BACC80711BD963E400919ED8 /* FSCollectionInspectorTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F60216E05A25CDC0004EFF1 /* FSCollectionInspectorTableView.h */; };
+		BACC80721BD963E400919ED8 /* FSNSSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F60F24505A9FE8B00985FEC /* FSNSSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80731BD963E400919ED8 /* FSAttributedStringInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDCCD4E05C09F8200747C0A /* FSAttributedStringInspector.h */; };
+		BACC80741BD963E400919ED8 /* FSNSAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDCCDBF05C0A23000747C0A /* FSNSAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80751BD963E400919ED8 /* FSInterpreterViewPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F71F72205C43A7D00C34794 /* FSInterpreterViewPrivate.h */; };
+		BACC80761BD963E400919ED8 /* FScriptMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0B66FB05C5639E0099180D /* FScriptMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80771BD963E400919ED8 /* FSNSFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F658B2705C9694F0040FB24 /* FSNSFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80781BD963E400919ED8 /* FSObjectBrowserMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB505FF05D53C8600153B33 /* FSObjectBrowserMatrix.h */; };
+		BACC80791BD963E400919ED8 /* FSSymbolTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F17C07D06B1309C00F07862 /* FSSymbolTable.h */; };
+		BACC807A1BD963E400919ED8 /* FSObjectBrowserViewObjectInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4E294C075B8E5600F8DCDB /* FSObjectBrowserViewObjectInfo.h */; };
+		BACC807B1BD963E400919ED8 /* FSCollectionInspectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA8EDC607735B3B001BEC7B /* FSCollectionInspectorView.h */; };
+		BACC807C1BD963E400919ED8 /* ArrayRepFetchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBC2877077B7D5200F9B4A2 /* ArrayRepFetchRequest.h */; };
+		BACC807D1BD963E400919ED8 /* FSPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA70B077F6A5200AC1C96 /* FSPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC807E1BD963E400919ED8 /* FSGenericPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA779077F6C9300AC1C96 /* FSGenericPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC807F1BD963E400919ED8 /* FSPointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA7E8077F719800AC1C96 /* FSPointerPrivate.h */; };
+		BACC80801BD963E400919ED8 /* FSGenericPointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8EA841077F79A000AC1C96 /* FSGenericPointerPrivate.h */; };
+		BACC80811BD963E400919ED8 /* FSObjectPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE9AE12078071CC005B2CC4 /* FSObjectPointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80821BD963E400919ED8 /* FSObjectPointerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE9AE8207807269005B2CC4 /* FSObjectPointerPrivate.h */; };
+		BACC80831BD963E400919ED8 /* FSObjectBrowserNamedObjectWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F86923607F19BA8000D20A4 /* FSObjectBrowserNamedObjectWrapper.h */; };
+		BACC80841BD963E400919ED8 /* FSInspectorUniquier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7F4F9C07FB274C008E42F4 /* FSInspectorUniquier.h */; };
+		BACC80851BD963E400919ED8 /* FSPredicateTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F95E3C108034A670030B65C /* FSPredicateTextView.h */; };
+		BACC80861BD963E400919ED8 /* FSCoreDataSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE7E0E6082AD964008231E8 /* FSCoreDataSample.h */; };
+		BACC80871BD963E400919ED8 /* FSManagedObjectContextInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F37AEC2078B7E900083565D /* FSManagedObjectContextInspector.h */; };
+		BACC80881BD963E400919ED8 /* FSNSManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5189E707F072EA00A50735 /* FSNSManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80891BD963E400919ED8 /* FSObjectBrowserSearchField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F585F6E059B23F100C12B6F /* FSObjectBrowserSearchField.h */; };
+		BACC808A1BD963E400919ED8 /* FSBlockCompilationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F90A2EF096DB0660064F4BC /* FSBlockCompilationResult.h */; };
+		BACC808B1BD963E400919ED8 /* FSReturnSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD7D4A60975B377009B2685 /* FSReturnSignal.h */; };
+		BACC808C1BD963E400919ED8 /* FSMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3C13980C65E66400948776 /* FSMethod.h */; };
+		BACC808D1BD963E400919ED8 /* FSCNClassDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5AD3200D05CFFE000CEAC6 /* FSCNClassDefinition.h */; };
+		BACC808E1BD963E400919ED8 /* FSCNBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE6397E0D09C0F400255EBA /* FSCNBase.h */; };
+		BACC808F1BD963E400919ED8 /* FSCNIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE6398E0D09DCB600255EBA /* FSCNIdentifier.h */; };
+		BACC80901BD963E400919ED8 /* FSTestObjCClass1.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE3DD200D26D49900A1D767 /* FSTestObjCClass1.h */; };
+		BACC80911BD963E400919ED8 /* FSTestObjCClass2.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4822020D2C317700754A4E /* FSTestObjCClass2.h */; };
+		BACC80921BD963E400919ED8 /* FSCNCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8112F00D85E58200CB3407 /* FSCNCategory.h */; };
+		BACC80931BD963E400919ED8 /* FSCNMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F59CA6F0D86DD0800D67A78 /* FSCNMessage.h */; };
+		BACC80941BD963E400919ED8 /* FSCNSuper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F72237D0D870C6A00394C99 /* FSCNSuper.h */; };
+		BACC80951BD963E400919ED8 /* FSCNUnaryMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E341E0D8DB61C00912543 /* FSCNUnaryMessage.h */; };
+		BACC80961BD963E400919ED8 /* FSCNBinaryMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E34310D8DBF6A00912543 /* FSCNBinaryMessage.h */; };
+		BACC80971BD963E400919ED8 /* FSCNKeywordMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2E343A0D8DBFE700912543 /* FSCNKeywordMessage.h */; };
+		BACC80981BD963E400919ED8 /* FSCNCascade.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5900130D9468FC003A8B17 /* FSCNCascade.h */; };
+		BACC80991BD963E400919ED8 /* FSCNStatementList.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8F58640D9FE6A900ED0FED /* FSCNStatementList.h */; };
+		BACC809A1BD963E400919ED8 /* FSCNPrecomputedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F747DA70DA03AE200148342 /* FSCNPrecomputedObject.h */; };
+		BACC809B1BD963E400919ED8 /* FSCNArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F747DB60DA0467100148342 /* FSCNArray.h */; };
+		BACC809C1BD963E400919ED8 /* FSCNBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE79AA0DA0ED5D00CB6E14 /* FSCNBlock.h */; };
+		BACC809D1BD963E400919ED8 /* FSCNAssignment.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAE79F10DA109C500CB6E14 /* FSCNAssignment.h */; };
+		BACC809E1BD963E400919ED8 /* FSCNMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F45CBBD0DA813F200AFA8C8 /* FSCNMethod.h */; };
+		BACC809F1BD963E400919ED8 /* FSCNReturn.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD0A3120DD7276000E47459 /* FSCNReturn.h */; };
+		BACC80A01BD963E400919ED8 /* FSClassDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8949D50DE08B110094EC14 /* FSClassDefinition.h */; };
+		BACC80A11BD963E400919ED8 /* FSTranscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2DE6590E57254700CF83CB /* FSTranscript.h */; };
+		BACC80A21BD963E400919ED8 /* FSArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE6AD8F0EC740650096019D /* FSArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80A31BD963E400919ED8 /* Array_fscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F31A4C00EC74A2E00D1B8E8 /* Array_fscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80A41BD963E400919ED8 /* Block_fscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCA00C10EEAF34300B10420 /* Block_fscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80A51BD963E400919ED8 /* Number_fscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBB2FF00EEB3467007A3163 /* Number_fscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80A61BD963E400919ED8 /* FSGlobalScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB9D5970F1CEE2100E10274 /* FSGlobalScope.h */; };
+		BACC80A71BD963E400919ED8 /* FSNSFileHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F9D04170F1DF1CB001B8286 /* FSNSFileHandle.h */; settings = {ATTRIBUTES = (); }; };
+		BACC80A81BD963E400919ED8 /* FSAssociation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F940B810F2393B0004525E1 /* FSAssociation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80A91BD963E400919ED8 /* FSCNDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F940C6E0F23BC2E004525E1 /* FSCNDictionary.h */; };
+		BACC80AA1BD963E400919ED8 /* FSObjectBrowserBottomBarTextDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7A71290F48397C00E95364 /* FSObjectBrowserBottomBarTextDisplay.h */; };
+		BACC80AB1BD963E400919ED8 /* FSNSAffineTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2D72090F6BD9B100F0862A /* FSNSAffineTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80AC1BD963E400919ED8 /* FSNewlyAllocatedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCA593110883B0100F67841 /* FSNewlyAllocatedObject.h */; };
+		BACC80AD1BD963E400919ED8 /* FSWorksWhenModalWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5EDA00109B384A003A2F4C /* FSWorksWhenModalWindow.h */; };
+		BACC80AE1BD963E400919ED8 /* FSNSMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F44270B116549C700E88F21 /* FSNSMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACC80B01BD963E400919ED8 /* FSCollectionInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E31F00D7DFE17BE9C1BD /* FSCollectionInspector.nib */; };
+		BACC80B11BD963E400919ED8 /* blockInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E32A00D7DFE17BE9C1BD /* blockInspector.nib */; };
+		BACC80B21BD963E400919ED8 /* FlightTutorial.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E34400D7DFE17BE9C1BD /* FlightTutorial.txt */; };
+		BACC80B31BD963E400919ED8 /* genObjInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E37900D7DFE17BE9C1BD /* genObjInspector.nib */; };
+		BACC80B41BD963E400919ED8 /* KTest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E37D00D7DFE17BE9C1BD /* KTest.txt */; };
+		BACC80B51BD963E400919ED8 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CD4E37E00D7DFE17BE9C1BD /* license.txt */; };
+		BACC80B61BD963E400919ED8 /* fs.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = F538EF6E0279FD3C01345511 /* fs.scriptSuite */; };
+		BACC80B71BD963E400919ED8 /* fs.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = F538EF6F0279FD3C01345511 /* fs.scriptTerminology */; };
+		BACC80B81BD963E400919ED8 /* FSObjectBrowserButtonsInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5F9569002B272A30121B3BA /* FSObjectBrowserButtonsInspector.nib */; };
+		BACC80B91BD963E400919ED8 /* FSImageInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = F54B55C3036B48690140C608 /* FSImageInspector.nib */; };
+		BACC80BA1BD963E400919ED8 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = F58090EB0375648201AED2EF /* ReadMe.txt */; };
+		BACC80BB1BD963E400919ED8 /* ArrayTableView.nib in Resources */ = {isa = PBXBuildFile; fileRef = F58090FC03756D2401AED2EF /* ArrayTableView.nib */; };
+		BACC80BC1BD963E400919ED8 /* constantsDictionary in Resources */ = {isa = PBXBuildFile; fileRef = 8F92F0380463F2A400F4C61F /* constantsDictionary */; };
+		BACC80BD1BD963E400919ED8 /* FSAttributedStringInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDCCD7A05C0A0A000747C0A /* FSAttributedStringInspector.nib */; };
+		BACC80BE1BD963E400919ED8 /* FSConsole.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B64C805C5370D0099180D /* FSConsole.nib */; };
+		BACC80BF1BD963E400919ED8 /* FScriptPreferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B664F05C557A40099180D /* FScriptPreferences.nib */; };
+		BACC80C01BD963E400919ED8 /* run.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D066F05CED9B9007EA81B /* run.tiff */; };
+		BACC80C11BD963E400919ED8 /* build.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 8F56036505CF22660044FA65 /* build.tiff */; };
+		BACC80C21BD963E400919ED8 /* FSCollectionInspectorView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8EF9107739FD4001BEC7B /* FSCollectionInspectorView.nib */; };
+		BACC80C31BD963E400919ED8 /* FSManagedObjectContextInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA6B79078E0E4F005FC6B2 /* FSManagedObjectContextInspector.nib */; };
+		BACC80C41BD963E400919ED8 /* FSMovieInspector.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F7472BE056B7ACE00E87339 /* FSMovieInspector.nib */; };
+		BACC80C51BD963E400919ED8 /* FSTestClasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8FE3DC990D26C0FD00A1D767 /* FSTestClasses.txt */; };
+		BACC80C71BD963E400919ED8 /* FSAirplane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31000D7DFE17BE9C1BD /* FSAirplane.m */; };
+		BACC80C81BD963E400919ED8 /* ArrayRepDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31800D7DFE17BE9C1BD /* ArrayRepDouble.m */; };
+		BACC80C91BD963E400919ED8 /* ArrayRepEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31A00D7DFE17BE9C1BD /* ArrayRepEmpty.m */; };
+		BACC80CA1BD963E400919ED8 /* ArrayRepId.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31C00D7DFE17BE9C1BD /* ArrayRepId.m */; };
+		BACC80CB1BD963E400919ED8 /* FSCollectionInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E31E00D7DFE17BE9C1BD /* FSCollectionInspector.m */; };
+		BACC80CC1BD963E400919ED8 /* FSObjectBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32100D7DFE17BE9C1BD /* FSObjectBrowser.m */; };
+		BACC80CD1BD963E400919ED8 /* FSObjectBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32300D7DFE17BE9C1BD /* FSObjectBrowserCell.m */; };
+		BACC80CE1BD963E400919ED8 /* FSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32700D7DFE17BE9C1BD /* FSBlock.m */; };
+		BACC80CF1BD963E400919ED8 /* BlockInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32900D7DFE17BE9C1BD /* BlockInspector.m */; };
+		BACC80D01BD963E400919ED8 /* BlockRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32D00D7DFE17BE9C1BD /* BlockRep.m */; };
+		BACC80D11BD963E400919ED8 /* BlockStackElem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33000D7DFE17BE9C1BD /* BlockStackElem.m */; };
+		BACC80D21BD963E400919ED8 /* CLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33400D7DFE17BE9C1BD /* CLIView.m */; };
+		BACC80D31BD963E400919ED8 /* FSCompilationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33600D7DFE17BE9C1BD /* FSCompilationResult.m */; };
+		BACC80D41BD963E400919ED8 /* CompiledCodeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33800D7DFE17BE9C1BD /* CompiledCodeNode.m */; };
+		BACC80D51BD963E400919ED8 /* FSCompiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33A00D7DFE17BE9C1BD /* FSCompiler.m */; };
+		BACC80D61BD963E400919ED8 /* FSConstantsInitialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33C00D7DFE17BE9C1BD /* FSConstantsInitialization.m */; };
+		BACC80D71BD963E400919ED8 /* FSExecEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E33E00D7DFE17BE9C1BD /* FSExecEngine.m */; };
+		BACC80D81BD963E400919ED8 /* FSExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34000D7DFE17BE9C1BD /* FSExecutor.m */; };
+		BACC80D91BD963E400919ED8 /* FSFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34300D7DFE17BE9C1BD /* FSFlight.m */; };
+		BACC80DA1BD963E400919ED8 /* FSArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34600D7DFE17BE9C1BD /* FSArchiver.m */; };
+		BACC80DB1BD963E400919ED8 /* FSBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34800D7DFE17BE9C1BD /* FSBoolean.m */; };
+		BACC80DC1BD963E400919ED8 /* FScriptFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E34F00D7DFE17BE9C1BD /* FScriptFunctions.m */; };
+		BACC80DD1BD963E400919ED8 /* FSInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35100D7DFE17BE9C1BD /* FSInterpreter.m */; };
+		BACC80DE1BD963E400919ED8 /* FSInterpreterResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35300D7DFE17BE9C1BD /* FSInterpreterResult.m */; };
+		BACC80DF1BD963E400919ED8 /* FSInterpreterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35600D7DFE17BE9C1BD /* FSInterpreterView.m */; };
+		BACC80E01BD963E400919ED8 /* FSNSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35900D7DFE17BE9C1BD /* FSNSArray.m */; };
+		BACC80E11BD963E400919ED8 /* FSNSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35C00D7DFE17BE9C1BD /* FSNSDate.m */; };
+		BACC80E21BD963E400919ED8 /* FSNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E35E00D7DFE17BE9C1BD /* FSNSDictionary.m */; };
+		BACC80E31BD963E400919ED8 /* FSNSMutableString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36000D7DFE17BE9C1BD /* FSNSMutableString.m */; };
+		BACC80E41BD963E400919ED8 /* FSNSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36200D7DFE17BE9C1BD /* FSNSNumber.m */; };
+		BACC80E51BD963E400919ED8 /* FSNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36400D7DFE17BE9C1BD /* FSNSObject.m */; };
+		BACC80E61BD963E400919ED8 /* FSNSProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36600D7DFE17BE9C1BD /* FSNSProxy.m */; };
+		BACC80E71BD963E400919ED8 /* FSNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36800D7DFE17BE9C1BD /* FSNSString.m */; };
+		BACC80E81BD963E400919ED8 /* FSPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E36D00D7DFE17BE9C1BD /* FSPattern.m */; };
+		BACC80E91BD963E400919ED8 /* FSUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E37300D7DFE17BE9C1BD /* FSUnarchiver.m */; };
+		BACC80EA1BD963E400919ED8 /* FSVoid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E37500D7DFE17BE9C1BD /* FSVoid.m */; };
+		BACC80EB1BD963E400919ED8 /* FSGenericObjectInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E37800D7DFE17BE9C1BD /* FSGenericObjectInspector.m */; };
+		BACC80EC1BD963E400919ED8 /* MessagePatternCodeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38000D7DFE17BE9C1BD /* MessagePatternCodeNode.m */; };
+		BACC80ED1BD963E400919ED8 /* FSMiscTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38200D7DFE17BE9C1BD /* FSMiscTools.m */; };
+		BACC80EE1BD963E400919ED8 /* FSMsgContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38400D7DFE17BE9C1BD /* FSMsgContext.m */; };
+		BACC80EF1BD963E400919ED8 /* FSNewlyAllocatedObjectHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38800D7DFE17BE9C1BD /* FSNewlyAllocatedObjectHolder.m */; };
+		BACC80F01BD963E400919ED8 /* FSNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E38E00D7DFE17BE9C1BD /* FSNumber.m */; };
+		BACC80F11BD963E400919ED8 /* FSPilot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39100D7DFE17BE9C1BD /* FSPilot.m */; };
+		BACC80F21BD963E400919ED8 /* FSReplacementForCoderForClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39500D7DFE17BE9C1BD /* FSReplacementForCoderForClass.m */; };
+		BACC80F31BD963E400919ED8 /* ShellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39700D7DFE17BE9C1BD /* ShellView.m */; };
+		BACC80F41BD963E400919ED8 /* Space.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39900D7DFE17BE9C1BD /* Space.m */; };
+		BACC80F51BD963E400919ED8 /* FSCommandHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39B00D7DFE17BE9C1BD /* FSCommandHistory.m */; };
+		BACC80F61BD963E400919ED8 /* FSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E39F00D7DFE17BE9C1BD /* FSSystem.m */; };
+		BACC80F71BD963E400919ED8 /* KTestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66029E590161E0650055708C /* KTestManager.m */; };
+		BACC80F81BD963E400919ED8 /* FSNSDistantObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F51CA01501B013C401BFBB24 /* FSNSDistantObject.m */; };
+		BACC80F91BD963E400919ED8 /* DOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F13B4801C8BE3401CB6DF7 /* DOTest.m */; };
+		BACC80FA1BD963E400919ED8 /* FScriptTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F501AF7B021497C401A75EC5 /* FScriptTextView.m */; };
+		BACC80FB1BD963E400919ED8 /* FSObjectBrowserArgumentPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FA8A6D0215D44C01AFEEFD /* FSObjectBrowserArgumentPanel.m */; };
+		BACC80FC1BD963E400919ED8 /* FSNSProtocolChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F1405A0223CC9D01DD698C /* FSNSProtocolChecker.m */; };
+		BACC80FD1BD963E400919ED8 /* FSObjectBrowserToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF6D0279FD3C01345511 /* FSObjectBrowserToolbar.m */; };
+		BACC80FE1BD963E400919ED8 /* FSEvalCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF710279FD3C01345511 /* FSEvalCommand.m */; };
+		BACC80FF1BD963E400919ED8 /* FSServicesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF7D0279FD3C01345511 /* FSServicesProvider.m */; };
+		BACC81001BD963E400919ED8 /* FSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F538EF7F0279FD3C01345511 /* FSTask.m */; };
+		BACC81011BD963E400919ED8 /* FSObjectBrowserToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0AD430285792F0103CD49 /* FSObjectBrowserToolbarButton.m */; };
+		BACC81021BD963E400919ED8 /* FSObjectBrowserButtonCtxBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0261E02C243D20155CB83 /* FSObjectBrowserButtonCtxBlock.m */; };
+		BACC81031BD963E400919ED8 /* FSObjectBrowserButtonsInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F9569502B272FB0121B3BA /* FSObjectBrowserButtonsInspector.m */; };
+		BACC81041BD963E400919ED8 /* FSObjectBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD4E32500D7DFE17BE9C1BD /* FSObjectBrowserView.m */; };
+		BACC81051BD963E400919ED8 /* Pointer.m in Sources */ = {isa = PBXBuildFile; fileRef = F505647F02DF417501FE0326 /* Pointer.m */; };
+		BACC81061BD963E400919ED8 /* FSObjectFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBE810321029601CA10C6 /* FSObjectFormatter.m */; };
+		BACC81071BD963E400919ED8 /* FSIdentifierFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5073A2002FC5400013656B0 /* FSIdentifierFormatter.m */; };
+		BACC81081BD963E400919ED8 /* FSKeyedUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D44C50358A88801B9E934 /* FSKeyedUnarchiver.m */; };
+		BACC81091BD963E400919ED8 /* FSKeyedArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D44CF0358B5D201B9E934 /* FSKeyedArchiver.m */; };
+		BACC810A1BD963E400919ED8 /* FSConstantListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EECA7036210E2016141BB /* FSConstantListBuilder.m */; };
+		BACC810B1BD963E400919ED8 /* FSImageInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = F54B55BA036B45770140C608 /* FSImageInspector.m */; };
+		BACC810C1BD963E400919ED8 /* FSNSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F54B55C9036B4A330140C608 /* FSNSImage.m */; };
+		BACC810D1BD963E400919ED8 /* FSObjectBrowserToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F58090D003755FC701AED2EF /* FSObjectBrowserToolbarItem.m */; };
+		BACC810E1BD963E400919ED8 /* ArrayRepBoolean.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D4BE2A038511FF01461810 /* ArrayRepBoolean.m */; };
+		BACC810F1BD963E400919ED8 /* FSArrayEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3AE56044D4D6700CF7A3A /* FSArrayEnumerator.m */; };
+		BACC81101BD963E400919ED8 /* FSNSMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F66F85504666E8100AFC811 /* FSNSMutableArray.m */; };
+		BACC81111BD963E400919ED8 /* FSNSValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F553BF80585222700A92293 /* FSNSValue.m */; };
+		BACC81121BD963E400919ED8 /* FSReplacementForCoderForNilInArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7D7DB8058E32CD00F1B8A8 /* FSReplacementForCoderForNilInArray.m */; };
+		BACC81131BD963E400919ED8 /* FSNamedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0E3B7F059F3DBB003F6CE9 /* FSNamedNumber.m */; };
+		BACC81141BD963E400919ED8 /* FSCollectionInspectorTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F60216F05A25CDC0004EFF1 /* FSCollectionInspectorTableView.m */; };
+		BACC81151BD963E400919ED8 /* FSNSSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F60F24605A9FE8B00985FEC /* FSNSSet.m */; };
+		BACC81161BD963E400919ED8 /* FSAttributedStringInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCCD4F05C09F8200747C0A /* FSAttributedStringInspector.m */; };
+		BACC81171BD963E400919ED8 /* FSNSAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCCDC005C0A23000747C0A /* FSNSAttributedString.m */; };
+		BACC81181BD963E400919ED8 /* FScriptMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B66FC05C5639E0099180D /* FScriptMenuItem.m */; };
+		BACC81191BD963E400919ED8 /* FSNSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F658B2805C9694F0040FB24 /* FSNSFont.m */; };
+		BACC811A1BD963E400919ED8 /* FSObjectBrowserMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB5060005D53C8600153B33 /* FSObjectBrowserMatrix.m */; };
+		BACC811B1BD963E400919ED8 /* FSSymbolTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F17C07E06B1309C00F07862 /* FSSymbolTable.m */; };
+		BACC811C1BD963E400919ED8 /* FSObjectBrowserViewObjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E294D075B8E5600F8DCDB /* FSObjectBrowserViewObjectInfo.m */; };
+		BACC811D1BD963E400919ED8 /* FSCollectionInspectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8EDD307735B3B001BEC7B /* FSCollectionInspectorView.m */; };
+		BACC811E1BD963E400919ED8 /* ArrayRepFetchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBC2884077B7D5200F9B4A2 /* ArrayRepFetchRequest.m */; };
+		BACC811F1BD963E400919ED8 /* FSPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EA718077F6A5200AC1C96 /* FSPointer.m */; };
+		BACC81201BD963E400919ED8 /* FSGenericPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8EA786077F6C9300AC1C96 /* FSGenericPointer.m */; };
+		BACC81211BD963E400919ED8 /* FSObjectPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE9AE1F078071CC005B2CC4 /* FSObjectPointer.m */; };
+		BACC81221BD963E400919ED8 /* FSObjectBrowserNamedObjectWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F86923707F19BA8000D20A4 /* FSObjectBrowserNamedObjectWrapper.m */; };
+		BACC81231BD963E400919ED8 /* FSInspectorUniquier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F4F9D07FB274C008E42F4 /* FSInspectorUniquier.m */; };
+		BACC81241BD963E400919ED8 /* FSPredicateTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F95E3C208034A670030B65C /* FSPredicateTextView.m */; };
+		BACC81251BD963E400919ED8 /* FSCoreDataSample.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE7E0E7082AD964008231E8 /* FSCoreDataSample.m */; };
+		BACC81261BD963E400919ED8 /* FSManagedObjectContextInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F37AEC3078B7E900083565D /* FSManagedObjectContextInspector.m */; };
+		BACC81271BD963E400919ED8 /* FSNSManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5189E807F072EA00A50735 /* FSNSManagedObjectContext.m */; };
+		BACC81281BD963E400919ED8 /* FSObjectBrowserSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F585F6F059B23F100C12B6F /* FSObjectBrowserSearchField.m */; };
+		BACC81291BD963E400919ED8 /* FSBlockCompilationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F90A2F0096DB0660064F4BC /* FSBlockCompilationResult.m */; };
+		BACC812A1BD963E400919ED8 /* FSReturnSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD7D4A70975B377009B2685 /* FSReturnSignal.m */; };
+		BACC812B1BD963E400919ED8 /* FSMovieInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F573F7E056B754B00F2796A /* FSMovieInspector.m */; };
+		BACC812C1BD963E400919ED8 /* FSMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C13990C65E66400948776 /* FSMethod.m */; };
+		BACC812D1BD963E400919ED8 /* FSCNClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5AD3210D05CFFE000CEAC6 /* FSCNClassDefinition.m */; };
+		BACC812E1BD963E400919ED8 /* FSCNBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6397F0D09C0F400255EBA /* FSCNBase.m */; };
+		BACC812F1BD963E400919ED8 /* FSCNIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6398F0D09DCB600255EBA /* FSCNIdentifier.m */; };
+		BACC81301BD963E400919ED8 /* FSTestObjCClass1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3DD210D26D49900A1D767 /* FSTestObjCClass1.m */; };
+		BACC81311BD963E400919ED8 /* FSTestObjCClass2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4822030D2C317700754A4E /* FSTestObjCClass2.m */; };
+		BACC81321BD963E400919ED8 /* FSCNCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8112F10D85E58200CB3407 /* FSCNCategory.m */; };
+		BACC81331BD963E400919ED8 /* FSCNMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F59CA700D86DD0800D67A78 /* FSCNMessage.m */; };
+		BACC81341BD963E400919ED8 /* FSCNSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72237E0D870C6A00394C99 /* FSCNSuper.m */; };
+		BACC81351BD963E400919ED8 /* FSCNUnaryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E341F0D8DB61C00912543 /* FSCNUnaryMessage.m */; };
+		BACC81361BD963E400919ED8 /* FSCNBinaryMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E34320D8DBF6A00912543 /* FSCNBinaryMessage.m */; };
+		BACC81371BD963E400919ED8 /* FSCNKeywordMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2E343B0D8DBFE700912543 /* FSCNKeywordMessage.m */; };
+		BACC81381BD963E400919ED8 /* FSCNCascade.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5900140D9468FC003A8B17 /* FSCNCascade.m */; };
+		BACC81391BD963E400919ED8 /* FSCNStatementList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F58650D9FE6A900ED0FED /* FSCNStatementList.m */; };
+		BACC813A1BD963E400919ED8 /* FSCNPrecomputedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F747DA80DA03AE200148342 /* FSCNPrecomputedObject.m */; };
+		BACC813B1BD963E400919ED8 /* FSCNArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F747DB70DA0467100148342 /* FSCNArray.m */; };
+		BACC813C1BD963E400919ED8 /* FSCNBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE79AB0DA0ED5D00CB6E14 /* FSCNBlock.m */; };
+		BACC813D1BD963E400919ED8 /* FSCNAssignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAE79F20DA109C500CB6E14 /* FSCNAssignment.m */; };
+		BACC813E1BD963E400919ED8 /* FSCNMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F45CBBE0DA813F200AFA8C8 /* FSCNMethod.m */; };
+		BACC813F1BD963E400919ED8 /* FSCNReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD0A3130DD7276000E47459 /* FSCNReturn.m */; };
+		BACC81401BD963E400919ED8 /* FSClassDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8949D60DE08B110094EC14 /* FSClassDefinition.m */; };
+		BACC81411BD963E400919ED8 /* FSTranscript.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2DE65A0E57254700CF83CB /* FSTranscript.m */; };
+		BACC81421BD963E400919ED8 /* FSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE6AD900EC740650096019D /* FSArray.m */; };
+		BACC81431BD963E400919ED8 /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F31A4C10EC74A2E00D1B8E8 /* Array.m */; };
+		BACC81441BD963E400919ED8 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA00C20EEAF34300B10420 /* Block.m */; };
+		BACC81451BD963E400919ED8 /* Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB2FF10EEB3467007A3163 /* Number.m */; };
+		BACC81461BD963E400919ED8 /* FSGlobalScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9D5980F1CEE2100E10274 /* FSGlobalScope.m */; };
+		BACC81471BD963E400919ED8 /* FSNSFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D04180F1DF1CB001B8286 /* FSNSFileHandle.m */; };
+		BACC81481BD963E400919ED8 /* FSAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F940B820F2393B0004525E1 /* FSAssociation.m */; };
+		BACC81491BD963E400919ED8 /* FSCNDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F940C6F0F23BC2E004525E1 /* FSCNDictionary.m */; };
+		BACC814A1BD963E400919ED8 /* FSObjectBrowserBottomBarTextDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7A712A0F48397C00E95364 /* FSObjectBrowserBottomBarTextDisplay.m */; };
+		BACC814B1BD963E400919ED8 /* FSNSAffineTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D720A0F6BD9B100F0862A /* FSNSAffineTransform.m */; };
+		BACC814C1BD963E400919ED8 /* FSNewlyAllocatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA593210883B0100F67841 /* FSNewlyAllocatedObject.m */; };
+		BACC814D1BD963E400919ED8 /* FSWorksWhenModalWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5EDA01109B384A003A2F4C /* FSWorksWhenModalWindow.m */; };
+		BACC814E1BD963E400919ED8 /* FSNSMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44270C116549C700E88F21 /* FSNSMutableDictionary.m */; };
+		BACC81501BD963E400919ED8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B6189F9A2E002C5B6A /* Cocoa.framework */; };
+		BACC81511BD963E400919ED8 /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22316F189F9AD3002C5B6A /* ExceptionHandling.framework */; };
 		E29F5BD219FD93FD00AD90CF /* FSAirplane.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E30F00D7DFE17BE9C1BD /* FSAirplane.h */; };
 		E29F5BD319FD93FD00AD90CF /* ArrayPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31300D7DFE17BE9C1BD /* ArrayPrivate.h */; };
 		E29F5BD419FD93FD00AD90CF /* ArrayRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CD4E31400D7DFE17BE9C1BD /* ArrayRep.h */; };
@@ -3555,6 +4328,20 @@
 			remoteGlobalIDString = 8F6DA5DE055FC6980050409A;
 			remoteInfo = FSTest2;
 		};
+		BACC7DB91BD9636A00919ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CD4E2FA00D7DD4D7BE9C1BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F6DA6D8055FC6C80050409A;
+			remoteInfo = FSTest1;
+		};
+		BACC7DBB1BD9636A00919ED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CD4E2FA00D7DD4D7BE9C1BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F6DA5DE055FC6980050409A;
+			remoteInfo = FSTest2;
+		};
 		E29F5BCE19FD93FD00AD90CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0CD4E2FA00D7DD4D7BE9C1BD /* Project object */;
@@ -3967,6 +4754,24 @@
 		BA223520189FA412002C5B6A /* F-Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA223668189FA429002C5B6A /* FScript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FScript.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2237B0189FA432002C5B6A /* FScript.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FScript.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC7F7F1BD9636A00919ED8 /* F-Script 10.11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Script 10.11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACC7FF01BD963DA00919ED8 /* AppKitScripting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKitScripting.framework; path = System/Library/Frameworks/AppKitScripting.framework; sourceTree = SDKROOT; };
+		BACC7FF11BD963DA00919ED8 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		BACC7FF21BD963DA00919ED8 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		BACC7FF31BD963DA00919ED8 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		BACC7FF41BD963DA00919ED8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BACC7FF51BD963DA00919ED8 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
+		BACC7FF61BD963DB00919ED8 /* JavaFrameEmbedding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaFrameEmbedding.framework; path = System/Library/Frameworks/JavaFrameEmbedding.framework; sourceTree = SDKROOT; };
+		BACC7FF71BD963DB00919ED8 /* JavaVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaVM.framework; path = System/Library/Frameworks/JavaVM.framework; sourceTree = SDKROOT; };
+		BACC7FF81BD963DB00919ED8 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		BACC7FF91BD963DB00919ED8 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		BACC7FFA1BD963DB00919ED8 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		BACC7FFB1BD963DB00919ED8 /* ModelIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelIO.framework; path = System/Library/Frameworks/ModelIO.framework; sourceTree = SDKROOT; };
+		BACC7FFC1BD963DB00919ED8 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		BACC7FFD1BD963DB00919ED8 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		BACC7FFE1BD963DB00919ED8 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		BACC7FFF1BD963DB00919ED8 /* vecLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vecLib.framework; path = System/Library/Frameworks/vecLib.framework; sourceTree = SDKROOT; };
+		BACC81561BD963E400919ED8 /* FScriptFramework 10.11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "FScriptFramework 10.11.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29F5D8A19FD93FD00AD90CF /* F-Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F-Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29F5D9219FD944300AD90CF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E29F5D9319FD944400AD90CF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -4432,6 +5237,147 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BACC7F0A1BD9636A00919ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC80001BD963DB00919ED8 /* AppKitScripting.framework in Frameworks */,
+				BACC80011BD963DB00919ED8 /* Contacts.framework in Frameworks */,
+				BACC80021BD963DB00919ED8 /* ContactsUI.framework in Frameworks */,
+				BACC80031BD963DB00919ED8 /* CoreImage.framework in Frameworks */,
+				BACC80041BD963DB00919ED8 /* CoreTelephony.framework in Frameworks */,
+				BACC80051BD963DB00919ED8 /* GameplayKit.framework in Frameworks */,
+				BACC80061BD963DB00919ED8 /* JavaFrameEmbedding.framework in Frameworks */,
+				BACC80071BD963DB00919ED8 /* JavaVM.framework in Frameworks */,
+				BACC80091BD963DB00919ED8 /* Metal.framework in Frameworks */,
+				BACC800A1BD963DB00919ED8 /* MetalKit.framework in Frameworks */,
+				BACC800B1BD963DB00919ED8 /* ModelIO.framework in Frameworks */,
+				BACC800C1BD963DB00919ED8 /* NetworkExtension.framework in Frameworks */,
+				BACC800D1BD963DB00919ED8 /* Photos.framework in Frameworks */,
+				BACC800E1BD963DB00919ED8 /* PhotosUI.framework in Frameworks */,
+				BACC7F811BD963DA00919ED8 /* Accelerate.framework in Frameworks */,
+				BACC7F821BD963DA00919ED8 /* Accounts.framework in Frameworks */,
+				BACC7F831BD963DA00919ED8 /* AddressBook.framework in Frameworks */,
+				BACC7F841BD963DA00919ED8 /* AGL.framework in Frameworks */,
+				BACC7F851BD963DA00919ED8 /* AppKit.framework in Frameworks */,
+				BACC7F861BD963DA00919ED8 /* AppleScriptKit.framework in Frameworks */,
+				BACC7F871BD963DA00919ED8 /* AppleScriptObjC.framework in Frameworks */,
+				BACC7F881BD963DA00919ED8 /* ApplicationServices.framework in Frameworks */,
+				BACC7F891BD963DA00919ED8 /* AudioToolbox.framework in Frameworks */,
+				BACC7F8A1BD963DA00919ED8 /* AudioUnit.framework in Frameworks */,
+				BACC7F8B1BD963DA00919ED8 /* AudioVideoBridging.framework in Frameworks */,
+				BACC7F8C1BD963DA00919ED8 /* Automator.framework in Frameworks */,
+				BACC7F8D1BD963DA00919ED8 /* AVFoundation.framework in Frameworks */,
+				BACC7F8E1BD963DA00919ED8 /* AVKit.framework in Frameworks */,
+				BACC7F8F1BD963DA00919ED8 /* CalendarStore.framework in Frameworks */,
+				BACC7F901BD963DA00919ED8 /* Carbon.framework in Frameworks */,
+				BACC7F911BD963DA00919ED8 /* CFNetwork.framework in Frameworks */,
+				BACC7F921BD963DA00919ED8 /* CloudKit.framework in Frameworks */,
+				BACC7F931BD963DA00919ED8 /* Cocoa.framework in Frameworks */,
+				BACC7F941BD963DA00919ED8 /* Collaboration.framework in Frameworks */,
+				BACC7F951BD963DA00919ED8 /* CoreAudio.framework in Frameworks */,
+				BACC7F961BD963DA00919ED8 /* CoreAudioKit.framework in Frameworks */,
+				BACC7F971BD963DA00919ED8 /* CoreBluetooth.framework in Frameworks */,
+				BACC7F981BD963DA00919ED8 /* CoreData.framework in Frameworks */,
+				BACC7F991BD963DA00919ED8 /* CoreFoundation.framework in Frameworks */,
+				BACC7F9A1BD963DA00919ED8 /* CoreGraphics.framework in Frameworks */,
+				BACC7F9B1BD963DA00919ED8 /* CoreLocation.framework in Frameworks */,
+				BACC7F9C1BD963DA00919ED8 /* CoreMedia.framework in Frameworks */,
+				BACC7F9D1BD963DA00919ED8 /* CoreMediaIO.framework in Frameworks */,
+				BACC7F9E1BD963DA00919ED8 /* CoreMIDI.framework in Frameworks */,
+				BACC7F9F1BD963DA00919ED8 /* CoreServices.framework in Frameworks */,
+				BACC7FA01BD963DA00919ED8 /* CoreText.framework in Frameworks */,
+				BACC7FA11BD963DA00919ED8 /* CoreVideo.framework in Frameworks */,
+				BACC7FA21BD963DA00919ED8 /* CoreWLAN.framework in Frameworks */,
+				BACC7FA31BD963DA00919ED8 /* CryptoTokenKit.framework in Frameworks */,
+				BACC7FA41BD963DA00919ED8 /* DirectoryService.framework in Frameworks */,
+				BACC7FA51BD963DA00919ED8 /* DiscRecording.framework in Frameworks */,
+				BACC7FA61BD963DA00919ED8 /* DiscRecordingUI.framework in Frameworks */,
+				BACC7FA71BD963DA00919ED8 /* DiskArbitration.framework in Frameworks */,
+				BACC7FA81BD963DA00919ED8 /* DVComponentGlue.framework in Frameworks */,
+				BACC7FA91BD963DA00919ED8 /* DVDPlayback.framework in Frameworks */,
+				BACC7FAA1BD963DA00919ED8 /* EventKit.framework in Frameworks */,
+				BACC7FAB1BD963DA00919ED8 /* ExceptionHandling.framework in Frameworks */,
+				BACC7FAC1BD963DA00919ED8 /* FinderSync.framework in Frameworks */,
+				BACC7FAD1BD963DA00919ED8 /* ForceFeedback.framework in Frameworks */,
+				BACC7FAE1BD963DA00919ED8 /* Foundation.framework in Frameworks */,
+				BACC7FAF1BD963DA00919ED8 /* FWAUserLib.framework in Frameworks */,
+				BACC7FB01BD963DA00919ED8 /* GameController.framework in Frameworks */,
+				BACC7FB11BD963DA00919ED8 /* GameKit.framework in Frameworks */,
+				BACC7FB21BD963DA00919ED8 /* GLKit.framework in Frameworks */,
+				BACC7FB31BD963DA00919ED8 /* GLUT.framework in Frameworks */,
+				BACC7FB41BD963DA00919ED8 /* GSS.framework in Frameworks */,
+				BACC7FB51BD963DA00919ED8 /* Hypervisor.framework in Frameworks */,
+				BACC7FB61BD963DA00919ED8 /* ICADevices.framework in Frameworks */,
+				BACC7FB71BD963DA00919ED8 /* ImageCaptureCore.framework in Frameworks */,
+				BACC7FB81BD963DA00919ED8 /* ImageIO.framework in Frameworks */,
+				BACC7FB91BD963DA00919ED8 /* IMServicePlugIn.framework in Frameworks */,
+				BACC7FBA1BD963DA00919ED8 /* InputMethodKit.framework in Frameworks */,
+				BACC7FBB1BD963DA00919ED8 /* InstallerPlugins.framework in Frameworks */,
+				BACC7FBC1BD963DA00919ED8 /* InstantMessage.framework in Frameworks */,
+				BACC7FBD1BD963DA00919ED8 /* IOBluetooth.framework in Frameworks */,
+				BACC7FBE1BD963DA00919ED8 /* IOBluetoothUI.framework in Frameworks */,
+				BACC7FBF1BD963DA00919ED8 /* IOKit.framework in Frameworks */,
+				BACC7FC01BD963DA00919ED8 /* IOSurface.framework in Frameworks */,
+				BACC7FC11BD963DA00919ED8 /* JavaScriptCore.framework in Frameworks */,
+				BACC7FC21BD963DA00919ED8 /* Kerberos.framework in Frameworks */,
+				BACC7FC31BD963DA00919ED8 /* LatentSemanticMapping.framework in Frameworks */,
+				BACC7FC41BD963DA00919ED8 /* LDAP.framework in Frameworks */,
+				BACC7FC51BD963DA00919ED8 /* LocalAuthentication.framework in Frameworks */,
+				BACC7FC61BD963DA00919ED8 /* MapKit.framework in Frameworks */,
+				BACC7FC71BD963DA00919ED8 /* MediaAccessibility.framework in Frameworks */,
+				BACC7FC81BD963DA00919ED8 /* MediaLibrary.framework in Frameworks */,
+				BACC7FC91BD963DA00919ED8 /* MediaToolbox.framework in Frameworks */,
+				BACC7FCA1BD963DA00919ED8 /* MultipeerConnectivity.framework in Frameworks */,
+				BACC7FCB1BD963DA00919ED8 /* NetFS.framework in Frameworks */,
+				BACC7FCC1BD963DA00919ED8 /* NotificationCenter.framework in Frameworks */,
+				BACC7FCD1BD963DA00919ED8 /* OpenAL.framework in Frameworks */,
+				BACC7FCE1BD963DA00919ED8 /* OpenCL.framework in Frameworks */,
+				BACC7FCF1BD963DA00919ED8 /* OpenDirectory.framework in Frameworks */,
+				BACC7FD01BD963DA00919ED8 /* OpenGL.framework in Frameworks */,
+				BACC7FD11BD963DA00919ED8 /* OSAKit.framework in Frameworks */,
+				BACC7FD21BD963DA00919ED8 /* PCSC.framework in Frameworks */,
+				BACC7FD31BD963DA00919ED8 /* PreferencePanes.framework in Frameworks */,
+				BACC7FD41BD963DA00919ED8 /* PubSub.framework in Frameworks */,
+				BACC7FD51BD963DA00919ED8 /* Python.framework in Frameworks */,
+				BACC7FD61BD963DA00919ED8 /* QTKit.framework in Frameworks */,
+				BACC7FD71BD963DA00919ED8 /* Quartz.framework in Frameworks */,
+				BACC7FD81BD963DA00919ED8 /* QuartzCore.framework in Frameworks */,
+				BACC7FD91BD963DA00919ED8 /* QuickLook.framework in Frameworks */,
+				BACC7FDA1BD963DA00919ED8 /* QuickTime.framework in Frameworks */,
+				BACC7FDB1BD963DA00919ED8 /* Ruby.framework in Frameworks */,
+				BACC7FDC1BD963DA00919ED8 /* SceneKit.framework in Frameworks */,
+				BACC7FDD1BD963DA00919ED8 /* ScreenSaver.framework in Frameworks */,
+				BACC7FDE1BD963DA00919ED8 /* Scripting.framework in Frameworks */,
+				BACC7FDF1BD963DA00919ED8 /* ScriptingBridge.framework in Frameworks */,
+				BACC7FE01BD963DA00919ED8 /* Security.framework in Frameworks */,
+				BACC7FE11BD963DA00919ED8 /* SecurityFoundation.framework in Frameworks */,
+				BACC7FE21BD963DA00919ED8 /* SecurityInterface.framework in Frameworks */,
+				BACC7FE31BD963DA00919ED8 /* ServiceManagement.framework in Frameworks */,
+				BACC7FE41BD963DA00919ED8 /* Social.framework in Frameworks */,
+				BACC7FE51BD963DA00919ED8 /* SpriteKit.framework in Frameworks */,
+				BACC7FE61BD963DA00919ED8 /* StoreKit.framework in Frameworks */,
+				BACC7FE71BD963DA00919ED8 /* SyncServices.framework in Frameworks */,
+				BACC7FE81BD963DA00919ED8 /* SystemConfiguration.framework in Frameworks */,
+				BACC7FE91BD963DA00919ED8 /* Tcl.framework in Frameworks */,
+				BACC7FEA1BD963DA00919ED8 /* Tk.framework in Frameworks */,
+				BACC7FEB1BD963DA00919ED8 /* TWAIN.framework in Frameworks */,
+				BACC7FEC1BD963DA00919ED8 /* VideoDecodeAcceleration.framework in Frameworks */,
+				BACC7FED1BD963DA00919ED8 /* VideoToolbox.framework in Frameworks */,
+				BACC7FEE1BD963DA00919ED8 /* vmnet.framework in Frameworks */,
+				BACC7FEF1BD963DA00919ED8 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC814F1BD963E400919ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC81501BD963E400919ED8 /* Cocoa.framework in Frameworks */,
+				BACC81511BD963E400919ED8 /* ExceptionHandling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E29F5D1F19FD93FD00AD90CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4566,18 +5512,34 @@
 		0CD4E2FB00D7DD4D7BE9C1BD = {
 			isa = PBXGroup;
 			children = (
-				E29F5F9319FD9F0400AD90CF /* Other Frameworks */,
+				BACC7FF01BD963DA00919ED8 /* AppKitScripting.framework */,
+				BACC7FF11BD963DA00919ED8 /* Contacts.framework */,
+				BACC7FF21BD963DA00919ED8 /* ContactsUI.framework */,
+				BACC7FF31BD963DA00919ED8 /* CoreImage.framework */,
+				BACC7FF41BD963DA00919ED8 /* CoreTelephony.framework */,
 				F5F1A9F4022E9A96011160FE /* F-Script */,
 				0CD4E30D00D7DFE17BE9C1BD /* FScriptFramework */,
 				8F6392E00BDB855B005C8D94 /* FScriptIBPlugin */,
 				F5F1AAAD022E9E4F011160FE /* FSTest1 */,
 				F5F1AAB6022E9E90011160FE /* FSTest2 */,
+				BACC7FF51BD963DA00919ED8 /* GameplayKit.framework */,
 				8F6DA8EB055FC70C0050409A /* Info-FScript.plist */,
 				8F6DA9DC055FC7200050409A /* Info-FScriptFramework.plist */,
 				8F6DA6E7055FC6C80050409A /* Info-FSTest1_2.plist */,
 				8F6DA6D1055FC6980050409A /* Info-FSTest2_2.plist */,
+				BACC7FF61BD963DB00919ED8 /* JavaFrameEmbedding.framework */,
+				BACC7FF71BD963DB00919ED8 /* JavaVM.framework */,
 				F5F00F100279FB69016D9B48 /* JGAdditions */,
+				BACC7FF81BD963DB00919ED8 /* Kernel.framework */,
+				BACC7FF91BD963DB00919ED8 /* Metal.framework */,
+				BACC7FFA1BD963DB00919ED8 /* MetalKit.framework */,
+				BACC7FFB1BD963DB00919ED8 /* ModelIO.framework */,
+				BACC7FFC1BD963DB00919ED8 /* NetworkExtension.framework */,
+				E29F5F9319FD9F0400AD90CF /* Other Frameworks */,
+				BACC7FFD1BD963DB00919ED8 /* Photos.framework */,
+				BACC7FFE1BD963DB00919ED8 /* PhotosUI.framework */,
 				0CD4E2FC00D7DDB47BE9C1BD /* Products */,
+				BACC7FFF1BD963DB00919ED8 /* vecLib.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4595,6 +5557,8 @@
 				BA2237B0189FA432002C5B6A /* FScript.framework */,
 				E29F5D8A19FD93FD00AD90CF /* F-Script.app */,
 				E29F5EEC19FD94FC00AD90CF /* FScript.framework */,
+				BACC7F7F1BD9636A00919ED8 /* F-Script 10.11.app */,
+				BACC81561BD963E400919ED8 /* FScriptFramework 10.11.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -6290,6 +7254,338 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BACC7DBC1BD9636A00919ED8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC7DBD1BD9636A00919ED8 /* FSAirplane.h in Headers */,
+				BACC7DBE1BD9636A00919ED8 /* ArrayPrivate.h in Headers */,
+				BACC7DBF1BD9636A00919ED8 /* ArrayRep.h in Headers */,
+				BACC7DC01BD9636A00919ED8 /* ArrayRepDouble.h in Headers */,
+				BACC7DC11BD9636A00919ED8 /* ArrayRepEmpty.h in Headers */,
+				BACC7DC21BD9636A00919ED8 /* ArrayRepId.h in Headers */,
+				BACC7DC31BD9636A00919ED8 /* FSCollectionInspector.h in Headers */,
+				BACC7DC41BD9636A00919ED8 /* FSObjectBrowser.h in Headers */,
+				BACC7DC51BD9636A00919ED8 /* FSObjectBrowserArgumentPanel.h in Headers */,
+				BACC7DC61BD9636A00919ED8 /* FSObjectBrowserCell.h in Headers */,
+				BACC7DC71BD9636A00919ED8 /* FSObjectBrowserView.h in Headers */,
+				BACC7DC81BD9636A00919ED8 /* FSBlock.h in Headers */,
+				BACC7DC91BD9636A00919ED8 /* BlockInspector.h in Headers */,
+				BACC7DCA1BD9636A00919ED8 /* BlockPrivate.h in Headers */,
+				BACC7DCB1BD9636A00919ED8 /* BlockRep.h in Headers */,
+				BACC7DCC1BD9636A00919ED8 /* BlockSignature.h in Headers */,
+				BACC7DCD1BD9636A00919ED8 /* BlockStackElem.h in Headers */,
+				BACC7DCE1BD9636A00919ED8 /* build_config.h in Headers */,
+				BACC7DCF1BD9636A00919ED8 /* CLIView.h in Headers */,
+				BACC7DD01BD9636A00919ED8 /* FSCompilationResult.h in Headers */,
+				BACC7DD11BD9636A00919ED8 /* CompiledCodeNode.h in Headers */,
+				BACC7DD21BD9636A00919ED8 /* FSCompiler.h in Headers */,
+				BACC7DD31BD9636A00919ED8 /* FSConstantsInitialization.h in Headers */,
+				BACC7DD41BD9636A00919ED8 /* FSExecEngine.h in Headers */,
+				BACC7DD51BD9636A00919ED8 /* FSExecutor.h in Headers */,
+				BACC7DD61BD9636A00919ED8 /* FSFlight.h in Headers */,
+				BACC7DD71BD9636A00919ED8 /* FSArchiver.h in Headers */,
+				BACC7DD81BD9636A00919ED8 /* FSBoolean.h in Headers */,
+				BACC7DD91BD9636A00919ED8 /* FSBooleanPrivate.h in Headers */,
+				BACC7DDA1BD9636A00919ED8 /* FScript.h in Headers */,
+				BACC7DDB1BD9636A00919ED8 /* FScriptFunctions.h in Headers */,
+				BACC7DDC1BD9636A00919ED8 /* FScriptTextView.h in Headers */,
+				BACC7DDD1BD9636A00919ED8 /* FSInterpreter.h in Headers */,
+				BACC7DDE1BD9636A00919ED8 /* FSInterpreterResult.h in Headers */,
+				BACC7DDF1BD9636A00919ED8 /* FSInterpreterResultPrivate.h in Headers */,
+				BACC7DE01BD9636A00919ED8 /* FSInterpreterView.h in Headers */,
+				BACC7DE11BD9636A00919ED8 /* FSInterpreterViewIBHeader.h in Headers */,
+				BACC7DE21BD9636A00919ED8 /* FSNSArray.h in Headers */,
+				BACC7DE31BD9636A00919ED8 /* FSNSArrayPrivate.h in Headers */,
+				BACC7DE41BD9636A00919ED8 /* FSNSDate.h in Headers */,
+				BACC7DE51BD9636A00919ED8 /* FSNSDictionary.h in Headers */,
+				BACC7DE61BD9636A00919ED8 /* FSNSDistantObject.h in Headers */,
+				BACC7DE71BD9636A00919ED8 /* FSNSMutableString.h in Headers */,
+				BACC7DE81BD9636A00919ED8 /* FSNSNumber.h in Headers */,
+				BACC7DE91BD9636A00919ED8 /* FSNSObject.h in Headers */,
+				BACC7DEA1BD9636A00919ED8 /* FSNSProxy.h in Headers */,
+				BACC7DEB1BD9636A00919ED8 /* FSPattern.h in Headers */,
+				BACC7DEC1BD9636A00919ED8 /* FSUnarchiver.h in Headers */,
+				BACC7DED1BD9636A00919ED8 /* FSVoid.h in Headers */,
+				BACC7DEE1BD9636A00919ED8 /* FSVoidPrivate.h in Headers */,
+				BACC7DEF1BD9636A00919ED8 /* FSGenericObjectInspector.h in Headers */,
+				BACC7DF01BD9636A00919ED8 /* KTestManager.h in Headers */,
+				BACC7DF11BD9636A00919ED8 /* MessagePatternCodeNode.h in Headers */,
+				BACC7DF21BD9636A00919ED8 /* FSMiscTools.h in Headers */,
+				BACC7DF31BD9636A00919ED8 /* FSMsgContext.h in Headers */,
+				BACC7DF41BD9636A00919ED8 /* FSNewlyAllocatedObjectHolder.h in Headers */,
+				BACC7DF51BD9636A00919ED8 /* FSNumber.h in Headers */,
+				BACC7DF61BD9636A00919ED8 /* NumberPrivate.h in Headers */,
+				BACC7DF71BD9636A00919ED8 /* FSPilot.h in Headers */,
+				BACC7DF81BD9636A00919ED8 /* FSReplacementForCoderForClass.h in Headers */,
+				BACC7DF91BD9636A00919ED8 /* ShellView.h in Headers */,
+				BACC7DFA1BD9636A00919ED8 /* Space.h in Headers */,
+				BACC7DFB1BD9636A00919ED8 /* FSCommandHistory.h in Headers */,
+				BACC7DFC1BD9636A00919ED8 /* FSSystem.h in Headers */,
+				BACC7DFD1BD9636A00919ED8 /* DOTest.h in Headers */,
+				BACC7DFE1BD9636A00919ED8 /* FSNSProtocolChecker.h in Headers */,
+				BACC7DFF1BD9636A00919ED8 /* FScriptAppController.h in Headers */,
+				BACC7E001BD9636A00919ED8 /* FSObjectBrowserToolbar.h in Headers */,
+				BACC7E011BD9636A00919ED8 /* FSEvalCommand.h in Headers */,
+				BACC7E021BD9636A00919ED8 /* FSServicesProvider.h in Headers */,
+				BACC7E031BD9636A00919ED8 /* FSTask.h in Headers */,
+				BACC7E041BD9636A00919ED8 /* FSObjectBrowserToolbarButton.h in Headers */,
+				BACC7E051BD9636A00919ED8 /* FSObjectBrowserButtonCtxBlock.h in Headers */,
+				BACC7E061BD9636A00919ED8 /* DOCustom.h in Headers */,
+				BACC7E071BD9636A00919ED8 /* Pointer.h in Headers */,
+				BACC7E081BD9636A00919ED8 /* PointerPrivate.h in Headers */,
+				BACC7E091BD9636A00919ED8 /* FSInterpreterPrivate.h in Headers */,
+				BACC7E0A1BD9636A00919ED8 /* FSIdentifierFormatter.h in Headers */,
+				BACC7E0B1BD9636A00919ED8 /* FSObjectFormatter.h in Headers */,
+				BACC7E0C1BD9636A00919ED8 /* FSSystemPrivate.h in Headers */,
+				BACC7E0D1BD9636A00919ED8 /* FSKeyedUnarchiver.h in Headers */,
+				BACC7E0E1BD9636A00919ED8 /* FSKeyedArchiver.h in Headers */,
+				BACC7E0F1BD9636A00919ED8 /* FSConstantListBuilder.h in Headers */,
+				BACC7E101BD9636A00919ED8 /* FSImageInspector.h in Headers */,
+				BACC7E111BD9636A00919ED8 /* FSNSImage.h in Headers */,
+				BACC7E121BD9636A00919ED8 /* FSObjectBrowserToolbarItem.h in Headers */,
+				BACC7E131BD9636A00919ED8 /* FSNSObjectPrivate.h in Headers */,
+				BACC7E141BD9636A00919ED8 /* FSArrayEnumerator.h in Headers */,
+				BACC7E151BD9636A00919ED8 /* FSNSMutableArray.h in Headers */,
+				BACC7E161BD9636A00919ED8 /* FSObjectBrowserButtonsInspector.h in Headers */,
+				BACC7E171BD9636A00919ED8 /* ArrayRepBoolean.h in Headers */,
+				BACC7E181BD9636A00919ED8 /* FSNSValue.h in Headers */,
+				BACC7E191BD9636A00919ED8 /* FSReplacementForCoderForNilInArray.h in Headers */,
+				BACC7E1A1BD9636A00919ED8 /* FSNamedNumber.h in Headers */,
+				BACC7E1B1BD9636A00919ED8 /* FSCollectionInspectorTableView.h in Headers */,
+				BACC7E1C1BD9636A00919ED8 /* FSNSSet.h in Headers */,
+				BACC7E1D1BD9636A00919ED8 /* FSAttributedStringInspector.h in Headers */,
+				BACC7E1E1BD9636A00919ED8 /* FSNSAttributedString.h in Headers */,
+				BACC7E1F1BD9636A00919ED8 /* FSInterpreterViewPrivate.h in Headers */,
+				BACC7E201BD9636A00919ED8 /* FScriptMenuItem.h in Headers */,
+				BACC7E211BD9636A00919ED8 /* FSNSFont.h in Headers */,
+				BACC7E221BD9636A00919ED8 /* FSObjectBrowserMatrix.h in Headers */,
+				BACC7E231BD9636A00919ED8 /* FSNSString.h in Headers */,
+				BACC7E241BD9636A00919ED8 /* FSNSStringPrivate.h in Headers */,
+				BACC7E251BD9636A00919ED8 /* FSSymbolTable.h in Headers */,
+				BACC7E261BD9636A00919ED8 /* TestFS.h in Headers */,
+				BACC7E271BD9636A00919ED8 /* FSObjectBrowserViewObjectInfo.h in Headers */,
+				BACC7E281BD9636A00919ED8 /* FSCollectionInspectorView.h in Headers */,
+				BACC7E291BD9636A00919ED8 /* ArrayRepFetchRequest.h in Headers */,
+				BACC7E2A1BD9636A00919ED8 /* FSPointer.h in Headers */,
+				BACC7E2B1BD9636A00919ED8 /* FSGenericPointer.h in Headers */,
+				BACC7E2C1BD9636A00919ED8 /* FSPointerPrivate.h in Headers */,
+				BACC7E2D1BD9636A00919ED8 /* FSGenericPointerPrivate.h in Headers */,
+				BACC7E2E1BD9636A00919ED8 /* FSObjectPointer.h in Headers */,
+				BACC7E2F1BD9636A00919ED8 /* FSObjectPointerPrivate.h in Headers */,
+				BACC7E301BD9636A00919ED8 /* FSManagedObjectContextInspector.h in Headers */,
+				BACC7E311BD9636A00919ED8 /* FSObjectBrowserNamedObjectWrapper.h in Headers */,
+				BACC7E321BD9636A00919ED8 /* FSInspectorUniquier.h in Headers */,
+				BACC7E331BD9636A00919ED8 /* FSPredicateTextView.h in Headers */,
+				BACC7E341BD9636A00919ED8 /* FSCoreDataSample.h in Headers */,
+				BACC7E351BD9636A00919ED8 /* FSNSManagedObjectContext.h in Headers */,
+				BACC7E361BD9636A00919ED8 /* FSObjectBrowserSearchField.h in Headers */,
+				BACC7E371BD9636A00919ED8 /* FSBlockCompilationResult.h in Headers */,
+				BACC7E381BD9636A00919ED8 /* FSReturnSignal.h in Headers */,
+				BACC7E391BD9636A00919ED8 /* FSConstantsDictionaryGenerator.h in Headers */,
+				BACC7E3A1BD9636A00919ED8 /* FSMethod.h in Headers */,
+				BACC7E3B1BD9636A00919ED8 /* FSCNClassDefinition.h in Headers */,
+				BACC7E3C1BD9636A00919ED8 /* FSCNBase.h in Headers */,
+				BACC7E3D1BD9636A00919ED8 /* FSCNIdentifier.h in Headers */,
+				BACC7E3E1BD9636A00919ED8 /* FSTestObjCClass1.h in Headers */,
+				BACC7E3F1BD9636A00919ED8 /* FSTestObjCClass2.h in Headers */,
+				BACC7E401BD9636A00919ED8 /* FSCNCategory.h in Headers */,
+				BACC7E411BD9636A00919ED8 /* FSCNMessage.h in Headers */,
+				BACC7E421BD9636A00919ED8 /* FSCNSuper.h in Headers */,
+				BACC7E431BD9636A00919ED8 /* FSCNUnaryMessage.h in Headers */,
+				BACC7E441BD9636A00919ED8 /* FSCNBinaryMessage.h in Headers */,
+				BACC7E451BD9636A00919ED8 /* FSCNKeywordMessage.h in Headers */,
+				BACC7E461BD9636A00919ED8 /* FSCNCascade.h in Headers */,
+				BACC7E471BD9636A00919ED8 /* FSCNStatementList.h in Headers */,
+				BACC7E481BD9636A00919ED8 /* FSCNPrecomputedObject.h in Headers */,
+				BACC7E491BD9636A00919ED8 /* FSCNArray.h in Headers */,
+				BACC7E4A1BD9636A00919ED8 /* FSCNBlock.h in Headers */,
+				BACC7E4B1BD9636A00919ED8 /* FSCNAssignment.h in Headers */,
+				BACC7E4C1BD9636A00919ED8 /* FSCNMethod.h in Headers */,
+				BACC7E4D1BD9636A00919ED8 /* FSCNReturn.h in Headers */,
+				BACC7E4E1BD9636A00919ED8 /* FSClassDefinition.h in Headers */,
+				BACC7E4F1BD9636A00919ED8 /* FSTranscript.h in Headers */,
+				BACC7E501BD9636A00919ED8 /* FSArray.h in Headers */,
+				BACC7E511BD9636A00919ED8 /* Array_fscript.h in Headers */,
+				BACC7E521BD9636A00919ED8 /* Block_fscript.h in Headers */,
+				BACC7E531BD9636A00919ED8 /* Number_fscript.h in Headers */,
+				BACC7E541BD9636A00919ED8 /* FSGlobalScope.h in Headers */,
+				BACC7E551BD9636A00919ED8 /* FSNSFileHandle.h in Headers */,
+				BACC7E561BD9636A00919ED8 /* FSAssociation.h in Headers */,
+				BACC7E571BD9636A00919ED8 /* FSCNDictionary.h in Headers */,
+				BACC7E581BD9636A00919ED8 /* FSObjectBrowserBottomBarTextDisplay.h in Headers */,
+				BACC7E591BD9636A00919ED8 /* FSNSAffineTransform.h in Headers */,
+				BACC7E5A1BD9636A00919ED8 /* FSDemoAssistant.h in Headers */,
+				BACC7E5B1BD9636A00919ED8 /* FSNewlyAllocatedObject.h in Headers */,
+				BACC7E5C1BD9636A00919ED8 /* FSWorksWhenModalWindow.h in Headers */,
+				BACC7E5D1BD9636A00919ED8 /* FSNSMutableDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC80111BD963E400919ED8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC80121BD963E400919ED8 /* BlockSignature.h in Headers */,
+				BACC80131BD963E400919ED8 /* FSAirplane.h in Headers */,
+				BACC80141BD963E400919ED8 /* ArrayPrivate.h in Headers */,
+				BACC80151BD963E400919ED8 /* ArrayRep.h in Headers */,
+				BACC80161BD963E400919ED8 /* ArrayRepDouble.h in Headers */,
+				BACC80171BD963E400919ED8 /* ArrayRepEmpty.h in Headers */,
+				BACC80181BD963E400919ED8 /* ArrayRepId.h in Headers */,
+				BACC80191BD963E400919ED8 /* FSCollectionInspector.h in Headers */,
+				BACC801A1BD963E400919ED8 /* FSObjectBrowser.h in Headers */,
+				BACC801B1BD963E400919ED8 /* FSObjectBrowserCell.h in Headers */,
+				BACC801C1BD963E400919ED8 /* FSBlock.h in Headers */,
+				BACC801D1BD963E400919ED8 /* BlockInspector.h in Headers */,
+				BACC801E1BD963E400919ED8 /* BlockPrivate.h in Headers */,
+				BACC801F1BD963E400919ED8 /* BlockRep.h in Headers */,
+				BACC80201BD963E400919ED8 /* BlockStackElem.h in Headers */,
+				BACC80211BD963E400919ED8 /* build_config.h in Headers */,
+				BACC80221BD963E400919ED8 /* CLIView.h in Headers */,
+				BACC80231BD963E400919ED8 /* FSCompilationResult.h in Headers */,
+				BACC80241BD963E400919ED8 /* CompiledCodeNode.h in Headers */,
+				BACC80251BD963E400919ED8 /* FSCompiler.h in Headers */,
+				BACC80261BD963E400919ED8 /* FSConstantsInitialization.h in Headers */,
+				BACC80271BD963E400919ED8 /* FSExecEngine.h in Headers */,
+				BACC80281BD963E400919ED8 /* FSExecutor.h in Headers */,
+				BACC80291BD963E400919ED8 /* FSFlight.h in Headers */,
+				BACC802A1BD963E400919ED8 /* FSArchiver.h in Headers */,
+				BACC802B1BD963E400919ED8 /* FSBoolean.h in Headers */,
+				BACC802C1BD963E400919ED8 /* FSBooleanPrivate.h in Headers */,
+				BACC802D1BD963E400919ED8 /* FScript.h in Headers */,
+				BACC802E1BD963E400919ED8 /* FScriptFunctions.h in Headers */,
+				BACC802F1BD963E400919ED8 /* FSInterpreter.h in Headers */,
+				BACC80301BD963E400919ED8 /* FSInterpreterResult.h in Headers */,
+				BACC80311BD963E400919ED8 /* FSInterpreterResultPrivate.h in Headers */,
+				BACC80321BD963E400919ED8 /* FSInterpreterView.h in Headers */,
+				BACC80331BD963E400919ED8 /* FSInterpreterViewIBHeader.h in Headers */,
+				BACC80341BD963E400919ED8 /* FSNSArray.h in Headers */,
+				BACC80351BD963E400919ED8 /* FSNSArrayPrivate.h in Headers */,
+				BACC80361BD963E400919ED8 /* FSNSDate.h in Headers */,
+				BACC80371BD963E400919ED8 /* FSNSDictionary.h in Headers */,
+				BACC80381BD963E400919ED8 /* FSNSMutableString.h in Headers */,
+				BACC80391BD963E400919ED8 /* FSNSNumber.h in Headers */,
+				BACC803A1BD963E400919ED8 /* FSNSObject.h in Headers */,
+				BACC803B1BD963E400919ED8 /* FSNSProxy.h in Headers */,
+				BACC803C1BD963E400919ED8 /* FSNSString.h in Headers */,
+				BACC803D1BD963E400919ED8 /* FSNSStringPrivate.h in Headers */,
+				BACC803E1BD963E400919ED8 /* FSPattern.h in Headers */,
+				BACC803F1BD963E400919ED8 /* FSUnarchiver.h in Headers */,
+				BACC80401BD963E400919ED8 /* FSVoid.h in Headers */,
+				BACC80411BD963E400919ED8 /* FSVoidPrivate.h in Headers */,
+				BACC80421BD963E400919ED8 /* FSGenericObjectInspector.h in Headers */,
+				BACC80431BD963E400919ED8 /* MessagePatternCodeNode.h in Headers */,
+				BACC80441BD963E400919ED8 /* FSMiscTools.h in Headers */,
+				BACC80451BD963E400919ED8 /* FSMsgContext.h in Headers */,
+				BACC80461BD963E400919ED8 /* FSNewlyAllocatedObjectHolder.h in Headers */,
+				BACC80471BD963E400919ED8 /* FSNumber.h in Headers */,
+				BACC80481BD963E400919ED8 /* NumberPrivate.h in Headers */,
+				BACC80491BD963E400919ED8 /* FSPilot.h in Headers */,
+				BACC804A1BD963E400919ED8 /* Pointer.h in Headers */,
+				BACC804B1BD963E400919ED8 /* FSReplacementForCoderForClass.h in Headers */,
+				BACC804C1BD963E400919ED8 /* ShellView.h in Headers */,
+				BACC804D1BD963E400919ED8 /* Space.h in Headers */,
+				BACC804E1BD963E400919ED8 /* FSCommandHistory.h in Headers */,
+				BACC804F1BD963E400919ED8 /* FSSystem.h in Headers */,
+				BACC80501BD963E400919ED8 /* KTestManager.h in Headers */,
+				BACC80511BD963E400919ED8 /* FSNSDistantObject.h in Headers */,
+				BACC80521BD963E400919ED8 /* DOTest.h in Headers */,
+				BACC80531BD963E400919ED8 /* FScriptTextView.h in Headers */,
+				BACC80541BD963E400919ED8 /* FSObjectBrowserArgumentPanel.h in Headers */,
+				BACC80551BD963E400919ED8 /* FSNSProtocolChecker.h in Headers */,
+				BACC80561BD963E400919ED8 /* FSObjectBrowserToolbar.h in Headers */,
+				BACC80571BD963E400919ED8 /* FSEvalCommand.h in Headers */,
+				BACC80581BD963E400919ED8 /* FSServicesProvider.h in Headers */,
+				BACC80591BD963E400919ED8 /* FSTask.h in Headers */,
+				BACC805A1BD963E400919ED8 /* FSObjectBrowserToolbarButton.h in Headers */,
+				BACC805B1BD963E400919ED8 /* FSObjectBrowserButtonCtxBlock.h in Headers */,
+				BACC805C1BD963E400919ED8 /* FSObjectBrowserButtonsInspector.h in Headers */,
+				BACC805D1BD963E400919ED8 /* FSObjectBrowserView.h in Headers */,
+				BACC805E1BD963E400919ED8 /* PointerPrivate.h in Headers */,
+				BACC805F1BD963E400919ED8 /* FSInterpreterPrivate.h in Headers */,
+				BACC80601BD963E400919ED8 /* FSObjectFormatter.h in Headers */,
+				BACC80611BD963E400919ED8 /* FSIdentifierFormatter.h in Headers */,
+				BACC80621BD963E400919ED8 /* FSSystemPrivate.h in Headers */,
+				BACC80631BD963E400919ED8 /* FSKeyedUnarchiver.h in Headers */,
+				BACC80641BD963E400919ED8 /* FSKeyedArchiver.h in Headers */,
+				BACC80651BD963E400919ED8 /* FSConstantListBuilder.h in Headers */,
+				BACC80661BD963E400919ED8 /* FSImageInspector.h in Headers */,
+				BACC80671BD963E400919ED8 /* FSNSImage.h in Headers */,
+				BACC80681BD963E400919ED8 /* FSObjectBrowserToolbarItem.h in Headers */,
+				BACC80691BD963E400919ED8 /* ArrayRepBoolean.h in Headers */,
+				BACC806A1BD963E400919ED8 /* FSNSObjectPrivate.h in Headers */,
+				BACC806B1BD963E400919ED8 /* FSArrayEnumerator.h in Headers */,
+				BACC806C1BD963E400919ED8 /* TestFS.h in Headers */,
+				BACC806D1BD963E400919ED8 /* FSNSMutableArray.h in Headers */,
+				BACC806E1BD963E400919ED8 /* FSNSValue.h in Headers */,
+				BACC806F1BD963E400919ED8 /* FSReplacementForCoderForNilInArray.h in Headers */,
+				BACC80701BD963E400919ED8 /* FSNamedNumber.h in Headers */,
+				BACC80711BD963E400919ED8 /* FSCollectionInspectorTableView.h in Headers */,
+				BACC80721BD963E400919ED8 /* FSNSSet.h in Headers */,
+				BACC80731BD963E400919ED8 /* FSAttributedStringInspector.h in Headers */,
+				BACC80741BD963E400919ED8 /* FSNSAttributedString.h in Headers */,
+				BACC80751BD963E400919ED8 /* FSInterpreterViewPrivate.h in Headers */,
+				BACC80761BD963E400919ED8 /* FScriptMenuItem.h in Headers */,
+				BACC80771BD963E400919ED8 /* FSNSFont.h in Headers */,
+				BACC80781BD963E400919ED8 /* FSObjectBrowserMatrix.h in Headers */,
+				BACC80791BD963E400919ED8 /* FSSymbolTable.h in Headers */,
+				BACC807A1BD963E400919ED8 /* FSObjectBrowserViewObjectInfo.h in Headers */,
+				BACC807B1BD963E400919ED8 /* FSCollectionInspectorView.h in Headers */,
+				BACC807C1BD963E400919ED8 /* ArrayRepFetchRequest.h in Headers */,
+				BACC807D1BD963E400919ED8 /* FSPointer.h in Headers */,
+				BACC807E1BD963E400919ED8 /* FSGenericPointer.h in Headers */,
+				BACC807F1BD963E400919ED8 /* FSPointerPrivate.h in Headers */,
+				BACC80801BD963E400919ED8 /* FSGenericPointerPrivate.h in Headers */,
+				BACC80811BD963E400919ED8 /* FSObjectPointer.h in Headers */,
+				BACC80821BD963E400919ED8 /* FSObjectPointerPrivate.h in Headers */,
+				BACC80831BD963E400919ED8 /* FSObjectBrowserNamedObjectWrapper.h in Headers */,
+				BACC80841BD963E400919ED8 /* FSInspectorUniquier.h in Headers */,
+				BACC80851BD963E400919ED8 /* FSPredicateTextView.h in Headers */,
+				BACC80861BD963E400919ED8 /* FSCoreDataSample.h in Headers */,
+				BACC80871BD963E400919ED8 /* FSManagedObjectContextInspector.h in Headers */,
+				BACC80881BD963E400919ED8 /* FSNSManagedObjectContext.h in Headers */,
+				BACC80891BD963E400919ED8 /* FSObjectBrowserSearchField.h in Headers */,
+				BACC808A1BD963E400919ED8 /* FSBlockCompilationResult.h in Headers */,
+				BACC808B1BD963E400919ED8 /* FSReturnSignal.h in Headers */,
+				BACC808C1BD963E400919ED8 /* FSMethod.h in Headers */,
+				BACC808D1BD963E400919ED8 /* FSCNClassDefinition.h in Headers */,
+				BACC808E1BD963E400919ED8 /* FSCNBase.h in Headers */,
+				BACC808F1BD963E400919ED8 /* FSCNIdentifier.h in Headers */,
+				BACC80901BD963E400919ED8 /* FSTestObjCClass1.h in Headers */,
+				BACC80911BD963E400919ED8 /* FSTestObjCClass2.h in Headers */,
+				BACC80921BD963E400919ED8 /* FSCNCategory.h in Headers */,
+				BACC80931BD963E400919ED8 /* FSCNMessage.h in Headers */,
+				BACC80941BD963E400919ED8 /* FSCNSuper.h in Headers */,
+				BACC80951BD963E400919ED8 /* FSCNUnaryMessage.h in Headers */,
+				BACC80961BD963E400919ED8 /* FSCNBinaryMessage.h in Headers */,
+				BACC80971BD963E400919ED8 /* FSCNKeywordMessage.h in Headers */,
+				BACC80981BD963E400919ED8 /* FSCNCascade.h in Headers */,
+				BACC80991BD963E400919ED8 /* FSCNStatementList.h in Headers */,
+				BACC809A1BD963E400919ED8 /* FSCNPrecomputedObject.h in Headers */,
+				BACC809B1BD963E400919ED8 /* FSCNArray.h in Headers */,
+				BACC809C1BD963E400919ED8 /* FSCNBlock.h in Headers */,
+				BACC809D1BD963E400919ED8 /* FSCNAssignment.h in Headers */,
+				BACC809E1BD963E400919ED8 /* FSCNMethod.h in Headers */,
+				BACC809F1BD963E400919ED8 /* FSCNReturn.h in Headers */,
+				BACC80A01BD963E400919ED8 /* FSClassDefinition.h in Headers */,
+				BACC80A11BD963E400919ED8 /* FSTranscript.h in Headers */,
+				BACC80A21BD963E400919ED8 /* FSArray.h in Headers */,
+				BACC80A31BD963E400919ED8 /* Array_fscript.h in Headers */,
+				BACC80A41BD963E400919ED8 /* Block_fscript.h in Headers */,
+				BACC80A51BD963E400919ED8 /* Number_fscript.h in Headers */,
+				BACC80A61BD963E400919ED8 /* FSGlobalScope.h in Headers */,
+				BACC80A71BD963E400919ED8 /* FSNSFileHandle.h in Headers */,
+				BACC80A81BD963E400919ED8 /* FSAssociation.h in Headers */,
+				BACC80A91BD963E400919ED8 /* FSCNDictionary.h in Headers */,
+				BACC80AA1BD963E400919ED8 /* FSObjectBrowserBottomBarTextDisplay.h in Headers */,
+				BACC80AB1BD963E400919ED8 /* FSNSAffineTransform.h in Headers */,
+				BACC80AC1BD963E400919ED8 /* FSNewlyAllocatedObject.h in Headers */,
+				BACC80AD1BD963E400919ED8 /* FSWorksWhenModalWindow.h in Headers */,
+				BACC80AE1BD963E400919ED8 /* FSNSMutableDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E29F5BD119FD93FD00AD90CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -6806,6 +8102,47 @@
 			productReference = BA2237B0189FA432002C5B6A /* FScript.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BACC7DB71BD9636A00919ED8 /* F-Script 10.11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACC7F7C1BD9636A00919ED8 /* Build configuration list for PBXNativeTarget "F-Script 10.11" */;
+			buildPhases = (
+				BACC7DBC1BD9636A00919ED8 /* Headers */,
+				BACC7E5E1BD9636A00919ED8 /* Resources */,
+				BACC7E7A1BD9636A00919ED8 /* Sources */,
+				BACC7F0A1BD9636A00919ED8 /* Frameworks */,
+				BACC7F7B1BD9636A00919ED8 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACC7DB81BD9636A00919ED8 /* PBXTargetDependency */,
+				BACC7DBA1BD9636A00919ED8 /* PBXTargetDependency */,
+			);
+			name = "F-Script 10.11";
+			productName = fs;
+			productReference = BACC7F7F1BD9636A00919ED8 /* F-Script 10.11.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BACC80101BD963E400919ED8 /* FScriptFramework 10.11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACC81531BD963E400919ED8 /* Build configuration list for PBXNativeTarget "FScriptFramework 10.11" */;
+			buildPhases = (
+				BACC80111BD963E400919ED8 /* Headers */,
+				BACC80AF1BD963E400919ED8 /* Resources */,
+				BACC80C61BD963E400919ED8 /* Sources */,
+				BACC814F1BD963E400919ED8 /* Frameworks */,
+				BACC81521BD963E400919ED8 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FScriptFramework 10.11";
+			productInstallPath = "";
+			productName = FScript;
+			productReference = BACC81561BD963E400919ED8 /* FScriptFramework 10.11.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E29F5BCC19FD93FD00AD90CF /* F-Script 10.10 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E29F5D8719FD93FD00AD90CF /* Build configuration list for PBXNativeTarget "F-Script 10.10" */;
@@ -6875,6 +8212,8 @@
 				BA22366A189FA431002C5B6A /* FScriptFramework 10.9 */,
 				E29F5BCC19FD93FD00AD90CF /* F-Script 10.10 */,
 				E29F5DA619FD94FC00AD90CF /* FScriptFramework 10.10 */,
+				BACC7DB71BD9636A00919ED8 /* F-Script 10.11 */,
+				BACC80101BD963E400919ED8 /* FScriptFramework 10.11 */,
 				8F6DA6D8055FC6C80050409A /* FSTest1 */,
 				8F6DA5DE055FC6980050409A /* FSTest2 */,
 				8F6392D00BDB8521005C8D94 /* FScriptIBPlugin */,
@@ -7144,6 +8483,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BACC7E5E1BD9636A00919ED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC7E5F1BD9636A00919ED8 /* FSTest2.app in Resources */,
+				BACC7E601BD9636A00919ED8 /* FSTest1.app in Resources */,
+				BACC7E611BD9636A00919ED8 /* FSCollectionInspector.nib in Resources */,
+				BACC7E621BD9636A00919ED8 /* blockInspector.nib in Resources */,
+				BACC7E631BD9636A00919ED8 /* FlightTutorial.txt in Resources */,
+				BACC7E641BD9636A00919ED8 /* genObjInspector.nib in Resources */,
+				BACC7E651BD9636A00919ED8 /* KTest.txt in Resources */,
+				BACC7E661BD9636A00919ED8 /* license.txt in Resources */,
+				BACC7E671BD9636A00919ED8 /* fs.icns in Resources */,
+				BACC7E681BD9636A00919ED8 /* FScriptAppPreference.nib in Resources */,
+				BACC7E691BD9636A00919ED8 /* fs.nib in Resources */,
+				BACC7E6A1BD9636A00919ED8 /* fs.scriptSuite in Resources */,
+				BACC7E6B1BD9636A00919ED8 /* fs.scriptTerminology in Resources */,
+				BACC7E6C1BD9636A00919ED8 /* FSObjectBrowserButtonsInspector.nib in Resources */,
+				BACC7E6D1BD9636A00919ED8 /* FSImageInspector.nib in Resources */,
+				BACC7E6E1BD9636A00919ED8 /* ArrayTableView.nib in Resources */,
+				BACC7E6F1BD9636A00919ED8 /* constantsDictionary in Resources */,
+				BACC7E701BD9636A00919ED8 /* FSAttributedStringInspector.nib in Resources */,
+				BACC7E711BD9636A00919ED8 /* FSConsole.nib in Resources */,
+				BACC7E721BD9636A00919ED8 /* FScriptPreferences.nib in Resources */,
+				BACC7E731BD9636A00919ED8 /* run.tiff in Resources */,
+				BACC7E741BD9636A00919ED8 /* build.tiff in Resources */,
+				BACC7E751BD9636A00919ED8 /* FSCollectionInspectorView.nib in Resources */,
+				BACC7E761BD9636A00919ED8 /* FSManagedObjectContextInspector.nib in Resources */,
+				BACC7E771BD9636A00919ED8 /* FSMovieInspector.nib in Resources */,
+				BACC7E781BD9636A00919ED8 /* FSTestClasses.txt in Resources */,
+				BACC7E791BD9636A00919ED8 /* DemoAssistant.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC80AF1BD963E400919ED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC80B01BD963E400919ED8 /* FSCollectionInspector.nib in Resources */,
+				BACC80B11BD963E400919ED8 /* blockInspector.nib in Resources */,
+				BACC80B21BD963E400919ED8 /* FlightTutorial.txt in Resources */,
+				BACC80B31BD963E400919ED8 /* genObjInspector.nib in Resources */,
+				BACC80B41BD963E400919ED8 /* KTest.txt in Resources */,
+				BACC80B51BD963E400919ED8 /* license.txt in Resources */,
+				BACC80B61BD963E400919ED8 /* fs.scriptSuite in Resources */,
+				BACC80B71BD963E400919ED8 /* fs.scriptTerminology in Resources */,
+				BACC80B81BD963E400919ED8 /* FSObjectBrowserButtonsInspector.nib in Resources */,
+				BACC80B91BD963E400919ED8 /* FSImageInspector.nib in Resources */,
+				BACC80BA1BD963E400919ED8 /* ReadMe.txt in Resources */,
+				BACC80BB1BD963E400919ED8 /* ArrayTableView.nib in Resources */,
+				BACC80BC1BD963E400919ED8 /* constantsDictionary in Resources */,
+				BACC80BD1BD963E400919ED8 /* FSAttributedStringInspector.nib in Resources */,
+				BACC80BE1BD963E400919ED8 /* FSConsole.nib in Resources */,
+				BACC80BF1BD963E400919ED8 /* FScriptPreferences.nib in Resources */,
+				BACC80C01BD963E400919ED8 /* run.tiff in Resources */,
+				BACC80C11BD963E400919ED8 /* build.tiff in Resources */,
+				BACC80C21BD963E400919ED8 /* FSCollectionInspectorView.nib in Resources */,
+				BACC80C31BD963E400919ED8 /* FSManagedObjectContextInspector.nib in Resources */,
+				BACC80C41BD963E400919ED8 /* FSMovieInspector.nib in Resources */,
+				BACC80C51BD963E400919ED8 /* FSTestClasses.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E29F5C7319FD93FD00AD90CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7260,6 +8662,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA2237AC189FA432002C5B6A /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC7F7B1BD9636A00919ED8 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC81521BD963E400919ED8 /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -8462,6 +9878,299 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BACC7E7A1BD9636A00919ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC7E7B1BD9636A00919ED8 /* FSAirplane.m in Sources */,
+				BACC7E7C1BD9636A00919ED8 /* ArrayRepDouble.m in Sources */,
+				BACC7E7D1BD9636A00919ED8 /* ArrayRepEmpty.m in Sources */,
+				BACC7E7E1BD9636A00919ED8 /* ArrayRepId.m in Sources */,
+				BACC7E7F1BD9636A00919ED8 /* FSCollectionInspector.m in Sources */,
+				BACC7E801BD9636A00919ED8 /* FSObjectBrowser.m in Sources */,
+				BACC7E811BD9636A00919ED8 /* FSObjectBrowserArgumentPanel.m in Sources */,
+				BACC7E821BD9636A00919ED8 /* FSObjectBrowserCell.m in Sources */,
+				BACC7E831BD9636A00919ED8 /* FSObjectBrowserView.m in Sources */,
+				BACC7E841BD9636A00919ED8 /* FSBlock.m in Sources */,
+				BACC7E851BD9636A00919ED8 /* BlockInspector.m in Sources */,
+				BACC7E861BD9636A00919ED8 /* BlockRep.m in Sources */,
+				BACC7E871BD9636A00919ED8 /* BlockStackElem.m in Sources */,
+				BACC7E881BD9636A00919ED8 /* CLIView.m in Sources */,
+				BACC7E891BD9636A00919ED8 /* FSCompilationResult.m in Sources */,
+				BACC7E8A1BD9636A00919ED8 /* CompiledCodeNode.m in Sources */,
+				BACC7E8B1BD9636A00919ED8 /* FSCompiler.m in Sources */,
+				BACC7E8C1BD9636A00919ED8 /* FSConstantsInitialization.m in Sources */,
+				BACC7E8D1BD9636A00919ED8 /* FSExecEngine.m in Sources */,
+				BACC7E8E1BD9636A00919ED8 /* FSExecutor.m in Sources */,
+				BACC7E8F1BD9636A00919ED8 /* FSFlight.m in Sources */,
+				BACC7E901BD9636A00919ED8 /* FSArchiver.m in Sources */,
+				BACC7E911BD9636A00919ED8 /* FSBoolean.m in Sources */,
+				BACC7E921BD9636A00919ED8 /* FScriptFunctions.m in Sources */,
+				BACC7E931BD9636A00919ED8 /* FScriptTextView.m in Sources */,
+				BACC7E941BD9636A00919ED8 /* FSInterpreter.m in Sources */,
+				BACC7E951BD9636A00919ED8 /* FSInterpreterResult.m in Sources */,
+				BACC7E961BD9636A00919ED8 /* FSInterpreterView.m in Sources */,
+				BACC7E971BD9636A00919ED8 /* FSNSArray.m in Sources */,
+				BACC7E981BD9636A00919ED8 /* FSNSDate.m in Sources */,
+				BACC7E991BD9636A00919ED8 /* FSNSDictionary.m in Sources */,
+				BACC7E9A1BD9636A00919ED8 /* FSNSDistantObject.m in Sources */,
+				BACC7E9B1BD9636A00919ED8 /* FSNSMutableString.m in Sources */,
+				BACC7E9C1BD9636A00919ED8 /* FSNSNumber.m in Sources */,
+				BACC7E9D1BD9636A00919ED8 /* FSNSObject.m in Sources */,
+				BACC7E9E1BD9636A00919ED8 /* FSNSProxy.m in Sources */,
+				BACC7E9F1BD9636A00919ED8 /* FSPattern.m in Sources */,
+				BACC7EA01BD9636A00919ED8 /* FSUnarchiver.m in Sources */,
+				BACC7EA11BD9636A00919ED8 /* FSVoid.m in Sources */,
+				BACC7EA21BD9636A00919ED8 /* FSGenericObjectInspector.m in Sources */,
+				BACC7EA31BD9636A00919ED8 /* KTestManager.m in Sources */,
+				BACC7EA41BD9636A00919ED8 /* FSMiscTools.m in Sources */,
+				BACC7EA51BD9636A00919ED8 /* FSMsgContext.m in Sources */,
+				BACC7EA61BD9636A00919ED8 /* FSNewlyAllocatedObjectHolder.m in Sources */,
+				BACC7EA71BD9636A00919ED8 /* FSNumber.m in Sources */,
+				BACC7EA81BD9636A00919ED8 /* FSPilot.m in Sources */,
+				BACC7EA91BD9636A00919ED8 /* MessagePatternCodeNode.m in Sources */,
+				BACC7EAA1BD9636A00919ED8 /* FSReplacementForCoderForClass.m in Sources */,
+				BACC7EAB1BD9636A00919ED8 /* ShellView.m in Sources */,
+				BACC7EAC1BD9636A00919ED8 /* Space.m in Sources */,
+				BACC7EAD1BD9636A00919ED8 /* FSCommandHistory.m in Sources */,
+				BACC7EAE1BD9636A00919ED8 /* FSSystem.m in Sources */,
+				BACC7EAF1BD9636A00919ED8 /* DOTest.m in Sources */,
+				BACC7EB01BD9636A00919ED8 /* FSNSProtocolChecker.m in Sources */,
+				BACC7EB11BD9636A00919ED8 /* fs_main.m in Sources */,
+				BACC7EB21BD9636A00919ED8 /* FScriptAppController.m in Sources */,
+				BACC7EB31BD9636A00919ED8 /* FSObjectBrowserToolbar.m in Sources */,
+				BACC7EB41BD9636A00919ED8 /* FSEvalCommand.m in Sources */,
+				BACC7EB51BD9636A00919ED8 /* FSServicesProvider.m in Sources */,
+				BACC7EB61BD9636A00919ED8 /* FSTask.m in Sources */,
+				BACC7EB71BD9636A00919ED8 /* FSObjectBrowserToolbarButton.m in Sources */,
+				BACC7EB81BD9636A00919ED8 /* FSObjectBrowserButtonsInspector.m in Sources */,
+				BACC7EB91BD9636A00919ED8 /* FSObjectBrowserButtonCtxBlock.m in Sources */,
+				BACC7EBA1BD9636A00919ED8 /* DOCustom.m in Sources */,
+				BACC7EBB1BD9636A00919ED8 /* Pointer.m in Sources */,
+				BACC7EBC1BD9636A00919ED8 /* FSIdentifierFormatter.m in Sources */,
+				BACC7EBD1BD9636A00919ED8 /* FSObjectFormatter.m in Sources */,
+				BACC7EBE1BD9636A00919ED8 /* FSKeyedUnarchiver.m in Sources */,
+				BACC7EBF1BD9636A00919ED8 /* FSKeyedArchiver.m in Sources */,
+				BACC7EC01BD9636A00919ED8 /* FSConstantListBuilder.m in Sources */,
+				BACC7EC11BD9636A00919ED8 /* FSImageInspector.m in Sources */,
+				BACC7EC21BD9636A00919ED8 /* FSNSImage.m in Sources */,
+				BACC7EC31BD9636A00919ED8 /* FSObjectBrowserToolbarItem.m in Sources */,
+				BACC7EC41BD9636A00919ED8 /* FSArrayEnumerator.m in Sources */,
+				BACC7EC51BD9636A00919ED8 /* FSNSMutableArray.m in Sources */,
+				BACC7EC61BD9636A00919ED8 /* ArrayRepBoolean.m in Sources */,
+				BACC7EC71BD9636A00919ED8 /* FSNSValue.m in Sources */,
+				BACC7EC81BD9636A00919ED8 /* FSReplacementForCoderForNilInArray.m in Sources */,
+				BACC7EC91BD9636A00919ED8 /* FSNamedNumber.m in Sources */,
+				BACC7ECA1BD9636A00919ED8 /* FSCollectionInspectorTableView.m in Sources */,
+				BACC7ECB1BD9636A00919ED8 /* FSNSSet.m in Sources */,
+				BACC7ECC1BD9636A00919ED8 /* FSAttributedStringInspector.m in Sources */,
+				BACC7ECD1BD9636A00919ED8 /* FSNSAttributedString.m in Sources */,
+				BACC7ECE1BD9636A00919ED8 /* FScriptMenuItem.m in Sources */,
+				BACC7ECF1BD9636A00919ED8 /* FSNSFont.m in Sources */,
+				BACC7ED01BD9636A00919ED8 /* FSObjectBrowserMatrix.m in Sources */,
+				BACC7ED11BD9636A00919ED8 /* FSNSString.m in Sources */,
+				BACC7ED21BD9636A00919ED8 /* FSSymbolTable.m in Sources */,
+				BACC7ED31BD9636A00919ED8 /* TestFS.m in Sources */,
+				BACC7ED41BD9636A00919ED8 /* FSObjectBrowserViewObjectInfo.m in Sources */,
+				BACC7ED51BD9636A00919ED8 /* FSCollectionInspectorView.m in Sources */,
+				BACC7ED61BD9636A00919ED8 /* ArrayRepFetchRequest.m in Sources */,
+				BACC7ED71BD9636A00919ED8 /* FSPointer.m in Sources */,
+				BACC7ED81BD9636A00919ED8 /* FSGenericPointer.m in Sources */,
+				BACC7ED91BD9636A00919ED8 /* FSObjectPointer.m in Sources */,
+				BACC7EDA1BD9636A00919ED8 /* FSManagedObjectContextInspector.m in Sources */,
+				BACC7EDB1BD9636A00919ED8 /* FSObjectBrowserNamedObjectWrapper.m in Sources */,
+				BACC7EDC1BD9636A00919ED8 /* FSInspectorUniquier.m in Sources */,
+				BACC7EDD1BD9636A00919ED8 /* FSPredicateTextView.m in Sources */,
+				BACC7EDE1BD9636A00919ED8 /* FSCoreDataSample.m in Sources */,
+				BACC7EDF1BD9636A00919ED8 /* FSNSManagedObjectContext.m in Sources */,
+				BACC7EE01BD9636A00919ED8 /* FSObjectBrowserSearchField.m in Sources */,
+				BACC7EE11BD9636A00919ED8 /* FSBlockCompilationResult.m in Sources */,
+				BACC7EE21BD9636A00919ED8 /* FSReturnSignal.m in Sources */,
+				BACC7EE31BD9636A00919ED8 /* FSConstantsDictionaryGenerator.m in Sources */,
+				BACC7EE41BD9636A00919ED8 /* FSQTMovie.m in Sources */,
+				BACC7EE51BD9636A00919ED8 /* FSMovieInspector.m in Sources */,
+				BACC7EE61BD9636A00919ED8 /* FSMethod.m in Sources */,
+				BACC7EE71BD9636A00919ED8 /* FSCNClassDefinition.m in Sources */,
+				BACC7EE81BD9636A00919ED8 /* FSCNBase.m in Sources */,
+				BACC7EE91BD9636A00919ED8 /* FSCNIdentifier.m in Sources */,
+				BACC7EEA1BD9636A00919ED8 /* FSTestObjCClass1.m in Sources */,
+				BACC7EEB1BD9636A00919ED8 /* FSTestObjCClass2.m in Sources */,
+				BACC7EEC1BD9636A00919ED8 /* FSCNCategory.m in Sources */,
+				BACC7EED1BD9636A00919ED8 /* FSCNMessage.m in Sources */,
+				BACC7EEE1BD9636A00919ED8 /* FSCNSuper.m in Sources */,
+				BACC7EEF1BD9636A00919ED8 /* FSCNUnaryMessage.m in Sources */,
+				BACC7EF01BD9636A00919ED8 /* FSCNBinaryMessage.m in Sources */,
+				BACC7EF11BD9636A00919ED8 /* FSCNKeywordMessage.m in Sources */,
+				BACC7EF21BD9636A00919ED8 /* FSCNCascade.m in Sources */,
+				BACC7EF31BD9636A00919ED8 /* FSCNStatementList.m in Sources */,
+				BACC7EF41BD9636A00919ED8 /* FSCNPrecomputedObject.m in Sources */,
+				BACC7EF51BD9636A00919ED8 /* FSCNArray.m in Sources */,
+				BACC7EF61BD9636A00919ED8 /* FSCNBlock.m in Sources */,
+				BACC7EF71BD9636A00919ED8 /* FSCNAssignment.m in Sources */,
+				BACC7EF81BD9636A00919ED8 /* FSCNMethod.m in Sources */,
+				BACC7EF91BD9636A00919ED8 /* FSCNReturn.m in Sources */,
+				BACC7EFA1BD9636A00919ED8 /* FSClassDefinition.m in Sources */,
+				BACC7EFB1BD9636A00919ED8 /* FSTranscript.m in Sources */,
+				BACC7EFC1BD9636A00919ED8 /* FSArray.m in Sources */,
+				BACC7EFD1BD9636A00919ED8 /* Array.m in Sources */,
+				BACC7EFE1BD9636A00919ED8 /* Block.m in Sources */,
+				BACC7EFF1BD9636A00919ED8 /* Number.m in Sources */,
+				BACC7F001BD9636A00919ED8 /* FSGlobalScope.m in Sources */,
+				BACC7F011BD9636A00919ED8 /* FSNSFileHandle.m in Sources */,
+				BACC7F021BD9636A00919ED8 /* FSAssociation.m in Sources */,
+				BACC7F031BD9636A00919ED8 /* FSCNDictionary.m in Sources */,
+				BACC7F041BD9636A00919ED8 /* FSObjectBrowserBottomBarTextDisplay.m in Sources */,
+				BACC7F051BD9636A00919ED8 /* FSNSAffineTransform.m in Sources */,
+				BACC7F061BD9636A00919ED8 /* FSDemoAssistant.m in Sources */,
+				BACC7F071BD9636A00919ED8 /* FSNewlyAllocatedObject.m in Sources */,
+				BACC7F081BD9636A00919ED8 /* FSWorksWhenModalWindow.m in Sources */,
+				BACC7F091BD9636A00919ED8 /* FSNSMutableDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACC80C61BD963E400919ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACC80C71BD963E400919ED8 /* FSAirplane.m in Sources */,
+				BACC80C81BD963E400919ED8 /* ArrayRepDouble.m in Sources */,
+				BACC80C91BD963E400919ED8 /* ArrayRepEmpty.m in Sources */,
+				BACC80CA1BD963E400919ED8 /* ArrayRepId.m in Sources */,
+				BACC80CB1BD963E400919ED8 /* FSCollectionInspector.m in Sources */,
+				BACC80CC1BD963E400919ED8 /* FSObjectBrowser.m in Sources */,
+				BACC80CD1BD963E400919ED8 /* FSObjectBrowserCell.m in Sources */,
+				BACC80CE1BD963E400919ED8 /* FSBlock.m in Sources */,
+				BACC80CF1BD963E400919ED8 /* BlockInspector.m in Sources */,
+				BACC80D01BD963E400919ED8 /* BlockRep.m in Sources */,
+				BACC80D11BD963E400919ED8 /* BlockStackElem.m in Sources */,
+				BACC80D21BD963E400919ED8 /* CLIView.m in Sources */,
+				BACC80D31BD963E400919ED8 /* FSCompilationResult.m in Sources */,
+				BACC80D41BD963E400919ED8 /* CompiledCodeNode.m in Sources */,
+				BACC80D51BD963E400919ED8 /* FSCompiler.m in Sources */,
+				BACC80D61BD963E400919ED8 /* FSConstantsInitialization.m in Sources */,
+				BACC80D71BD963E400919ED8 /* FSExecEngine.m in Sources */,
+				BACC80D81BD963E400919ED8 /* FSExecutor.m in Sources */,
+				BACC80D91BD963E400919ED8 /* FSFlight.m in Sources */,
+				BACC80DA1BD963E400919ED8 /* FSArchiver.m in Sources */,
+				BACC80DB1BD963E400919ED8 /* FSBoolean.m in Sources */,
+				BACC80DC1BD963E400919ED8 /* FScriptFunctions.m in Sources */,
+				BACC80DD1BD963E400919ED8 /* FSInterpreter.m in Sources */,
+				BACC80DE1BD963E400919ED8 /* FSInterpreterResult.m in Sources */,
+				BACC80DF1BD963E400919ED8 /* FSInterpreterView.m in Sources */,
+				BACC80E01BD963E400919ED8 /* FSNSArray.m in Sources */,
+				BACC80E11BD963E400919ED8 /* FSNSDate.m in Sources */,
+				BACC80E21BD963E400919ED8 /* FSNSDictionary.m in Sources */,
+				BACC80E31BD963E400919ED8 /* FSNSMutableString.m in Sources */,
+				BACC80E41BD963E400919ED8 /* FSNSNumber.m in Sources */,
+				BACC80E51BD963E400919ED8 /* FSNSObject.m in Sources */,
+				BACC80E61BD963E400919ED8 /* FSNSProxy.m in Sources */,
+				BACC80E71BD963E400919ED8 /* FSNSString.m in Sources */,
+				BACC80E81BD963E400919ED8 /* FSPattern.m in Sources */,
+				BACC80E91BD963E400919ED8 /* FSUnarchiver.m in Sources */,
+				BACC80EA1BD963E400919ED8 /* FSVoid.m in Sources */,
+				BACC80EB1BD963E400919ED8 /* FSGenericObjectInspector.m in Sources */,
+				BACC80EC1BD963E400919ED8 /* MessagePatternCodeNode.m in Sources */,
+				BACC80ED1BD963E400919ED8 /* FSMiscTools.m in Sources */,
+				BACC80EE1BD963E400919ED8 /* FSMsgContext.m in Sources */,
+				BACC80EF1BD963E400919ED8 /* FSNewlyAllocatedObjectHolder.m in Sources */,
+				BACC80F01BD963E400919ED8 /* FSNumber.m in Sources */,
+				BACC80F11BD963E400919ED8 /* FSPilot.m in Sources */,
+				BACC80F21BD963E400919ED8 /* FSReplacementForCoderForClass.m in Sources */,
+				BACC80F31BD963E400919ED8 /* ShellView.m in Sources */,
+				BACC80F41BD963E400919ED8 /* Space.m in Sources */,
+				BACC80F51BD963E400919ED8 /* FSCommandHistory.m in Sources */,
+				BACC80F61BD963E400919ED8 /* FSSystem.m in Sources */,
+				BACC80F71BD963E400919ED8 /* KTestManager.m in Sources */,
+				BACC80F81BD963E400919ED8 /* FSNSDistantObject.m in Sources */,
+				BACC80F91BD963E400919ED8 /* DOTest.m in Sources */,
+				BACC80FA1BD963E400919ED8 /* FScriptTextView.m in Sources */,
+				BACC80FB1BD963E400919ED8 /* FSObjectBrowserArgumentPanel.m in Sources */,
+				BACC80FC1BD963E400919ED8 /* FSNSProtocolChecker.m in Sources */,
+				BACC80FD1BD963E400919ED8 /* FSObjectBrowserToolbar.m in Sources */,
+				BACC80FE1BD963E400919ED8 /* FSEvalCommand.m in Sources */,
+				BACC80FF1BD963E400919ED8 /* FSServicesProvider.m in Sources */,
+				BACC81001BD963E400919ED8 /* FSTask.m in Sources */,
+				BACC81011BD963E400919ED8 /* FSObjectBrowserToolbarButton.m in Sources */,
+				BACC81021BD963E400919ED8 /* FSObjectBrowserButtonCtxBlock.m in Sources */,
+				BACC81031BD963E400919ED8 /* FSObjectBrowserButtonsInspector.m in Sources */,
+				BACC81041BD963E400919ED8 /* FSObjectBrowserView.m in Sources */,
+				BACC81051BD963E400919ED8 /* Pointer.m in Sources */,
+				BACC81061BD963E400919ED8 /* FSObjectFormatter.m in Sources */,
+				BACC81071BD963E400919ED8 /* FSIdentifierFormatter.m in Sources */,
+				BACC81081BD963E400919ED8 /* FSKeyedUnarchiver.m in Sources */,
+				BACC81091BD963E400919ED8 /* FSKeyedArchiver.m in Sources */,
+				BACC810A1BD963E400919ED8 /* FSConstantListBuilder.m in Sources */,
+				BACC810B1BD963E400919ED8 /* FSImageInspector.m in Sources */,
+				BACC810C1BD963E400919ED8 /* FSNSImage.m in Sources */,
+				BACC810D1BD963E400919ED8 /* FSObjectBrowserToolbarItem.m in Sources */,
+				BACC810E1BD963E400919ED8 /* ArrayRepBoolean.m in Sources */,
+				BACC810F1BD963E400919ED8 /* FSArrayEnumerator.m in Sources */,
+				BACC81101BD963E400919ED8 /* FSNSMutableArray.m in Sources */,
+				BACC81111BD963E400919ED8 /* FSNSValue.m in Sources */,
+				BACC81121BD963E400919ED8 /* FSReplacementForCoderForNilInArray.m in Sources */,
+				BACC81131BD963E400919ED8 /* FSNamedNumber.m in Sources */,
+				BACC81141BD963E400919ED8 /* FSCollectionInspectorTableView.m in Sources */,
+				BACC81151BD963E400919ED8 /* FSNSSet.m in Sources */,
+				BACC81161BD963E400919ED8 /* FSAttributedStringInspector.m in Sources */,
+				BACC81171BD963E400919ED8 /* FSNSAttributedString.m in Sources */,
+				BACC81181BD963E400919ED8 /* FScriptMenuItem.m in Sources */,
+				BACC81191BD963E400919ED8 /* FSNSFont.m in Sources */,
+				BACC811A1BD963E400919ED8 /* FSObjectBrowserMatrix.m in Sources */,
+				BACC811B1BD963E400919ED8 /* FSSymbolTable.m in Sources */,
+				BACC811C1BD963E400919ED8 /* FSObjectBrowserViewObjectInfo.m in Sources */,
+				BACC811D1BD963E400919ED8 /* FSCollectionInspectorView.m in Sources */,
+				BACC811E1BD963E400919ED8 /* ArrayRepFetchRequest.m in Sources */,
+				BACC811F1BD963E400919ED8 /* FSPointer.m in Sources */,
+				BACC81201BD963E400919ED8 /* FSGenericPointer.m in Sources */,
+				BACC81211BD963E400919ED8 /* FSObjectPointer.m in Sources */,
+				BACC81221BD963E400919ED8 /* FSObjectBrowserNamedObjectWrapper.m in Sources */,
+				BACC81231BD963E400919ED8 /* FSInspectorUniquier.m in Sources */,
+				BACC81241BD963E400919ED8 /* FSPredicateTextView.m in Sources */,
+				BACC81251BD963E400919ED8 /* FSCoreDataSample.m in Sources */,
+				BACC81261BD963E400919ED8 /* FSManagedObjectContextInspector.m in Sources */,
+				BACC81271BD963E400919ED8 /* FSNSManagedObjectContext.m in Sources */,
+				BACC81281BD963E400919ED8 /* FSObjectBrowserSearchField.m in Sources */,
+				BACC81291BD963E400919ED8 /* FSBlockCompilationResult.m in Sources */,
+				BACC812A1BD963E400919ED8 /* FSReturnSignal.m in Sources */,
+				BACC812B1BD963E400919ED8 /* FSMovieInspector.m in Sources */,
+				BACC812C1BD963E400919ED8 /* FSMethod.m in Sources */,
+				BACC812D1BD963E400919ED8 /* FSCNClassDefinition.m in Sources */,
+				BACC812E1BD963E400919ED8 /* FSCNBase.m in Sources */,
+				BACC812F1BD963E400919ED8 /* FSCNIdentifier.m in Sources */,
+				BACC81301BD963E400919ED8 /* FSTestObjCClass1.m in Sources */,
+				BACC81311BD963E400919ED8 /* FSTestObjCClass2.m in Sources */,
+				BACC81321BD963E400919ED8 /* FSCNCategory.m in Sources */,
+				BACC81331BD963E400919ED8 /* FSCNMessage.m in Sources */,
+				BACC81341BD963E400919ED8 /* FSCNSuper.m in Sources */,
+				BACC81351BD963E400919ED8 /* FSCNUnaryMessage.m in Sources */,
+				BACC81361BD963E400919ED8 /* FSCNBinaryMessage.m in Sources */,
+				BACC81371BD963E400919ED8 /* FSCNKeywordMessage.m in Sources */,
+				BACC81381BD963E400919ED8 /* FSCNCascade.m in Sources */,
+				BACC81391BD963E400919ED8 /* FSCNStatementList.m in Sources */,
+				BACC813A1BD963E400919ED8 /* FSCNPrecomputedObject.m in Sources */,
+				BACC813B1BD963E400919ED8 /* FSCNArray.m in Sources */,
+				BACC813C1BD963E400919ED8 /* FSCNBlock.m in Sources */,
+				BACC813D1BD963E400919ED8 /* FSCNAssignment.m in Sources */,
+				BACC813E1BD963E400919ED8 /* FSCNMethod.m in Sources */,
+				BACC813F1BD963E400919ED8 /* FSCNReturn.m in Sources */,
+				BACC81401BD963E400919ED8 /* FSClassDefinition.m in Sources */,
+				BACC81411BD963E400919ED8 /* FSTranscript.m in Sources */,
+				BACC81421BD963E400919ED8 /* FSArray.m in Sources */,
+				BACC81431BD963E400919ED8 /* Array.m in Sources */,
+				BACC81441BD963E400919ED8 /* Block.m in Sources */,
+				BACC81451BD963E400919ED8 /* Number.m in Sources */,
+				BACC81461BD963E400919ED8 /* FSGlobalScope.m in Sources */,
+				BACC81471BD963E400919ED8 /* FSNSFileHandle.m in Sources */,
+				BACC81481BD963E400919ED8 /* FSAssociation.m in Sources */,
+				BACC81491BD963E400919ED8 /* FSCNDictionary.m in Sources */,
+				BACC814A1BD963E400919ED8 /* FSObjectBrowserBottomBarTextDisplay.m in Sources */,
+				BACC814B1BD963E400919ED8 /* FSNSAffineTransform.m in Sources */,
+				BACC814C1BD963E400919ED8 /* FSNewlyAllocatedObject.m in Sources */,
+				BACC814D1BD963E400919ED8 /* FSWorksWhenModalWindow.m in Sources */,
+				BACC814E1BD963E400919ED8 /* FSNSMutableDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E29F5C8F19FD93FD00AD90CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -8792,6 +10501,16 @@
 			isa = PBXTargetDependency;
 			target = 8F6DA5DE055FC6980050409A /* FSTest2 */;
 			targetProxy = BA223366189FA412002C5B6A /* PBXContainerItemProxy */;
+		};
+		BACC7DB81BD9636A00919ED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F6DA6D8055FC6C80050409A /* FSTest1 */;
+			targetProxy = BACC7DB91BD9636A00919ED8 /* PBXContainerItemProxy */;
+		};
+		BACC7DBA1BD9636A00919ED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F6DA5DE055FC6980050409A /* FSTest2 */;
+			targetProxy = BACC7DBB1BD9636A00919ED8 /* PBXContainerItemProxy */;
 		};
 		E29F5BCD19FD93FD00AD90CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -9417,6 +11136,133 @@
 			};
 			name = Release;
 		};
+		BACC7F7D1BD9636A00919ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTO_SHADOW = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info-FScript.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-lffi";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		BACC7F7E1BD9636A00919ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(DEVELOPER_FRAMEWORKS_DIR)\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info-FScript.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-lffi";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BACC81541BD963E400919ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info-FScriptFramework.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-lffi",
+					"-weak_framework",
+					Cocoa,
+				);
+				OTHER_LIBTOOL_FLAGS = "$(value) ";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		BACC81551BD963E400919ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Info-FScriptFramework.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-lffi",
+					"-weak_framework",
+					Cocoa,
+				);
+				OTHER_LIBTOOL_FLAGS = "$(value) ";
+				OTHER_REZFLAGS = "";
+				PRINCIPAL_CLASS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		E29F5D8819FD93FD00AD90CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9633,6 +11479,24 @@
 			buildConfigurations = (
 				BA2237AE189FA432002C5B6A /* Debug */,
 				BA2237AF189FA432002C5B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BACC7F7C1BD9636A00919ED8 /* Build configuration list for PBXNativeTarget "F-Script 10.11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC7F7D1BD9636A00919ED8 /* Debug */,
+				BACC7F7E1BD9636A00919ED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BACC81531BD963E400919ED8 /* Build configuration list for PBXNativeTarget "FScriptFramework 10.11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACC81541BD963E400919ED8 /* Debug */,
+				BACC81551BD963E400919ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
