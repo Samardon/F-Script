@@ -2,6 +2,7 @@
 /*   This software is open source. See the license.  */  
 
 #import <Foundation/Foundation.h>
+#import <SceneKit/SceneKit.h>
 
 @class FSBoolean;
 
@@ -41,10 +42,14 @@
 - (CGFloat)height;
 - (CGFloat)width;
 
+// NSEdgeInsets
 + (NSEdgeInsets)edgeInsetsWithTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right;
 -(CGFloat)top;
 -(CGFloat)left;
 -(CGFloat)bottom;
 -(CGFloat)right;
 
+// SCNVector3
++ (SCNVector3)scnVector3WithX:(CGFloat)x y:(CGFloat)y z:(CGFloat)z;
+-(CGFloat)z;
 @end
