@@ -3,6 +3,7 @@
 
 #import "FSObjectBrowserView.h"
 #import "FSObjectBrowserViewObjectInfo.h"
+#import <SceneKit/SceneKit.h>
 #import <objc/objc-class.h>
 #import <objc/objc.h>
 #import "FSCompiler.h"
@@ -1738,6 +1739,10 @@ static NSString* humanReadableFScriptTypeDescriptionFromEncodedObjCType(const ch
                 return @"CGRect";
         else if (strcmp(ptr, @encode(CGAffineTransform)) == 0)
                 return @"CGAffineTransform";
+        else if (strcmp(ptr, @encode(NSEdgeInsets)) == 0)
+                return @"NSEdgeInsets";
+        else if (strcmp(ptr, @encode(SCNVector3)) == 0)
+                return @"SCNVector3";
         else if (strcmp(ptr, @encode(_Bool)) == 0)
                 return @"boolean";
         else if (*ptr == '{') {
@@ -1779,6 +1784,8 @@ static NSString* FScriptObjectTemplateForEncodedObjCType(const char* ptr)
                 return @"0<>0 extent:0<>0";
         else if (strcmp(ptr, @encode(NSEdgeInsets)) == 0)
                 return @"NSValue edgeInsetsWithTop:0 left:0 bottom:0 right:0";
+        else if (strcmp(ptr, @encode(SCNVector3)) == 0)
+                return @"NSValue scnVector3WithX:0 y:0 z:0";
         else if (strcmp(ptr, @encode(CGPoint)) == 0)
                 return @"0<>0";
         else if (strcmp(ptr, @encode(CGSize)) == 0)

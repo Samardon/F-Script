@@ -230,6 +230,12 @@ labelFromPropertyName(NSString* propertyName)
         ADD_VALUE([NSValue valueWithRect:_rect], FS_ITEM_RECT, PROPERTY, nil, 0, nil, labelFromPropertyName(@#PROPERTY), NO) \
 }
 
+#define ADD_SCNVECTOR3(OBJECT, PROPERTY) \
+{ \
+        SCNVector3 _vec = [OBJECT PROPERTY]; \
+        NSRect _rect = NSMakeRect(_vec.x, _vec.y, _vec.z, 0.0); \
+        ADD_VALUE([NSValue valueWithRect:_rect], FS_ITEM_RECT, PROPERTY, nil, 0, nil, labelFromPropertyName(@#PROPERTY), NO) \
+}
 #define ADD_POINT(OBJECT, PROPERTY) \
         ADD_VALUE([NSValue valueWithPoint:[OBJECT PROPERTY]], FS_ITEM_POINT, PROPERTY, nil, 0, nil, labelFromPropertyName(@#PROPERTY), NO)
 

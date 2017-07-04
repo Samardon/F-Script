@@ -7,6 +7,7 @@
 #import "FSArray.h"
 #import "ArrayPrivate.h"
 #import <Foundation/Foundation.h>
+#import <SceneKit/SceneKit.h>
 //#import <objc/Protocol.h>  //objc_method_description
 #import "FSBooleanPrivate.h"
 #import "FSBlock.h"
@@ -145,6 +146,7 @@ id FSMapToObject(void *valuePtr, NSUInteger index, char fsEncodedType, const cha
       case fscode_NSRect:
       case fscode_CGRect:  return [NSValue valueWithRect:((NSRect *)valuePtr)[index]];
       case fscode_NSEdgeInsets:  return [NSValue valueWithEdgeInsets:((NSEdgeInsets *)valuePtr)[index]];
+      case fscode_SCNVector3:  return [NSValue valueWithSCNVector3:((SCNVector3 *)valuePtr)[index]];
       case fscode_CGAffineTransform: return FSNSAffineTransformFromCGAffineTransform(((CGAffineTransform *)valuePtr)[index]);
       case '*':
       case '^': 
@@ -310,6 +312,13 @@ void FSMapFromObject(void *valuePtr, NSUInteger index, char fsEncodedType, id ob
     if      (![object isKindOfClass:[NSValue class]])          FSExecError([NSString stringWithFormat:@"%@ is %@. An instance of NSValue containing a NSEdgeInsets was expected", description(mapType, argumentNumber, selector, ivarName), descriptionForFSMessage(object)]);
     else if (strcmp([object objCType], @encode(NSEdgeInsets)) != 0)  FSExecError([NSString stringWithFormat:@"%@ must be an NSValue containing a NSEdgeInsets", description(mapType, argumentNumber, selector, ivarName)]);
     else                                                       ((NSEdgeInsets *)valuePtr)[index] = [object edgeInsetsValue];
+    break;
+  }
+    case fscode_SCNVector3:
+  {
+    if      (![object isKindOfClass:[NSValue class]])          FSExecError([NSString stringWithFormat:@"%@ is %@. An instance of NSValue containing a SCNVector3 was expected", description(mapType, argumentNumber, selector, ivarName), descriptionForFSMessage(object)]);
+    else if (strcmp([object objCType], @encode(SCNVector3)) != 0)  FSExecError([NSString stringWithFormat:@"%@ must be an NSValue containing a SCNVector3", description(mapType, argumentNumber, selector, ivarName)]);
+    else                                                       ((SCNVector3 *)valuePtr)[index] = [object SCNVector3Value];
     break;
   }
   case fscode_CGAffineTransform:

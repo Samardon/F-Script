@@ -19,6 +19,10 @@
 {
   return NSEdgeInsetsMake(top, left, bottom, right);
 }
++ (SCNVector3)scnVector3WithX:(CGFloat)x y:(CGFloat)y z:(CGFloat)z
+{
+  return SCNVector3Make(x, y, z);
+}
  
 + (NSSize)sizeWithWidth:(CGFloat)width height:(CGFloat)height
 {
@@ -216,28 +220,34 @@
 
 - (CGFloat)x 
 {
-  if (strcmp([self objCType],@encode(NSPoint)) != 0)   
-  {
+  if (strcmp([self objCType],@encode(NSPoint)) == 0) return [self pointValue].x;
+  if (strcmp([self objCType],@encode(SCNVector3)) == 0) return [self SCNVector3Value].x;
+  
     if ([self isKindOfClass:[NSNumber class]])
       FSExecError(@"message \"x\" sent to a number");
     else
-      FSExecError(@"message \"x\" sent to an NSValue that does not contain an NSPoint");
-  }
-  else return [self pointValue].x;
+      FSExecError(@"message \"x\" sent to an NSValue that does not contain an NSPoint or SCNVector3");
 }
 
 - (CGFloat)y 
 {
-  if (strcmp([self objCType],@encode(NSPoint)) != 0) 
-  {
+  if (strcmp([self objCType],@encode(NSPoint)) == 0) return [self pointValue].y;
+  if (strcmp([self objCType],@encode(SCNVector3)) == 0) return [self SCNVector3Value].y;
     if ([self isKindOfClass:[NSNumber class]])
       FSExecError(@"message \"y\" sent to a number");
     else
-      FSExecError(@"message \"y\" sent to an NSValue that does not contain an NSPoint");
-  }
-  else return [self pointValue].y;
+      FSExecError(@"message \"y\" sent to an NSValue that does not contain an NSPoint or SCNVector3");
 }
 
+
+- (CGFloat)z
+{
+  if (strcmp([self objCType],@encode(SCNVector3)) == 0) return [self SCNVector3Value].z;
+    if ([self isKindOfClass:[NSNumber class]])
+      FSExecError(@"message \"z\" sent to a number");
+    else
+      FSExecError(@"message \"z\" sent to an NSValue that does not contain an SCNVector3");
+}
 
 - (CGFloat)top
 {

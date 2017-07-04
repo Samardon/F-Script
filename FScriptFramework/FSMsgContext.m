@@ -120,6 +120,7 @@
                               && returnType != 'q' && returnType != 'C' && returnType != 'I' && returnType != 'S'
                               && returnType != 'Q' && returnType != 'f' && returnType != ':' && returnType != 'w'
                               && returnType != 'x' && returnType != 'y' && returnType != 'z' && returnType != 'Z' && returnType != 'W'
+                              && returnType != fscode_SCNVector3
                               && returnType != 'X' && returnType != 'Y' && returnType != '^' && returnType != 'B'
                               && returnType != '9';  
               
@@ -162,7 +163,8 @@
       && argumentTypes[i] != 'q' && argumentTypes[i] != 'C' && argumentTypes[i] != 'I' && argumentTypes[i] != 'S'
       && argumentTypes[i] != 'Q' && argumentTypes[i] != 'f' && argumentTypes[i] != ':' && argumentTypes[i] != 'w'
       && argumentTypes[i] != 'W' && argumentTypes[i] != 'x' && argumentTypes[i] != 'X' && argumentTypes[i] != 'y'
-      && argumentTypes[i] != 'Y' && argumentTypes[i] != 'z' && argumentTypes[i] != 'Z' && argumentTypes[i] != '^' && argumentTypes[i] != '9')
+      && argumentTypes[i] != 'Y' && argumentTypes[i] != 'z' && argumentTypes[i] != 'Z' && argumentTypes[i] != '^' && argumentTypes[i] != '9'
+        && argumentTypes[i] != fscode_SCNVector3)
     {
       return i;
     }

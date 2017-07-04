@@ -12,6 +12,7 @@
 #import "FSBooleanPrivate.h"
 #import "FSBlock.h" 
 #import "FSCompiler.h"
+#import <SceneKit/SceneKit.h>
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
 #import "FSExecEngine.h"
@@ -188,6 +189,7 @@ if (s == nil) return nil;
     case fscode_NSRect:  
     case fscode_CGRect:            itemSize = sizeof(NSRect);             break;
     case fscode_NSEdgeInsets:      itemSize = sizeof(NSEdgeInsets);       break;
+    case fscode_SCNVector3:        itemSize = sizeof(SCNVector3);         break;
     case fscode_CGAffineTransform: itemSize = sizeof(CGAffineTransform);  break;
     default:                       itemSize = 0;
   }   

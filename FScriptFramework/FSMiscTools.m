@@ -13,6 +13,7 @@
 #import <objc/objc.h>
 #import <ExceptionHandling/NSExceptionHandler.h>
 #import <Cocoa/Cocoa.h>
+#import <SceneKit/SceneKit.h>
 #import "FSCollectionInspector.h"
 #import "FSDetailedObjectInspector.h"
 #import "FSObjectBrowserViewObjectInfo.h"
@@ -30,7 +31,13 @@
 
 @class _NSZombie, NSFault, NSRTFD;
 
-static ffi_type ffi_type_NSRange, ffi_type_NSPoint, ffi_type_NSRect, ffi_type_NSSize, ffi_type_CGAffineTransform, ffi_type_NSEdgeInsets;
+static ffi_type ffi_type_NSRange
+  , ffi_type_NSPoint
+  , ffi_type_NSRect
+  , ffi_type_NSSize
+  , ffi_type_CGAffineTransform
+  , ffi_type_NSEdgeInsets
+  , ffi_type_SCNVector3;
 
 void __attribute__ ((constructor)) initializeFFITypes(void)
 {
@@ -98,6 +105,16 @@ void __attribute__ ((constructor)) initializeFFITypes(void)
   ffi_type_NSEdgeInsets.elements[2] = &ffi_type_double;
   ffi_type_NSEdgeInsets.elements[3] = &ffi_type_double;
   ffi_type_NSEdgeInsets.elements[4] = NULL;
+  
+  //////////////////////////// Define ffi_type_SCNVector3
+  ffi_type_SCNVector3.size = 0;
+  ffi_type_SCNVector3.alignment = 0;
+  ffi_type_SCNVector3.type = FFI_TYPE_STRUCT;
+  ffi_type_SCNVector3.elements = malloc(4 * sizeof(ffi_type*));
+  ffi_type_SCNVector3.elements[0] = &ffi_type_double;
+  ffi_type_SCNVector3.elements[1] = &ffi_type_double;
+  ffi_type_SCNVector3.elements[2] = &ffi_type_double;
+  ffi_type_SCNVector3.elements[3] = NULL;
   
   //////////////////////////// Define ffi_type_CGAffineTransform
   ffi_type_CGAffineTransform.size = 0;                    
@@ -234,6 +251,7 @@ ffi_type *ffiTypeFromFSEncodedType(char fsEncodedType)
     case fscode_NSSize            : 
     case fscode_CGSize            : return &ffi_type_NSSize;
     case fscode_NSEdgeInsets      : return &ffi_type_NSEdgeInsets;
+    case fscode_SCNVector3        : return &ffi_type_SCNVector3;
     case fscode_CGAffineTransform : return &ffi_type_CGAffineTransform;
     case 'B'           : // No ffi_type defined yet for _Bool (Mac OS X 10.5.4), so we handle it ourselves
       if      (sizeof(_Bool) == 4) return &ffi_type_uint32; 
@@ -272,6 +290,7 @@ char FSEncode(const char *foundationEncodeStyleStr)
     else if  (strcmp(ptr,@encode(NSSize))             == 0 || strncmp(ptr,"{_NSSize="          ,  9) == 0) return fscode_NSSize;
     else if  (strcmp(ptr,@encode(NSRect))             == 0 || strncmp(ptr,"{_NSRect="          ,  9) == 0) return fscode_NSRect;
     else if  (strcmp(ptr,@encode(NSEdgeInsets))       == 0 || strncmp(ptr,"{_NSEdgeInsets="    , 15) == 0) return fscode_NSEdgeInsets;
+    else if  (strcmp(ptr,@encode(SCNVector3))         == 0 || strncmp(ptr,"{_SCNVector3="      , 13) == 0) return fscode_SCNVector3;
     else if  (strcmp(ptr,@encode(CGPoint))            == 0 || strncmp(ptr,"{CGPoint="          ,  9) == 0) return fscode_CGPoint;
     else if  (strcmp(ptr,@encode(CGSize))             == 0 || strncmp(ptr,"{CGSize="           ,  8) == 0) return fscode_CGSize;
     else if  (strcmp(ptr,@encode(CGRect))             == 0 || strncmp(ptr,"{CGRect="           ,  8) == 0) return fscode_CGRect;
