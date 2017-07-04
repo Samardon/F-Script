@@ -118,7 +118,7 @@ unsigned char foo(unsigned int x, float y)
 @end
 
 @interface FSNumber(NumberExt)
-+ numberWithDoubleNoCache:(double)val;
++ (id)numberWithDoubleNoCache:(double)val;
 @end 
 
 extern FSNumber *numberWithDouble(double val);
@@ -132,12 +132,12 @@ extern FSNumber *numberWithDouble(double val);
 
 //@dynamic dynamicProperty;
 
-- dynamicProperty
+- (id)dynamicProperty
 {
   return @"hello";
 }
 
-- testProperty
+- (id)testProperty
 {
   return self.dynamicProperty;
 }
@@ -150,12 +150,12 @@ extern FSNumber *numberWithDouble(double val);
 
 - (fsstruct) zozo { fsstruct r; r.a = 5; r.b = 88; return r;}
 
-+ :(id)arg
++ (id) :(id)arg
 {
   return arg;
 }
 
-+ testColonSelector
++ (id)testColonSelector
 {
   return [self :self];
 }
@@ -627,7 +627,7 @@ directory within the User domain. "*/
 
 
 
-+ managed
++ (id)managed
 {
   NSManagedObjectContext *context = [[NSManagedObjectContext alloc] init];
   NSManagedObjectModel *objectModel = [[NSManagedObjectModel alloc] init];
@@ -897,12 +897,12 @@ directory within the User domain. "*/
   return nil;
 }
 
-+classFromString:(NSString *)string
++(id)classFromString:(NSString *)string
 {
   return NSStringFromClass(NSClassFromString(string));
 }
 
-+stringFromClass:(Class)aClass
++(id)stringFromClass:(Class)aClass
 {
   return @"haha";
 }
@@ -921,7 +921,7 @@ directory within the User domain. "*/
   return @"november 2005";
 }
 
-+ stringSelect:(NSArray *) strings
++ (id)stringSelect:(NSArray *) strings
 {
   NSString *aString;
   NSMutableArray *result = [NSMutableArray array];
@@ -1104,18 +1104,18 @@ void logFloat(int dummy, ...)
   logFloat(12, (float)78.0);
 }
 
-+ encodeLong
++ (id)encodeLong
 {
   return [NSString stringWithUTF8String:@encode(long)];
 }
 
 
-+ encodeLongLong
++ (id)encodeLongLong
 {
   return [NSString stringWithUTF8String:@encode(long long)];
 }
 
-+ testffi
++ (id)testffi
 {
   KTestManager *t = [[KTestManager alloc] init];
   
@@ -1169,7 +1169,7 @@ void logFloat(int dummy, ...)
   return cgat;
 }
 
-+ encodeCGAffineTransform
++ (id)encodeCGAffineTransform
 {
   return [NSString stringWithUTF8String:@encode(CGAffineTransform)];
 }
@@ -1190,7 +1190,7 @@ void logFloat(int dummy, ...)
   return 46;
 }
 
-+ rangeEncode
++ (id)rangeEncode
 {
   	// calculate the sizes of C-Primitives
 	int i = 1;

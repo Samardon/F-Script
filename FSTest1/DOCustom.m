@@ -54,7 +54,7 @@
   i = value;
 }
 
-- testTimeout
+- (id)testTimeout
 {
   while(1);
 }
